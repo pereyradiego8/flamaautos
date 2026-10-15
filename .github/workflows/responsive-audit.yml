@@ -1,0 +1,40 @@
+name: Auditoría responsive
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "web/src/app/styles.css"
+      - "web/scripts/responsive-audit.mjs"
+      - ".github/workflows/responsive-audit.yml"
+permissions:
+  contents: read
+jobs:
+  chromium-responsive:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    defaults:
+      run:
+        working-directory: web
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Instalar Playwright para auditoría visual
+        run: |
+          npm ci --no-audit --no-fund
+          npm install --no-save --no-package-lock --ignore-scripts playwright@1.56.1 --no-audit --no-fund
+          npx playwright install --with-deps chromium
+      - name: Revisar siete resoluciones y páginas del sitio
+        run: node scripts/responsive-audit.mjs
+        env:
+          AUDIT_URL: https://flamaautos.vercel.app
+      - name: Adjuntar capturas de la auditoría
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: flama-responsive-capturas
+          path: web/responsive-artifacts/
+          retention-days: 7
+          if-no-files-found: ignore
