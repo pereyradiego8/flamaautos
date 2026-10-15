@@ -1,0 +1,39 @@
+name: Importar base inicial Flama Autos
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/bootstrap.yml"
+permissions:
+  contents: write
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Obtener repositorio
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Verificar y extraer el paquete inicial
+        shell: bash
+        run: |
+          set -euo pipefail
+          cat .bootstrap/source.b64.part* | base64 --decode > /tmp/flamaautos-source.tar.xz
+          echo "00235f2177bf031059f4e13eeeba7ff65dc06e4c69ea8d30e66959124c7c268d  /tmp/flamaautos-source.tar.xz" | sha256sum --check
+          tar -tJf /tmp/flamaautos-source.tar.xz > /tmp/flamaautos-file-list
+          if grep -E '(^/|\.\./)' /tmp/flamaautos-file-list; then
+            echo "Unsafe archive paths" >&2
+            exit 1
+          fi
+          tar -xJf /tmp/flamaautos-source.tar.xz --strip-components=1
+          rm -rf .bootstrap
+          rm .github/workflows/bootstrap.yml
+      - name: Publicar código fuente en main
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add --all
+          git commit -m "feat: Flama Autos v0.3 Next.js catalog admin and Supabase schema"
+          git push origin HEAD:main
