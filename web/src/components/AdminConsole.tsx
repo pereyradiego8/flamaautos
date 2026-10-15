@@ -61,7 +61,6 @@ export default function AdminConsole(){
   const {error:err}=await client.auth.signInWithPassword({email:email.trim(),password});setWorking(false);setPassword('');setShowPasswords(false);if(err)setError('No se pudo ingresar. Verificá tus credenciales.');
  }
  async function signup(e:React.FormEvent){e.preventDefault();if(!client||working)return;
-  if(password.length<12){setError('La contraseña debe tener al menos 12 caracteres.');return;}
   if(password!==confirmPassword){setError('Las contraseñas no coinciden. Revisalas e intentá nuevamente.');return;}
   setWorking(true);setError('');setMessage('');
   const {error:err}=await client.auth.signUp({
@@ -121,14 +120,14 @@ export default function AdminConsole(){
   <div className="password-group">
    <label htmlFor="admin-password">Contraseña</label>
    <div className="password-field">
-    <input id="admin-password" type={showPasswords?'text':'password'} required minLength={creatingAccess?12:undefined} autoComplete={creatingAccess?'new-password':'current-password'} value={password} onChange={e=>{setPassword(e.target.value);if(error)setError('');}} />
+    <input id="admin-password" type={showPasswords?'text':'password'} required autoComplete={creatingAccess?'new-password':'current-password'} value={password} onChange={e=>{setPassword(e.target.value);if(error)setError('');}} />
     <button type="button" className="password-visibility-button" aria-label={showPasswords?'Ocultar contraseñas':'Mostrar contraseñas'} aria-pressed={showPasswords} onClick={()=>setShowPasswords(v=>!v)}>{showPasswords?'Ocultar':'Mostrar'}</button>
    </div>
   </div>
   {creatingAccess&&<div className="password-group">
    <label htmlFor="admin-confirm-password">Confirmar contraseña</label>
    <div className="password-field">
-    <input id="admin-confirm-password" type={showPasswords?'text':'password'} required minLength={12} autoComplete="new-password" value={confirmPassword} onChange={e=>{setConfirmPassword(e.target.value);if(error)setError('');}} aria-invalid={confirmPassword.length>0&&password!==confirmPassword} aria-describedby="password-confirmation-help" />
+    <input id="admin-confirm-password" type={showPasswords?'text':'password'} required autoComplete="new-password" value={confirmPassword} onChange={e=>{setConfirmPassword(e.target.value);if(error)setError('');}} aria-invalid={confirmPassword.length>0&&password!==confirmPassword} aria-describedby="password-confirmation-help" />
    </div>
    <p id="password-confirmation-help" className={confirmPassword.length>0&&password!==confirmPassword?'password-mismatch':'fine'} role={confirmPassword.length>0&&password!==confirmPassword?'status':undefined}>{confirmPassword.length>0&&password!==confirmPassword?'Las contraseñas no coinciden.':'Ingresá la misma contraseña en ambos campos.'}</p>
   </div>}
