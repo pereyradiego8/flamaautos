@@ -27,7 +27,7 @@ jobs:
           fi
           tar -xJf /tmp/flamaautos-source.tar.xz --strip-components=1
           rm -rf .bootstrap
-          rm .github/workflows/bootstrap.yml
+          rm .github/workflows/ci.yml
       - name: Publicar código fuente en main
         shell: bash
         run: |
