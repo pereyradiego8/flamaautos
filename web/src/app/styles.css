@@ -107,3 +107,150 @@
  .admin-page:has(> .login-card) > h1{display:none}
  .admin-page:has(> .login-card){justify-content:safe center}
 }
+
+/* FLAMA RESPONSIVE DESIGN SYSTEM 2026
+   Una escala tipográfica y de espacios coherente en todas las páginas.
+   Se conserva el diseño oscuro/rojo, sin agrandar los títulos del admin. */
+:root{--page-gutter:clamp(16px,3.5vw,52px);--space-section:clamp(32px,4.2vw,56px)}
+body{font-size:14px;overflow-wrap:break-word}
+.header{min-height:68px;padding:10px var(--page-gutter);gap:16px}
+.brand{font-size:clamp(19px,1.85vw,25px)}
+.brand-flame{font-size:21px}
+.brand small{font-size:9px;letter-spacing:5px;margin-top:3px}
+.header nav{gap:clamp(10px,1.65vw,25px);font-size:13px}
+.header-contact{font-size:12px;padding:10px 14px;border-radius:9px}
+.section{padding:var(--space-section) var(--page-gutter)}
+.section h2{font-size:clamp(24px,2.5vw,34px);line-height:1.16;letter-spacing:-.75px;margin:10px 0 18px}
+.eyebrow{font-size:10px;letter-spacing:2px}
+.btn{font-size:13px;padding:11px 16px;border-radius:9px}
+.small-button{font-size:12px;padding:8px 11px}
+.hero{min-height:clamp(340px,53svh,470px);padding:clamp(40px,5vw,70px) var(--page-gutter)}
+.hero-copy{width:min(600px,62%)}
+.hero h1{font-size:clamp(37px,4.65vw,64px);line-height:1.04;letter-spacing:-2px;max-width:680px;margin:16px 0 20px;overflow-wrap:normal}
+.hero-copy>p:not(.eyebrow){font-size:clamp(14px,1.3vw,18px);line-height:1.55}
+.hero-mark{right:3%;top:15%;width:32%}
+.features{padding:18px var(--page-gutter);gap:12px}
+.features div{padding:4px 14px}
+.features strong{font-size:14px}
+.features span{font-size:12px}
+.categories{gap:12px;margin-top:22px}
+.categories a{min-height:104px;padding:20px;font-size:clamp(17px,1.55vw,21px);gap:10px}
+.categories small{font-size:12px;padding-top:5px}
+.section-title{gap:16px}
+.outline-link{font-size:13px;padding:10px 13px}
+.branches{gap:14px;margin:20px 0}
+.branches article{padding:clamp(18px,2vw,26px)}
+.branches h3{font-size:clamp(18px,1.7vw,22px)}
+.contact h2{max-width:540px}
+footer{padding:24px var(--page-gutter);gap:16px;font-size:12px}
+footer strong{font-size:15px}
+.catalog,.detail{min-width:0}
+.catalog h1,.admin-page>h1,.detail h1{font-size:clamp(27px,3.15vw,42px);letter-spacing:-1.15px;line-height:1.14;margin:12px 0 18px;overflow-wrap:anywhere}
+.catalog>p:not(.eyebrow){max-width:70ch}
+.filters{grid-template-columns:minmax(0,1.8fr) repeat(3,minmax(0,1fr));gap:12px;margin:24px 0 14px}
+.filters label,.admin-controls label{min-width:0}
+input,select,textarea{min-width:0;padding:10px 11px;font-size:14px}
+.vehicle-grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,225px),1fr));gap:14px;margin-top:18px}
+.vehicle-card{min-width:0}
+.vehicle-body{padding:15px}
+.vehicle-body h3{font-size:clamp(16px,1.45vw,19px);line-height:1.25;overflow-wrap:anywhere}
+.vehicle-bottom strong{font-size:clamp(16px,1.5vw,19px);overflow-wrap:anywhere}
+.vehicle-body p{min-height:0}
+.specs{gap:8px}
+.empty{padding:clamp(18px,2.2vw,27px);margin-top:16px}
+.empty h2{font-size:clamp(20px,2vw,25px);letter-spacing:-.3px}
+.detail-subtitle{font-size:clamp(15px,1.5vw,18px)}
+.detail-gallery{gap:10px;margin:22px 0}
+.detail-columns{grid-template-columns:minmax(0,1.65fr) minmax(0,1fr);gap:16px}
+.detail-columns>*{min-width:0}
+.detail-panel{padding:clamp(16px,2vw,24px)}
+.detail-panel h2,.section .detail-panel h2{font-size:clamp(19px,1.75vw,23px);letter-spacing:-.4px;margin:0 0 16px}
+.detail-panel .details-list+h2{margin-top:23px}
+.section .pricing h2{font-size:clamp(23px,2.25vw,29px);overflow-wrap:anywhere}
+.photo-empty{padding:48px 16px}
+.admin-page{min-width:0;min-height:calc(100svh - 178px);padding-block:clamp(24px,3.2vw,44px)}
+.admin-page>.eyebrow{margin:0 0 4px}
+.admin-page>h1{margin:8px 0 24px}
+.admin-console{width:100%;max-width:1260px;min-width:0}
+.admin-top{align-items:center;gap:14px;margin-bottom:16px}
+.admin-top>div{min-width:0}
+.admin-top h2,.section .admin-top h2{font-size:clamp(22px,2.35vw,30px);letter-spacing:-.5px;line-height:1.2;margin:7px 0 0}
+.admin-top p{font-size:12px;overflow-wrap:anywhere}
+.admin-top .actions{justify-content:flex-end}
+.admin-top .btn{padding:10px 14px}
+.admin-list{gap:10px}
+.admin-row{padding:13px 16px;gap:12px}
+.admin-row>div{min-width:0}
+.admin-row strong{font-size:14px}
+.admin-row p{overflow-wrap:anywhere}
+.admin-controls{flex-wrap:wrap;justify-content:flex-end;min-width:0}
+.vehicle-form{max-width:100%;padding:clamp(15px,2.4vw,24px);gap:14px}
+.vehicle-form .form-top h3{font-size:clamp(20px,2.15vw,27px)}
+.vehicle-form .form-grid{gap:12px}
+.vehicle-form label{min-width:0}
+.login-card h2,.section .login-card h2{font-size:clamp(20px,2vw,27px)}
+/* El formulario de acceso sigue centrado, pero el panel autenticado es compacto. */
+.admin-page:has(> .login-card){min-height:calc(100svh - 68px)}
+@media(max-width:1080px){
+ .filters{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .header nav{gap:12px}
+ .vehicle-grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,210px),1fr))}
+}
+@media(max-width:800px){
+ .header{min-height:65px}
+ .header-contact{display:none}
+ .hero-copy{width:min(660px,80%)}
+ .hero-mark{opacity:.45;right:-5%;width:45%}
+ .categories{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .detail-columns{grid-template-columns:minmax(0,1fr)}
+ .detail-gallery{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .detail-gallery img:first-child{grid-column:span 2;grid-row:span 1;aspect-ratio:4/3;height:auto}
+ .photo-empty{grid-column:span 2}
+ .admin-top{align-items:flex-start;flex-wrap:wrap}
+ .admin-top .actions{justify-content:flex-start}
+ .vehicle-form .form-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:600px){
+ .header{padding:12px var(--page-gutter);justify-content:center;gap:12px}
+ .header .brand{margin-right:auto}
+ .header nav{order:2;width:100%;display:flex;justify-content:space-between;gap:7px;font-size:12px;flex-wrap:wrap}
+ .header nav a{white-space:nowrap}
+ .section{padding-block:clamp(28px,7vw,42px)}
+ .hero{min-height:360px;padding-block:45px}
+ .hero-copy{width:100%}
+ .hero h1{font-size:clamp(34px,8.4vw,44px);letter-spacing:-1.5px}
+ .hero-mark{width:90%;right:-35%;top:11%;opacity:.17}
+ .hero-copy>p:not(.eyebrow){font-size:14px}
+ .features{grid-template-columns:1fr;gap:9px}
+ .features div{padding-left:12px}
+ .categories{gap:10px}
+ .categories a{padding:16px;min-height:92px;font-size:16px}
+ .categories small{font-size:11px}
+ .branches{grid-template-columns:minmax(0,1fr)}
+ .section-title{align-items:flex-start;flex-direction:column;gap:8px}
+ .filters{grid-template-columns:minmax(0,1fr)}
+ .vehicle-grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,225px),1fr))}
+ .admin-page>h1{margin-bottom:18px}
+ .admin-top{gap:11px}
+ .admin-top .actions{width:100%;justify-content:flex-start}
+ .admin-controls{justify-content:flex-start;width:100%}
+ .admin-controls label{flex:1;min-width:min(100%,160px)}
+ .vehicle-form .form-grid{grid-template-columns:minmax(0,1fr)}
+ .admin-row{align-items:stretch}
+ footer{align-items:flex-start;flex-direction:column}
+ footer>div{flex-wrap:wrap;gap:12px}
+ .details-list>div{gap:14px}
+}
+@media(max-width:380px){
+ .categories{grid-template-columns:minmax(0,1fr)}
+ .hero .actions{flex-direction:column;align-items:stretch}
+ .hero .actions .btn{text-align:center}
+ .admin-top .actions{align-items:stretch;flex-direction:column}
+ .admin-top .actions>*{width:100%}
+ .detail-gallery{grid-template-columns:minmax(0,1fr)}
+ .detail-gallery img:first-child,.photo-empty{grid-column:auto}
+}
+@media(max-height:650px) and (min-width:601px){
+ .admin-page{padding-block:20px}
+ .hero{min-height:340px}
+}
