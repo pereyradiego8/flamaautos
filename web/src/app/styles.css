@@ -8,3 +8,15 @@
 @media(max-width:720px){.header{align-items:flex-start;flex-wrap:wrap}.header nav{order:2;width:100%;justify-content:space-between;gap:10px;padding:5px 0}.hero{padding:80px 22px;min-height:500px}.hero-copy{width:100%}.hero h1{font-size:clamp(43px,10vw,70px);letter-spacing:-2.5px}.hero-mark{right:-20%;top:14%;width:85%;opacity:.5}.features{grid-template-columns:1fr}.section{padding:48px 22px}.section-title{align-items:start;flex-direction:column}.categories{grid-template-columns:repeat(2,minmax(0,1fr))}.categories a{font-size:19px;padding:18px;min-height:115px}.branches,.detail-columns{grid-template-columns:1fr}.vehicle-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.filters{grid-template-columns:1fr}.detail-gallery{grid-template-columns:repeat(2,minmax(0,1fr))}.detail-gallery img:first-child{grid-column:span 2;grid-row:span 1;aspect-ratio:4/3}.photo-empty{grid-column:span 2}.admin-top,.admin-row{align-items:start;flex-direction:column}.admin-controls{width:100%}.vehicle-form .form-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:490px){.vehicle-grid{grid-template-columns:1fr}.categories{grid-template-columns:1fr 1fr}.categories a{font-size:16px;padding:15px}.vehicle-form .form-grid{grid-template-columns:1fr}.header nav a{font-size:12px}.admin-controls{flex-wrap:wrap}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.categories a{transition:none}}
+
+/* Campos de contraseña: botón accesible para mostrar u ocultar en ingreso y registro. */
+.password-group{display:grid;gap:8px}
+.password-group>label{font-size:13px;font-weight:600;color:#d4dadc}
+.password-group .fine{margin:0}
+.password-field{position:relative}
+.password-field input{padding-right:104px}
+.password-visibility-button{position:absolute;top:50%;right:6px;transform:translateY(-50%);padding:7px 11px;min-height:34px;border:1px solid #596971;border-radius:7px;background:#263238;color:#fff;font-size:12px;font-weight:700}
+.password-visibility-button:hover{background:#35444c}
+.password-visibility-button:focus-visible{outline:3px solid #ff9297;outline-offset:2px}
+.password-field input[aria-invalid="true"]{border-color:#ff9297}
+.password-mismatch{margin:0;color:#ffabb0;font-size:13px}
