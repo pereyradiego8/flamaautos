@@ -1,4 +1,4 @@
-name: Generar lockfile inicial
+name: Generar lockfile inicial (Supabase estable)
 on:
   push:
     branches: [main]
