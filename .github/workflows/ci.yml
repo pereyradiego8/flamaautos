@@ -17,8 +17,7 @@ jobs:
         with:
           node-version: '22'
       - name: Install dependencies
-        run: npm install --no-audit --no-fund
-        # Cambiar a npm ci cuando se genere y versione package-lock.json real.
+        run: npm ci --no-audit --no-fund
       - name: Unit tests
         run: npm test
       - name: TypeScript
