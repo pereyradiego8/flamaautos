@@ -118,18 +118,20 @@ export default function AdminConsole(){
   <label>Correo electrónico
    <input type="email" required autoComplete="username" value={email} onChange={e=>setEmail(e.target.value)} />
   </label>
-  <label htmlFor="admin-password">Contraseña</label>
-  <div className="password-field">
-   <input id="admin-password" type={showPasswords?'text':'password'} required minLength={creatingAccess?12:undefined} autoComplete={creatingAccess?'new-password':'current-password'} value={password} onChange={e=>{setPassword(e.target.value);if(error)setError('');}} />
-   <button type="button" className="password-visibility-button" aria-label={showPasswords?'Ocultar contraseñas':'Mostrar contraseñas'} aria-pressed={showPasswords} onClick={()=>setShowPasswords(v=>!v)}>{showPasswords?'Ocultar':'Mostrar'}</button>
+  <div className="password-group">
+   <label htmlFor="admin-password">Contraseña</label>
+   <div className="password-field">
+    <input id="admin-password" type={showPasswords?'text':'password'} required minLength={creatingAccess?12:undefined} autoComplete={creatingAccess?'new-password':'current-password'} value={password} onChange={e=>{setPassword(e.target.value);if(error)setError('');}} />
+    <button type="button" className="password-visibility-button" aria-label={showPasswords?'Ocultar contraseñas':'Mostrar contraseñas'} aria-pressed={showPasswords} onClick={()=>setShowPasswords(v=>!v)}>{showPasswords?'Ocultar':'Mostrar'}</button>
+   </div>
   </div>
-  {creatingAccess&&<>
+  {creatingAccess&&<div className="password-group">
    <label htmlFor="admin-confirm-password">Confirmar contraseña</label>
    <div className="password-field">
     <input id="admin-confirm-password" type={showPasswords?'text':'password'} required minLength={12} autoComplete="new-password" value={confirmPassword} onChange={e=>{setConfirmPassword(e.target.value);if(error)setError('');}} aria-invalid={confirmPassword.length>0&&password!==confirmPassword} aria-describedby="password-confirmation-help" />
    </div>
    <p id="password-confirmation-help" className={confirmPassword.length>0&&password!==confirmPassword?'password-mismatch':'fine'} role={confirmPassword.length>0&&password!==confirmPassword?'status':undefined}>{confirmPassword.length>0&&password!==confirmPassword?'Las contraseñas no coinciden.':'Ingresá la misma contraseña en ambos campos.'}</p>
-  </>}
+  </div>}
   <button className="btn" type="submit" disabled={working}>{working?'Procesando…':creatingAccess?'Crear cuenta y confirmar correo':'Ingresar'}</button>
   <button type="button" className="small-button" disabled={working} onClick={()=>{setCreatingAccess(!creatingAccess);setPassword('');setConfirmPassword('');setShowPasswords(false);setError('');setMessage('');}}>{creatingAccess?'Ya tengo una cuenta':'Crear acceso inicial'}</button>
   {error&&<p className="feedback error" role="alert">{error}</p>}
