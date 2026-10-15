@@ -23,6 +23,7 @@ export default function AdminConsole(){
  const [user,setUser]=useState<User|null>(null);
  const [role,setRole]=useState<'admin'|'editor'|null>(null);
  const [email,setEmail]=useState('');const [password,setPassword]=useState('');
+ const [creatingAccess,setCreatingAccess]=useState(false);
  const [loading,setLoading]=useState(true);const [working,setWorking]=useState(false);
  const [message,setMessage]=useState('');const [error,setError]=useState('');
  const [vehicles,setVehicles]=useState<Vehicle[]>([]);const [branches,setBranches]=useState<Branch[]>([]);
@@ -56,6 +57,18 @@ export default function AdminConsole(){
  },[client,user,refresh]);
  async function login(e:React.FormEvent){e.preventDefault();if(!client)return;setWorking(true);setError('');setMessage('');
   const {error:err}=await client.auth.signInWithPassword({email:email.trim(),password});setWorking(false);setPassword('');if(err)setError('No se pudo ingresar. Verificá tus credenciales.');
+ }
+ async function signup(e:React.FormEvent){e.preventDefault();if(!client||working)return;
+  if(password.length<12){setError('La contraseña debe tener al menos 12 caracteres.');return;}
+  setWorking(true);setError('');setMessage('');
+  const {error:err}=await client.auth.signUp({
+   email:email.trim(),password,
+   options:{emailRedirectTo:`${window.location.origin}/admin`}
+  });
+  setWorking(false);setPassword('');
+  if(err){setError('No pudimos iniciar el registro. Revisá el correo o intentá nuevamente más tarde.');return;}
+  setMessage('Revisá tu correo y confirmá la cuenta. Después, volvé a este panel e ingresá con tu contraseña. Solo el correo autorizado recibirá permisos de administración.');
+  setCreatingAccess(false);
  }
  async function logout(){if(client)await client.auth.signOut();setUser(null);setRole(null);setVehicles([]);setFormOpen(false);}
  function startNew(){setEditing(null);setForm({...newForm});setPhotos(null);setError('');setMessage('');setFormOpen(true);}
@@ -96,7 +109,7 @@ export default function AdminConsole(){
  }
  if(!client)return <div className="empty"><h2>Panel no configurado</h2><p>Para habilitar la administración hay que conectar un proyecto Supabase nuevo y exclusivo de Flama Autos. No se reutilizarán las claves de 3020.</p></div>;
  if(loading)return <p role="status">Verificando sesión…</p>;
- if(!user)return <form className="login-card" onSubmit={login}><h2>Ingreso del personal</h2><label>Correo electrónico<input type="email" required autoComplete="username" value={email} onChange={e=>setEmail(e.target.value)} /></label><label>Contraseña<input type="password" required autoComplete="current-password" value={password} onChange={e=>setPassword(e.target.value)} /></label><button className="btn" type="submit" disabled={working}>{working?'Ingresando…':'Ingresar'}</button>{error&&<p className="feedback error" role="alert">{error}</p>}<p className="fine">Acceso exclusivo a usuarios dados de alta en Supabase Auth y autorizados en la tabla staff.</p></form>;
+ if(!user)return <form className="login-card" onSubmit={creatingAccess?signup:login}><h2>{creatingAccess?'Crear acceso inicial':'Ingreso del personal'}</h2><p className="fine">{creatingAccess?'Usá el correo autorizado por el administrador del proyecto. La autorización se verifica en Supabase, no en esta página.':'Ingresá con tu cuenta autorizada de Flama Autos.'}</p><label>Correo electrónico<input type="email" required autoComplete="username" value={email} onChange={e=>setEmail(e.target.value)} /></label><label>Contraseña<input type="password" required minLength={creatingAccess?12:undefined} autoComplete={creatingAccess?'new-password':'current-password'} value={password} onChange={e=>setPassword(e.target.value)} /></label><button className="btn" type="submit" disabled={working}>{working?'Procesando…':creatingAccess?'Crear cuenta y confirmar correo':'Ingresar'}</button><button type="button" className="small-button" disabled={working} onClick={()=>{setCreatingAccess(!creatingAccess);setPassword('');setError('');}}>{creatingAccess?'Ya tengo una cuenta':'Crear acceso inicial'}</button>{error&&<p className="feedback error" role="alert">{error}</p>}{message&&<p className="feedback success" role="status">{message}</p>}<p className="fine">El registro no concede permisos por sí solo: únicamente una cuenta confirmada y previamente autorizada puede administrar vehículos.</p></form>;
  if(!role)return <div className="empty"><h2>Acceso no autorizado</h2><p>Tu cuenta tiene sesión, pero no está habilitada como personal de Flama Autos.</p><button className="small-button" onClick={logout}>Cerrar sesión</button></div>;
  return <div className="admin-console">
    <div className="admin-top"><div><p>Sesión: <strong>{user.email}</strong> · Rol: {role}</p><h2>Inventario ({vehicles.length})</h2></div><div className="actions"><button className="btn" onClick={startNew}>+ Agregar vehículo</button><button className="small-button" onClick={logout}>Cerrar sesión</button></div></div>
