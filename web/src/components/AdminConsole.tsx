@@ -23,9 +23,16 @@ export default function AdminConsole(){
  const [user,setUser]=useState<User|null>(null);
  const [role,setRole]=useState<'admin'|'editor'|null>(null);
  const [email,setEmail]=useState('');const [password,setPassword]=useState('');
- const [confirmPassword,setConfirmPassword]=useState('');
  const [showPasswords,setShowPasswords]=useState(false);
- const [creatingAccess,setCreatingAccess]=useState(false);
+ const [inviteEmail,setInviteEmail]=useState('');
+ const [inviteRole,setInviteRole]=useState<'admin'|'editor'>('editor');
+ const [inviteOpen,setInviteOpen]=useState(false);
+ const [newPassword,setNewPassword]=useState('');
+ const [newPasswordConfirmation,setNewPasswordConfirmation]=useState('');
+ const [passwordOpen,setPasswordOpen]=useState(false);
+ const [accountBusy,setAccountBusy]=useState(false);
+ const [adminSearch,setAdminSearch]=useState('');
+ const [adminStatus,setAdminStatus]=useState('all');
  const [loading,setLoading]=useState(true);const [working,setWorking]=useState(false);
  const [message,setMessage]=useState('');const [error,setError]=useState('');
  const [vehicles,setVehicles]=useState<Vehicle[]>([]);const [branches,setBranches]=useState<Branch[]>([]);
@@ -60,17 +67,30 @@ export default function AdminConsole(){
  async function login(e:React.FormEvent){e.preventDefault();if(!client)return;setWorking(true);setError('');setMessage('');
   const {error:err}=await client.auth.signInWithPassword({email:email.trim(),password});setWorking(false);setPassword('');setShowPasswords(false);if(err)setError('No se pudo ingresar. Verificá tus credenciales.');
  }
- async function signup(e:React.FormEvent){e.preventDefault();if(!client||working)return;
-  if(password!==confirmPassword){setError('Las contraseñas no coinciden. Revisalas e intentá nuevamente.');return;}
-  setWorking(true);setError('');setMessage('');
-  const {error:err}=await client.auth.signUp({
-   email:email.trim(),password,
-   options:{emailRedirectTo:`${window.location.origin}/admin`}
-  });
-  setWorking(false);setPassword('');setConfirmPassword('');setShowPasswords(false);
-  if(err){setError('No pudimos iniciar el registro. Revisá el correo o intentá nuevamente más tarde.');return;}
-  setMessage('Revisá tu correo y confirmá la cuenta. Después, volvé a este panel e ingresá con tu contraseña. Solo el correo autorizado recibirá permisos de administración.');
-  setCreatingAccess(false);
+ async function inviteStaff(e:React.FormEvent){
+  e.preventDefault();if(!client||role!=='admin'||accountBusy)return;
+  setAccountBusy(true);setError('');setMessage('');
+  try{
+   const {data, error:err}=await client.functions.invoke('invite-staff',{
+    body:{email:inviteEmail.trim(),role:inviteRole}
+   });
+   if(err||!data?.ok){
+    setError(typeof data?.error==='string'?data.error:'No se pudo enviar la invitación. Revisá la sesión y los permisos.');
+   }else{
+    setMessage('Invitación enviada. El nuevo usuario debe aceptar el correo y configurar su contraseña.');
+    setInviteEmail('');setInviteOpen(false);
+   }
+  }catch{setError('No se pudo contactar el servicio de invitaciones.');}
+  finally{setAccountBusy(false);}
+ }
+ async function changeAccountPassword(e:React.FormEvent){
+  e.preventDefault();if(!client||accountBusy)return;
+  if(newPassword!==newPasswordConfirmation){setError('Las contraseñas no coinciden.');return;}
+  setAccountBusy(true);setError('');setMessage('');
+  const {error:err}=await client.auth.updateUser({password:newPassword});
+  if(err)setError('No se pudo actualizar la contraseña. Revisá los requisitos de Supabase Auth.');
+  else{setMessage('Contraseña actualizada.');setNewPassword('');setNewPasswordConfirmation('');setPasswordOpen(false);}
+  setAccountBusy(false);
  }
  async function logout(){if(client)await client.auth.signOut();setUser(null);setRole(null);setVehicles([]);setFormOpen(false);}
  function startNew(){setEditing(null);setForm({...newForm});setPhotos(null);setError('');setMessage('');setFormOpen(true);}
@@ -111,35 +131,44 @@ export default function AdminConsole(){
  }
  if(!client)return <div className="empty"><h2>Panel no configurado</h2><p>Para habilitar la administración hay que conectar un proyecto Supabase nuevo y exclusivo de Flama Autos. No se reutilizarán las claves de 3020.</p></div>;
  if(loading)return <p role="status">Verificando sesión…</p>;
- if(!user)return <form className="login-card" onSubmit={creatingAccess?signup:login}>
-  <h2>{creatingAccess?'Crear acceso inicial':'Ingreso del personal'}</h2>
-  <p className="fine">{creatingAccess?'Usá el correo autorizado por el administrador del proyecto. La autorización se verifica en Supabase, no en esta página.':'Ingresá con tu cuenta autorizada de Flama Autos.'}</p>
+ if(!user)return <form className="login-card" onSubmit={login}>
+  <h2>Ingreso del personal</h2>
+  <p className="fine">Acceso exclusivo para las cuentas autorizadas de Flama Autos. Los usuarios nuevos se incorporan por invitación del administrador.</p>
   <label>Correo electrónico
    <input type="email" required autoComplete="username" value={email} onChange={e=>setEmail(e.target.value)} />
   </label>
   <div className="password-group">
    <label htmlFor="admin-password">Contraseña</label>
    <div className="password-field">
-    <input id="admin-password" type={showPasswords?'text':'password'} required autoComplete={creatingAccess?'new-password':'current-password'} value={password} onChange={e=>{setPassword(e.target.value);if(error)setError('');}} />
-    <button type="button" className="password-visibility-button" aria-label={showPasswords?'Ocultar contraseñas':'Mostrar contraseñas'} aria-pressed={showPasswords} onClick={()=>setShowPasswords(v=>!v)}>{showPasswords?'Ocultar':'Mostrar'}</button>
+    <input id="admin-password" type={showPasswords?'text':'password'} required autoComplete="current-password" value={password} onChange={e=>{setPassword(e.target.value);if(error)setError('');}} />
+    <button type="button" className="password-visibility-button" aria-label={showPasswords?'Ocultar contraseña':'Mostrar contraseña'} aria-pressed={showPasswords} onClick={()=>setShowPasswords(v=>!v)}>{showPasswords?'Ocultar':'Mostrar'}</button>
    </div>
   </div>
-  {creatingAccess&&<div className="password-group">
-   <label htmlFor="admin-confirm-password">Confirmar contraseña</label>
-   <div className="password-field">
-    <input id="admin-confirm-password" type={showPasswords?'text':'password'} required autoComplete="new-password" value={confirmPassword} onChange={e=>{setConfirmPassword(e.target.value);if(error)setError('');}} aria-invalid={confirmPassword.length>0&&password!==confirmPassword} aria-describedby="password-confirmation-help" />
-   </div>
-   <p id="password-confirmation-help" className={confirmPassword.length>0&&password!==confirmPassword?'password-mismatch':'fine'} role={confirmPassword.length>0&&password!==confirmPassword?'status':undefined}>{confirmPassword.length>0&&password!==confirmPassword?'Las contraseñas no coinciden.':'Ingresá la misma contraseña en ambos campos.'}</p>
-  </div>}
-  <button className="btn" type="submit" disabled={working}>{working?'Procesando…':creatingAccess?'Crear cuenta y confirmar correo':'Ingresar'}</button>
-  <button type="button" className="small-button" disabled={working} onClick={()=>{setCreatingAccess(!creatingAccess);setPassword('');setConfirmPassword('');setShowPasswords(false);setError('');setMessage('');}}>{creatingAccess?'Ya tengo una cuenta':'Crear acceso inicial'}</button>
+  <button className="btn" type="submit" disabled={working}>{working?'Ingresando…':'Ingresar'}</button>
   {error&&<p className="feedback error" role="alert">{error}</p>}
   {message&&<p className="feedback success" role="status">{message}</p>}
-  <p className="fine">El registro no concede permisos por sí solo: únicamente una cuenta confirmada y previamente autorizada puede administrar vehículos.</p>
  </form>;
  if(!role)return <div className="empty"><h2>Acceso no autorizado</h2><p>Tu cuenta tiene sesión, pero no está habilitada como personal de Flama Autos.</p><button className="small-button" onClick={logout}>Cerrar sesión</button></div>;
  return <div className="admin-console">
-   <div className="admin-top"><div><p>Sesión: <strong>{user.email}</strong> · Rol: {role}</p><h2>Inventario ({vehicles.length})</h2></div><div className="actions"><button className="btn" onClick={startNew}>+ Agregar vehículo</button><button className="small-button" onClick={logout}>Cerrar sesión</button></div></div>
+   <div className="admin-top"><div><p>Sesión: <strong>{user.email}</strong> · Rol: {role}</p><h2>Inventario ({vehicles.length})</h2></div><div className="actions"><button className="btn" onClick={startNew}>+ Agregar vehículo</button>{role==='admin'&&<button type="button" className="small-button" onClick={()=>{setInviteOpen(v=>!v);setPasswordOpen(false)}}>Invitar personal</button>}<button type="button" className="small-button" onClick={()=>{setPasswordOpen(v=>!v);setInviteOpen(false)}}>Cambiar contraseña</button><button className="small-button" onClick={logout}>Cerrar sesión</button></div></div>
+   {role==='admin'&&inviteOpen&&<form className="access-settings" onSubmit={inviteStaff}>
+    <h3>Invitar personal</h3>
+    <p className="fine">Solo administradores pueden invitar usuarios. Supabase enviará un enlace para aceptar la invitación.</p>
+    <div className="access-settings-fields">
+     <label>Correo electrónico<input type="email" required autoComplete="off" value={inviteEmail} onChange={e=>setInviteEmail(e.target.value)}/></label>
+     <label>Permiso<select value={inviteRole} onChange={e=>setInviteRole(e.target.value as 'admin'|'editor')}><option value="editor">Editor de vehículos</option><option value="admin">Administrador</option></select></label>
+    </div>
+    <div className="actions"><button className="btn" disabled={accountBusy} type="submit">{accountBusy?'Enviando…':'Enviar invitación'}</button><button className="small-button" type="button" onClick={()=>setInviteOpen(false)}>Cancelar</button></div>
+   </form>}
+   {passwordOpen&&<form className="access-settings" onSubmit={changeAccountPassword}>
+    <h3>Cambiar contraseña</h3>
+    <p className="fine">Ingresá la contraseña nueva dos veces. Supabase puede aplicar sus propias políticas de seguridad.</p>
+    <div className="access-settings-fields">
+     <label>Contraseña nueva<input type="password" required autoComplete="new-password" value={newPassword} onChange={e=>setNewPassword(e.target.value)}/></label>
+     <label>Confirmar contraseña<input type="password" required autoComplete="new-password" value={newPasswordConfirmation} onChange={e=>setNewPasswordConfirmation(e.target.value)}/></label>
+    </div>
+    <div className="actions"><button className="btn" disabled={accountBusy} type="submit">Actualizar contraseña</button><button className="small-button" type="button" onClick={()=>setPasswordOpen(false)}>Cancelar</button></div>
+   </form>}
    {error&&<p className="feedback error" role="alert">{error}</p>}{message&&<p className="feedback success" role="status">{message}</p>}
    {formOpen&&<form className="vehicle-form" onSubmit={save}>
     <div className="form-top"><h3>{editing?'Editar vehículo':'Nuevo vehículo'}</h3><button type="button" className="small-button" onClick={()=>setFormOpen(false)}>Cerrar</button></div>
