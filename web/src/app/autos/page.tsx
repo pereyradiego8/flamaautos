@@ -4,7 +4,7 @@ import { publishedVehicles,blueDollarRate } from '@/lib/vehicles';
 import { publicSupabase } from '@/lib/supabase';
 import type {Branch} from '@/lib/types';
 export const dynamic = 'force-dynamic';
-export const metadata: Metadata = {title:'Vehículos disponibles | Flama Autos',description:'Explorá vehículos publicados por Flama Autos y filtrá por categoría, sucursal y precio.'};
+export const metadata: Metadata = {title:'Vehículos disponibles',description:'Explorá vehículos publicados por Flama Autos y filtrá por categoría, sucursal y precio.',alternates:{canonical:'/autos'},openGraph:{title:'Catálogo de vehículos | Flama Autos',url:'/autos'}};
 export default async function Autos({searchParams}:{searchParams:Promise<{categoria?:string}>}){
   const {categoria}=await searchParams;
   const [vehicles,rate] = await Promise.all([publishedVehicles(),blueDollarRate()]);
