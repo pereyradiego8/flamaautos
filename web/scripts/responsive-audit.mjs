@@ -73,9 +73,9 @@ try {
       await page.locator('h1').first().waitFor({timeout:15000});
       await inspect(page, label, width, height);
       if (pathname === '/admin') {
-        await page.getByRole('button', {name: 'Crear acceso inicial'}).click({timeout:20000});
-        await page.getByLabel('Confirmar contraseña').waitFor({timeout:12000});
-        await inspect(page, 'crear-usuario', width, height);
+        // El registro público inicial está cerrado tras crear el primer administrador.
+        await page.getByRole('button', {name: 'Ingresar', exact: true}).waitFor({timeout:20000});
+        await inspect(page, 'inicio-sesion', width, height);
         // Maqueta visual para auditar el panel autenticado sin usar credenciales.
         await page.evaluate(() => {
           const form = document.querySelector('.admin-page > .login-card');
@@ -87,7 +87,14 @@ try {
             <div class="admin-top"><div><p>Sesión: usuario@example.com · Rol: admin</p>
             <h2>Inventario (0)</h2></div>
             <div class="actions"><button class="btn">+ Agregar vehículo</button>
+            <button class="small-button">Invitar personal</button>
+            <button class="small-button">Cambiar contraseña</button>
             <button class="small-button">Cerrar sesión</button></div></div>
+            <form class="access-settings"><h3>Invitar personal</h3>
+              <div class="access-settings-fields"><label>Correo electrónico
+              <input type="email" placeholder="editor@example.com"></label>
+              <label>Permiso<select><option>Editor</option></select></label></div>
+              <div class="actions"><button class="btn">Enviar invitación</button></div></form>
             <div class="admin-list"><div class="empty">Todavía no hay vehículos cargados. Empezá por “Agregar vehículo”.</div></div>`;
           document.querySelector('.admin-page').append(content);
         });
