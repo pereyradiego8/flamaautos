@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { formatKm,formatPrice } from '@/lib/catalog';
 import { publicPhotoUrl } from '@/lib/supabase';
 import type { Vehicle } from '@/lib/types';
@@ -7,7 +8,7 @@ export default function VehicleCard({vehicle}: {vehicle:Vehicle}) {
   const src = image ? publicPhotoUrl(image.storage_path) : null;
   return <article className="vehicle-card">
     <Link href={`/autos/${vehicle.slug}`} className="vehicle-media" aria-label={`Ver ${vehicle.brand} ${vehicle.model}`}>
-      {src ? <img loading="lazy" src={src} alt={image?.alt_text || `${vehicle.brand} ${vehicle.model}`} /> : <span>Fotografías próximamente</span>}
+      {src ? <Image loading="lazy" fill sizes="(max-width: 600px) 95vw, (max-width: 1080px) 45vw, 25vw" src={src} alt={image?.alt_text || `${vehicle.brand} ${vehicle.model}`} /> : <span>Fotografías próximamente</span>}
       {vehicle.featured && <small className="featured">Destacado</small>}
     </Link>
     <div className="vehicle-body">
