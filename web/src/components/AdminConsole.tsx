@@ -33,6 +33,11 @@ export default function AdminConsole(){
  const [accountBusy,setAccountBusy]=useState(false);
  const [adminSearch,setAdminSearch]=useState('');
  const [adminStatus,setAdminStatus]=useState('all');
+ const [branchesOpen,setBranchesOpen]=useState(false);
+ const [editingBranch,setEditingBranch]=useState<string|null>(null);
+ const [branchName,setBranchName]=useState('');
+ const [branchAddress,setBranchAddress]=useState('');
+ const [branchActive,setBranchActive]=useState(true);
  const [loading,setLoading]=useState(true);const [working,setWorking]=useState(false);
  const [message,setMessage]=useState('');const [error,setError]=useState('');
  const [vehicles,setVehicles]=useState<Vehicle[]>([]);const [branches,setBranches]=useState<Branch[]>([]);
@@ -93,6 +98,29 @@ export default function AdminConsole(){
   setAccountBusy(false);
  }
  async function logout(){if(client)await client.auth.signOut();setUser(null);setRole(null);setVehicles([]);setFormOpen(false);}
+ function startBranchEdit(branch:Branch){
+  setEditingBranch(branch.id);setBranchName(branch.name);
+  setBranchAddress(branch.address);setBranchActive(branch.active);
+  setBranchesOpen(true);
+ }
+ function startBranchNew(){
+  setEditingBranch(null);setBranchName('');setBranchAddress('');
+  setBranchActive(true);setBranchesOpen(true);
+ }
+ async function saveBranch(e:React.FormEvent){
+  e.preventDefault();if(!client||role!=='admin'||working)return;
+  const name=branchName.trim(),address=branchAddress.trim();
+  if(!name||!address){setError('Completá el nombre y la dirección de la sucursal.');return;}
+  setWorking(true);setError('');setMessage('');
+  const payload={name,address,active:branchActive};
+  const query=editingBranch
+   ? client.from('branches').update(payload).eq('id',editingBranch)
+   : client.from('branches').insert(payload);
+  const {error:err}=await query;
+  if(err)setError('No se pudo guardar la sucursal. Verificá si el nombre ya existe.');
+  else {setMessage('Sucursal guardada. Verificá los datos antes de publicarlos.');setEditingBranch(null);setBranchName('');setBranchAddress('');await refresh();}
+  setWorking(false);
+ }
  function startNew(){setEditing(null);setForm({...newForm});setPhotos(null);setError('');setMessage('');setFormOpen(true);}
  function startDuplicate(v:Vehicle){
   setEditing(null);
@@ -182,7 +210,7 @@ export default function AdminConsole(){
   return (!query||searchText.includes(query))&&(adminStatus==='all'||v.status===adminStatus);
  });
  return <div className="admin-console">
-   <div className="admin-top"><div><p>Sesión: <strong>{user.email}</strong> · Rol: {role}</p><h2>Inventario ({vehicles.length})</h2></div><div className="actions"><button className="btn" onClick={startNew}>+ Agregar vehículo</button>{role==='admin'&&<button type="button" className="small-button" onClick={()=>{setInviteOpen(v=>!v);setPasswordOpen(false)}}>Invitar personal</button>}<button type="button" className="small-button" onClick={()=>{setPasswordOpen(v=>!v);setInviteOpen(false)}}>Cambiar contraseña</button><button className="small-button" onClick={logout}>Cerrar sesión</button></div></div>
+   <div className="admin-top"><div><p>Sesión: <strong>{user.email}</strong> · Rol: {role}</p><h2>Inventario ({vehicles.length})</h2></div><div className="actions"><button className="btn" onClick={startNew}>+ Agregar vehículo</button>{role==='admin'&&<button type="button" className="small-button" onClick={()=>{setInviteOpen(v=>!v);setPasswordOpen(false)}}>Invitar personal</button>}{role==='admin'&&<button type="button" className="small-button" onClick={()=>{if(branchesOpen)setBranchesOpen(false);else startBranchNew();}}>Sucursales</button>}<button type="button" className="small-button" onClick={()=>{setPasswordOpen(v=>!v);setInviteOpen(false)}}>Cambiar contraseña</button><button className="small-button" onClick={logout}>Cerrar sesión</button></div></div>
    {role==='admin'&&inviteOpen&&<form className="access-settings" onSubmit={inviteStaff}>
     <h3>Invitar personal</h3>
     <p className="fine">Solo administradores pueden invitar usuarios. Supabase enviará un enlace para aceptar la invitación.</p>
@@ -192,6 +220,22 @@ export default function AdminConsole(){
     </div>
     <div className="actions"><button className="btn" disabled={accountBusy} type="submit">{accountBusy?'Enviando…':'Enviar invitación'}</button><button className="small-button" type="button" onClick={()=>setInviteOpen(false)}>Cancelar</button></div>
    </form>}
+   {role==='admin'&&branchesOpen&&<section className="access-settings">
+    <h3>Gestión de sucursales</h3>
+    <p className="fine">La web pública muestra las sucursales activas. Confirmá dirección y atención con Flama Autos antes de difundir cambios.</p>
+    <div className="branch-admin-list">
+     {branches.map(branch=><div key={branch.id} className="branch-admin-item"><div><strong>{branch.name}</strong><p>{branch.address}</p><span className="fine">{branch.active?'Activa':'Inactiva'}</span></div><button type="button" className="small-button" onClick={()=>startBranchEdit(branch)}>Editar</button></div>)}
+    </div>
+    <form className="branch-editor" onSubmit={saveBranch}>
+     <h4>{editingBranch?'Editar sucursal':'Agregar sucursal'}</h4>
+     <div className="access-settings-fields">
+      <label>Nombre<input required maxLength={80} value={branchName} onChange={e=>setBranchName(e.target.value)}/></label>
+      <label>Dirección<input required maxLength={200} value={branchAddress} onChange={e=>setBranchAddress(e.target.value)}/></label>
+     </div>
+     <label className="branch-active-label"><input type="checkbox" checked={branchActive} onChange={e=>setBranchActive(e.target.checked)}/> Sucursal activa</label>
+     <div className="actions"><button className="btn" type="submit" disabled={working}>Guardar sucursal</button><button type="button" className="small-button" onClick={startBranchNew}>Nueva</button><button type="button" className="small-button" onClick={()=>setBranchesOpen(false)}>Cerrar</button></div>
+    </form>
+   </section>}
    {passwordOpen&&<form className="access-settings" onSubmit={changeAccountPassword}>
     <h3>Cambiar contraseña</h3>
     <p className="fine">Ingresá la contraseña nueva dos veces. Supabase puede aplicar sus propias políticas de seguridad.</p>
