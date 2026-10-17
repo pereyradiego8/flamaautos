@@ -70,7 +70,7 @@ try {
     for (const [label,pathname] of pages) {
       const response = await page.goto(origin + pathname, { waitUntil: 'domcontentloaded', timeout: 60000 });
       assert.equal(response?.status(), 200, `${pathname} responde HTTP 200`);
-      await page.locator('h1').first().waitFor({timeout:15000});
+      await page.locator('h1').first().waitFor({state:'attached',timeout:15000});
       await inspect(page, label, width, height);
       if (pathname === '/admin') {
         // El registro público inicial está cerrado tras crear el primer administrador.
