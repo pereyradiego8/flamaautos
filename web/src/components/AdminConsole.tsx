@@ -94,6 +94,13 @@ export default function AdminConsole(){
  }
  async function logout(){if(client)await client.auth.signOut();setUser(null);setRole(null);setVehicles([]);setFormOpen(false);}
  function startNew(){setEditing(null);setForm({...newForm});setPhotos(null);setError('');setMessage('');setFormOpen(true);}
+ function startDuplicate(v:Vehicle){
+  setEditing(null);
+  setForm({...toForm(v),status:'draft',featured:false});
+  setPhotos(null);setError('');
+  setMessage('Revisá los datos antes de guardar una nueva unidad. Las fotos no se duplican.');
+  setFormOpen(true);
+ }
  function startEdit(v:Vehicle){setEditing(v.id);setForm(toForm(v));setPhotos(null);setError('');setMessage('');setFormOpen(true);}
  async function save(e:React.FormEvent){e.preventDefault();if(!client||!role||working)return;
   const problem=validate(form);if(problem){setError(problem);return;}
@@ -104,13 +111,15 @@ export default function AdminConsole(){
   if(result.error||!result.data){setError(`No se pudo guardar el vehículo (${result.error?.code??'sin confirmación'}).`);setWorking(false);return;}
   const id=result.data.id;
   if(photos?.length){
+   const currentImages=vehicles.find(v=>v.id===editing)?.vehicle_images??[];
+   let nextOrder=Math.max(-1,...currentImages.map(image=>image.sort_order))+1;
    for(const file of Array.from(photos).slice(0,12)){
     if(!['image/jpeg','image/png','image/webp'].includes(file.type)||file.size>5*1024*1024){setError('Algunas imágenes no se subieron: solo JPG, PNG o WebP de hasta 5 MB.');continue;}
     const ext=file.type==='image/jpeg'?'jpg':file.type==='image/png'?'png':'webp';
     const path=`${id}/${crypto.randomUUID()}.${ext}`;
     const uploaded=await client.storage.from('vehicle-images').upload(path,file,{upsert:false,contentType:file.type});
     if(uploaded.error){setError('El vehículo se guardó, pero alguna fotografía no pudo subirse.');continue;}
-    const added=await client.from('vehicle_images').insert({vehicle_id:id,storage_path:path,alt_text:`${payload.brand} ${payload.model}`,sort_order:0});
+    const added=await client.from('vehicle_images').insert({vehicle_id:id,storage_path:path,alt_text:`${payload.brand} ${payload.model}`,sort_order:nextOrder++});
     if(added.error){await client.storage.from('vehicle-images').remove([path]);setError('El vehículo se guardó, pero no se pudo registrar una fotografía.');}
    }
   }
@@ -120,6 +129,23 @@ export default function AdminConsole(){
   const {error:err}=await client.from('vehicles').update({status}).eq('id',id).select('id').single();
   if(err)setError('No se pudo actualizar el estado. Revisá que tenga año y precio si intentás publicarlo.');
   else {setVehicles(old=>old.map(v=>v.id===id?{...v,status}:v));setMessage('Estado actualizado.');}
+  setWorking(false);
+ }
+ async function movePhoto(imageId:string,direction:-1|1){
+  if(!client||!editing||working)return;
+  const images=[...(vehicles.find(v=>v.id===editing)?.vehicle_images??[])]
+   .sort((a,b)=>a.sort_order-b.sort_order||a.id.localeCompare(b.id));
+  const oldIndex=images.findIndex(image=>image.id===imageId);
+  const newIndex=oldIndex+direction;
+  if(oldIndex<0||newIndex<0||newIndex>=images.length)return;
+  const ids=images.map(image=>image.id);
+  [ids[oldIndex],ids[newIndex]]=[ids[newIndex],ids[oldIndex]];
+  setWorking(true);setError('');setMessage('');
+  const {error:err}=await client.rpc('reorder_vehicle_images',{
+   p_vehicle_id:editing,p_image_ids:ids,
+  });
+  if(err)setError('No pudimos cambiar el orden de las fotos.');
+  else{await refresh();setMessage('Orden de fotografías actualizado.');}
   setWorking(false);
  }
  async function removePhoto(imageId:string,path:string){if(!client||!role||working)return;if(!window.confirm('¿Quitar esta fotografía?'))return;setWorking(true);setError('');
@@ -149,6 +175,12 @@ export default function AdminConsole(){
   {message&&<p className="feedback success" role="status">{message}</p>}
  </form>;
  if(!role)return <div className="empty"><h2>Acceso no autorizado</h2><p>Tu cuenta tiene sesión, pero no está habilitada como personal de Flama Autos.</p><button className="small-button" onClick={logout}>Cerrar sesión</button></div>;
+ const shownVehicles=vehicles.filter(v=>{
+  const query=adminSearch.trim().normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+  const searchText=`${v.brand} ${v.model} ${v.version??''} ${v.model_year??''}`
+   .normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+  return (!query||searchText.includes(query))&&(adminStatus==='all'||v.status===adminStatus);
+ });
  return <div className="admin-console">
    <div className="admin-top"><div><p>Sesión: <strong>{user.email}</strong> · Rol: {role}</p><h2>Inventario ({vehicles.length})</h2></div><div className="actions"><button className="btn" onClick={startNew}>+ Agregar vehículo</button>{role==='admin'&&<button type="button" className="small-button" onClick={()=>{setInviteOpen(v=>!v);setPasswordOpen(false)}}>Invitar personal</button>}<button type="button" className="small-button" onClick={()=>{setPasswordOpen(v=>!v);setInviteOpen(false)}}>Cambiar contraseña</button><button className="small-button" onClick={logout}>Cerrar sesión</button></div></div>
    {role==='admin'&&inviteOpen&&<form className="access-settings" onSubmit={inviteStaff}>
@@ -190,9 +222,10 @@ export default function AdminConsole(){
      <label className="checkbox-label"><input type="checkbox" checked={form.featured} onChange={e=>setForm({...form,featured:e.target.checked})}/> Destacado</label>
      <label>Agregar fotografías (máx. 12 por guardado, JPG/PNG/WebP, 5 MB c/u)<input type="file" multiple accept="image/jpeg,image/png,image/webp" onChange={e=>setPhotos(e.target.files)}/></label>
     </div><label>Descripción y equipamiento<textarea rows={5} maxLength={10000} value={form.description} onChange={e=>setForm({...form,description:e.target.value})}/></label>
-    {editing&&<div className="photo-admin"><p>Fotos actuales</p>{vehicles.find(v=>v.id===editing)?.vehicle_images?.map(im=>{const url=publicPhotoUrl(im.storage_path);return <div className="mini-photo" key={im.id}>{url&&<img src={url} alt={im.alt_text??'Vehículo'}/>}<button type="button" disabled={working} onClick={()=>removePhoto(im.id,im.storage_path)}>Quitar</button></div>})}</div>}
+    {editing&&<div className="photo-admin"><p>Fotografías actuales (la primera es la principal)</p>{[...(vehicles.find(v=>v.id===editing)?.vehicle_images??[])].sort((a,b)=>a.sort_order-b.sort_order||a.id.localeCompare(b.id)).map((im,index,all)=>{const url=publicPhotoUrl(im.storage_path);return <div className="mini-photo" key={im.id}>{url&&<img src={url} alt={im.alt_text??'Vehículo'}/>}<span className="photo-order-label">{index===0?'Principal':`Foto ${index+1}`}</span><div className="photo-order-buttons"><button type="button" className="small-button" title="Mover foto hacia el principio" aria-label="Mover foto hacia el principio" disabled={working||index===0} onClick={()=>movePhoto(im.id,-1)}>←</button><button type="button" className="small-button" title="Mover foto hacia el final" aria-label="Mover foto hacia el final" disabled={working||index===all.length-1} onClick={()=>movePhoto(im.id,1)}>→</button></div><button type="button" className="small-button" disabled={working} onClick={()=>removePhoto(im.id,im.storage_path)}>Quitar</button></div>})}</div>}
     <div className="actions"><button className="btn" disabled={working} type="submit">{working?'Guardando…':'Guardar vehículo'}</button><button className="small-button" type="button" onClick={()=>setFormOpen(false)}>Cancelar</button></div>
    </form>}
-   <div className="admin-list">{vehicles.length===0&&<div className="empty">Todavía no hay vehículos cargados. Empezá por “Agregar vehículo”.</div>}{vehicles.map(v=><article className="admin-row" key={v.id}><div><strong>{v.brand} {v.model} {v.model_year??''}</strong><p>{v.version??''} · {formatPrice(v.cash_price,v.currency)} · {v.branches?.name??'Sin sucursal'}</p></div><div className="admin-controls"><label>Estado<select aria-label={`Estado de ${v.brand} ${v.model}`} disabled={working} value={v.status} onChange={e=>void changeStatus(v.id,e.target.value as VehicleStatus)}>{statuses.map(s=><option value={s.value} key={s.value}>{s.label}</option>)}</select></label><button className="small-button" onClick={()=>startEdit(v)}>Editar</button></div></article>)}</div>
+   {vehicles.length>0&&<div className="admin-searchbar"><label>Buscar unidades<input type="search" value={adminSearch} onChange={e=>setAdminSearch(e.target.value)} placeholder="Marca, modelo, año o versión"/></label><label>Estado<select value={adminStatus} onChange={e=>setAdminStatus(e.target.value)}><option value="all">Todos</option>{statuses.map(s=><option value={s.value} key={s.value}>{s.label}</option>)}</select></label><span className="fine" aria-live="polite">Mostrando {shownVehicles.length} de {vehicles.length}</span></div>}
+   <div className="admin-list">{vehicles.length===0&&<div className="empty">Todavía no hay vehículos cargados. Empezá por “Agregar vehículo”.</div>}{vehicles.length>0&&shownVehicles.length===0&&<div className="empty">No hay vehículos que coincidan con los filtros.</div>}{shownVehicles.map(v=><article className="admin-row" key={v.id}><div><strong>{v.brand} {v.model} {v.model_year??''}</strong><p>{v.version??''} · {formatPrice(v.cash_price,v.currency)} · {v.branches?.name??'Sin sucursal'}</p></div><div className="admin-controls"><label>Estado<select aria-label={`Estado de ${v.brand} ${v.model}`} disabled={working} value={v.status} onChange={e=>void changeStatus(v.id,e.target.value as VehicleStatus)}>{statuses.map(s=><option value={s.value} key={s.value}>{s.label}</option>)}</select></label><button type="button" className="small-button" onClick={()=>startEdit(v)}>Editar</button><button type="button" className="small-button" onClick={()=>startDuplicate(v)}>Duplicar</button></div></article>)}</div>
   </div>;
 }
