@@ -1,5 +1,13 @@
 import type { NextConfig } from 'next';
 const nextConfig: NextConfig = {
+  images: {
+    remotePatterns: [{
+      protocol: 'https',
+      hostname: 'kldsrenndnyttvfuoauf.supabase.co',
+      pathname: '/storage/v1/object/public/vehicle-images/**'
+    }],
+    formats: ['image/webp'],
+  },
   poweredByHeader: false,
   async headers() {
     return [{source:'/(.*)',headers:[
