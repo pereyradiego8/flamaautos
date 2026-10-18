@@ -80,9 +80,10 @@ def parse(url):
  if item_id not in url.replace('-',''):raise ValueError('La publicación respondió con otro ID')
  seller_markers=[r'"seller_id"\s*:\s*117436611\b',r'"sellerId"\s*:\s*117436611\b']
  seller_ok=any(re.search(p,raw) for p in seller_markers)
- if not seller_ok or 'Agenciaflama' not in raw:raise ValueError('El aviso no pertenece al vendedor verificado')
+ if not seller_ok:raise ValueError('El aviso no pertenece al vendedor verificado (ID de cuenta distinto)')
  status_match=re.search(r'"item_status"\s*:\s*"([a-z_]+)"',raw)
  status=status_match.group(1) if status_match else 'unknown'
+ if status!='active':raise ValueError(f'La publicación del vendedor oficial no está activa (estado: {status})')
  offer=obj.get('offers') if isinstance(obj.get('offers'),dict) else {}
  original_price=offer.get('price')
  currency=offer.get('priceCurrency')
