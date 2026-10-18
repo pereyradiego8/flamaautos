@@ -1,0 +1,21 @@
+name: Auditoría Mercado Libre de Flama
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'web/scripts/verify-mercadolibre-seller.mjs'
+      - '.github/workflows/mercadolibre-source-audit.yml'
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Comprobar pertenencia del aviso a la tienda oficial
+        run: node web/scripts/verify-mercadolibre-seller.mjs
