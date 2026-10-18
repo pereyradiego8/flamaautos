@@ -1,0 +1,245 @@
+{
+  "seller_id": 117436611,
+  "captured_at": "2026-10-18T20:54:37.436752+00:00",
+  "listings": [
+    {
+      "source_id": "MLA3917054036",
+      "source_url": "https://auto.mercadolibre.com.ar/MLA-3917054036-dodge-journey-24-sxt-170cv-techo-dvd-nav-_JM",
+      "source_seller_id": 117436611,
+      "source_status": "active",
+      "name": "Dodge Journey 2.4 Sxt 170cv (techo, Dvd, Nav)",
+      "brand": "Dodge",
+      "model": "Journey",
+      "version": "2.4 Sxt 170cv (techo, Dvd, Nav)",
+      "model_year": 2017,
+      "mileage_km": 70000,
+      "category": "suv",
+      "condition": "used",
+      "fuel": "Nafta",
+      "transmission": "Automática",
+      "currency": "ARS",
+      "cash_price": 25900000,
+      "down_payment": 11900000,
+      "list_price": 27200000,
+      "trade_in_price": null,
+      "description_source": "Hermosa Dodge Journey 7as, con solo Km70.000 con todos sus service, funcionando perfectamente, con 4 cubiertas nuevas, totalmente para recomendar.Esta SUV negra cuenta con motor 2.4 nafta de 170 cv y transmisión automática de 6 marchas, 4x2 y dirección hidráulica. Cuenta con techo, DVD, Nav, Bluetooth, ABS, airbags, sensores de lluvia y luz, control de estabilidad y comandos al volante. Vehículo ideal para el dia a dia y viajes largos en familia.",
+      "attrs": {
+        "Marca": "Dodge",
+        "Modelo": "Journey",
+        "Año": "2017",
+        "Versión": "2.4 Sxt 170cv (techo, Dvd, Nav)",
+        "Color": "Negro",
+        "Kilómetros": "70.000 km",
+        "Tipo de combustible": "Nafta",
+        "Puertas": "5",
+        "Transmisión": "Automática",
+        "Motor": "2.4",
+        "Tipo de carrocería": "SUV",
+        "Piloto automático": "Sí",
+        "Aire acondicionado": "Sí",
+        "Computadora de abordo": "Sí",
+        "Sensor de lluvia": "Sí",
+        "Comando remoto para radio en el volante": "Sí",
+        "Porta vasos": "Sí",
+        "Largo x Altura x Ancho": "4888 mm x 1691 mm x 1877 mm",
+        "Frenos ABS": "Sí",
+        "Airbag para conductor y pasajero": "Sí",
+        "Control de estabilidad": "Sí",
+        "Tracción ASR": "Sí",
+        "Llantas de aleación": "Sí",
+        "Control de tracción": "4x2",
+        "Capacidad de personas": "5",
+        "Potencia": "170 hp",
+        "Distancia entre ejes": "2.947 mm",
+        "Capacidad del tanque": "78 L",
+        "Válvulas por cilindro": "4",
+        "Dirección": "Hidráulica",
+        "Alarma": "Sí",
+        "AM/FM": "Sí",
+        "Bluetooth": "Sí",
+        "DVD": "Sí",
+        "Reproductor de MP3": "Sí"
+      },
+      "photos": [
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_777526-MLA117313936701_092026-F.webp",
+          "sort_order": 0,
+          "alt_text": "Imagen 1 de 25 de Dodge Journey 2.4 Sxt 170cv (techo, Dvd, Nav)",
+          "width": 1200,
+          "height": 1192
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_611902-MLA115851940534_092026-F.webp",
+          "sort_order": 1,
+          "alt_text": "Imagen 2 de 25 de Dodge Journey 2.4 Sxt 170cv (techo, Dvd, Nav)",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_650436-MLA115786404438_092026-F.webp",
+          "sort_order": 2,
+          "alt_text": "Imagen 3 de 25 de Dodge Journey 2.4 Sxt 170cv (techo, Dvd, Nav)",
+          "width": 953,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_841777-MLA115786404460_092026-F.webp",
+          "sort_order": 3,
+          "alt_text": "Imagen 4 de 25 de Dodge Journey 2.4 Sxt 170cv (techo, Dvd, Nav)",
+          "width": 1104,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_683832-MLA117242674669_092026-F.webp",
+          "sort_order": 4,
+          "alt_text": "Imagen 5 de 25 de Dodge Journey 2.4 Sxt 170cv (techo, Dvd, Nav)",
+          "width": 1085,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_642665-MLA117242966061_092026-F.webp",
+          "sort_order": 5,
+          "alt_text": "Imagen 6 de 25 de Dodge Journey 2.4 Sxt 170cv (techo, Dvd, Nav)",
+          "width": 964,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_714020-MLA115786754882_092026-F.webp",
+          "sort_order": 6,
+          "alt_text": "Imagen 7 de 25 de Dodge Journey 2.4 Sxt 170cv (techo, Dvd, Nav)",
+          "width": 1014,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_784396-MLA117242995845_092026-F.webp",
+          "sort_order": 7,
+          "alt_text": "Imagen 8 de 25 de Dodge Journey 2.4 Sxt 170cv (techo, Dvd, Nav)",
+          "width": 870,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_817163-MLA117242966101_092026-F.webp",
+          "sort_order": 8,
+          "alt_text": "Imagen 9 de 25 de Dodge Journey 2.4 Sxt 170cv (techo, Dvd, Nav)",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_811946-MLA117241912605_092026-F.webp",
+          "sort_order": 9,
+          "alt_text": "Imagen 10 de 25 de Dodge Journey 2.4 Sxt 170cv (techo, Dvd, Nav)",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_807124-MLA117242175673_092026-F.webp",
+          "sort_order": 10,
+          "alt_text": "Imagen 11 de 25 de Dodge Journey 2.4 Sxt 170cv (techo, Dvd, Nav)",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_656905-MLA115786754900_092026-F.webp",
+          "sort_order": 11,
+          "alt_text": "Imagen 12 de 25 de Dodge Journey 2.4 Sxt 170cv (techo, Dvd, Nav)",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_650895-MLA115786754916_092026-F.webp",
+          "sort_order": 12,
+          "alt_text": "Imagen 13 de 25 de Dodge Journey 2.4 Sxt 170cv (techo, Dvd, Nav)",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_844121-MLA117241912627_092026-F.webp",
+          "sort_order": 13,
+          "alt_text": "Imagen 14 de 25 de Dodge Journey 2.4 Sxt 170cv (techo, Dvd, Nav)",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_911066-MLA115786230686_092026-F.webp",
+          "sort_order": 14,
+          "alt_text": "Imagen 15 de 25 de Dodge Journey 2.4 Sxt 170cv (techo, Dvd, Nav)",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_970759-MLA115786404518_092026-F.webp",
+          "sort_order": 15,
+          "alt_text": "Imagen 16 de 25 de Dodge Journey 2.4 Sxt 170cv (techo, Dvd, Nav)",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_939504-MLA115786754942_092026-F.webp",
+          "sort_order": 16,
+          "alt_text": "Imagen 17 de 25 de Dodge Journey 2.4 Sxt 170cv (techo, Dvd, Nav)",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_876738-MLA115786404522_092026-F.webp",
+          "sort_order": 17,
+          "alt_text": "Imagen 18 de 25 de Dodge Journey 2.4 Sxt 170cv (techo, Dvd, Nav)",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_848604-MLA117242674769_092026-F.webp",
+          "sort_order": 18,
+          "alt_text": "Imagen 19 de 25 de Dodge Journey 2.4 Sxt 170cv (techo, Dvd, Nav)",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_957338-MLA115785730102_092026-F.webp",
+          "sort_order": 19,
+          "alt_text": "Imagen 20 de 25 de Dodge Journey 2.4 Sxt 170cv (techo, Dvd, Nav)",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_859125-MLA117242995941_092026-F.webp",
+          "sort_order": 20,
+          "alt_text": "Imagen 21 de 25 de Dodge Journey 2.4 Sxt 170cv (techo, Dvd, Nav)",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_664828-MLA115786754988_092026-F.webp",
+          "sort_order": 21,
+          "alt_text": "Imagen 22 de 25 de Dodge Journey 2.4 Sxt 170cv (techo, Dvd, Nav)",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_644975-MLA117241882721_092026-F.webp",
+          "sort_order": 22,
+          "alt_text": "Imagen 23 de 25 de Dodge Journey 2.4 Sxt 170cv (techo, Dvd, Nav)",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_737314-MLA117242966207_092026-F.webp",
+          "sort_order": 23,
+          "alt_text": "Imagen 24 de 25 de Dodge Journey 2.4 Sxt 170cv (techo, Dvd, Nav)",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_838734-MLA117242966233_092026-F.webp",
+          "sort_order": 24,
+          "alt_text": "Imagen 25 de 25 de Dodge Journey 2.4 Sxt 170cv (techo, Dvd, Nav)",
+          "width": 1200,
+          "height": 1123
+        }
+      ],
+      "year_conflict": false,
+      "captured_at": "2026-10-18T20:54:29.060932+00:00",
+      "price_valid_until": "2026-10-21"
+    }
+  ]
+}
