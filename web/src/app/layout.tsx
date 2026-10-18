@@ -9,8 +9,12 @@ export const metadata: Metadata={
  description:'Explorá el catálogo de Flama Autos en Berazategui. Vehículos, sucursales y contacto.',
  alternates:{canonical:'/'},
  icons:{
-  icon:[{url:'/flama-icon.svg',type:'image/svg+xml',sizes:'any'},{url:'/favicon-32x32.png',type:'image/png',sizes:'32x32'}],
-  shortcut:'/flama-icon.svg',
+  icon:[
+   {url:'/flama-favicon-large.svg',type:'image/svg+xml',sizes:'any'},
+   {url:'/flama-favicon-32.png',type:'image/png',sizes:'32x32'},
+   {url:'/flama-favicon-16.png',type:'image/png',sizes:'16x16'},
+  ],
+  shortcut:'/flama-favicon-large.svg',
   apple:[{url:'/apple-touch-icon.png',sizes:'180x180',type:'image/png'}],
  },
  robots:{index:true,follow:true},
