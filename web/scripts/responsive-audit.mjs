@@ -119,6 +119,34 @@ try {
             <h2>US$ 30.000</h2><a class="btn full">Consultar por este vehículo ↗</a></aside></div>`;
         });
         await inspect(page, 'ficha-fixture', width, height);
+
+        // Ficha real: comprobamos que el carrusel tenga una sola imagen principal
+        // y que los controles funcionen en cada resolución, sin credenciales.
+        const detailResponse=await page.goto(origin+'/autos/ford-territory-2023-mla2106857291',{
+          waitUntil:'load',timeout:60000
+        });
+        assert.equal(detailResponse?.status(),200,'Ficha real responde HTTP 200');
+        const gallery=page.getByRole('region',{name:/Galería de fotografías de Ford Territory/});
+        await gallery.waitFor({state:'visible',timeout:20000});
+        assert.equal(await gallery.locator('.vehicle-carousel-stage img').count(),1,
+          'Solo una fotografía principal a la vez');
+        assert.ok(await gallery.locator('.vehicle-carousel-thumbnail').count()>1,
+          'Las miniaturas de varias fotos están disponibles');
+        assert.match(await gallery.locator('.vehicle-carousel-counter').innerText(),/Foto 1 de \\d+/);
+        await gallery.getByRole('button',{name:'Foto siguiente',exact:true}).click();
+        await page.waitForFunction(()=>document.querySelector('.vehicle-carousel-counter')?.textContent?.includes('Foto 2 de'));
+        await gallery.getByRole('button',{name:/Ver foto 5 de/}).click();
+        await page.waitForFunction(()=>document.querySelector('.vehicle-carousel-counter')?.textContent?.includes('Foto 5 de'));
+        await gallery.focus();
+        await page.keyboard.press('ArrowLeft');
+        await page.waitForFunction(()=>document.querySelector('.vehicle-carousel-counter')?.textContent?.includes('Foto 4 de'));
+        await gallery.getByRole('button',{name:'Ampliar fotografía'}).click();
+        const modal=page.getByRole('dialog',{name:/Fotografía ampliada de Ford Territory/});
+        await modal.waitFor({state:'visible'});
+        await modal.getByRole('button',{name:'Foto siguiente ampliada'}).click();
+        await modal.getByRole('button',{name:'Cerrar fotografía ampliada'}).click();
+        assert.equal(await modal.isVisible(),false,'El visor ampliado se cierra');
+        await inspect(page,'ficha-real-carrusel',width,height);
       }
     }
     await context.close();
