@@ -1,0 +1,41 @@
+name: Descubrir inventario de Agencia Flama
+on:
+  push:
+    branches: [main]
+    paths: [".github/workflows/mercadolibre-seller-urls.yml"]
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Buscar inventario público por vendedor verificado
+        shell: bash
+        run: |
+          python - <<'PY'
+          import urllib.request,re,html,json
+          URLs=[
+            'https://autos.mercadolibre.com.ar/_CustId_117436611',
+            'https://autos.mercadolibre.com.ar/_CustId_117436611_NoIndex_True',
+            'https://vehiculos.mercadolibre.com.ar/_CustId_117436611',
+            'https://listado.mercadolibre.com.ar/_CustId_117436611',
+            'https://autos.mercadolibre.com.ar/_SellerId_117436611',
+            'https://www.mercadolibre.com.ar/perfil/AGENCIAFLAMA',
+            'https://auto.mercadolibre.com.ar/MLA-3906243858-volkswagen-suran-16-comfortline-101cv-_JM',
+          ]
+          for u in URLs:
+            try:
+              q=urllib.request.Request(u,headers={'User-Agent':'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/131.0 Safari/537.36','Accept-Language':'es-AR,es;q=0.9'})
+              with urllib.request.urlopen(q,timeout=12) as r: b=r.read().decode('utf8','replace');final=r.url
+              ids=list(dict.fromkeys(re.findall(r'MLA-?\d{10,}',b)))
+              descriptions=[html.unescape(x) for x in re.findall(r'<title[^>]*>(.*?)</title>',b,re.S|re.I)]
+              print('URL',u,'FINAL',final,'SIZE',len(b),'TITLE',descriptions[:1],'ITEM_IDS',ids[:45], 'COUNT',len(ids),'BOT_BLOCK', 'suspicious-traffic' in b.lower())
+              if '3906243858' in u:
+                variants=list(dict.fromkeys(re.findall(r'D_[NQ_]+\d+-MLA\d+_\d+-[A-Z0-9]+\.(?:webp|jpg)',b)))
+                print('  SAMPLE_IMAGES',variants[:30], 'COUNT',len(variants))
+                for term in ['ml-carousel','ui-pdp-gallery','ui-pdp-image','ui-pdp-specs','item_id','sellerId','"seller_id"','sellerName','pictures','"images"']:
+                  pos=b.lower().find(term.lower())
+                  print('  HTML_TAG',term,pos,repr(b[max(0,pos-120):pos+260])[:500] if pos>=0 else '')
+            except Exception as e: print('ERROR',u,type(e).__name__,str(e)[:300])
+          PY
