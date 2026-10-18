@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - "web/scripts/discover_missing_agenciaflama.py"
+      - "web/scripts/collect_mercadolibre.py"
       - ".github/workflows/mercadolibre-missing-discovery.yml"
 permissions:
   contents: write
