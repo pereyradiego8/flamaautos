@@ -31,7 +31,12 @@ jobs:
               const body=await response.text();
               let keys=[];let resultCount=null;let sellers=[];let ids=[];
               try{const data=JSON.parse(body);keys=Object.keys(data).slice(0,12);resultCount=data.paging?.total??null;sellers=[...new Set((data.results??[]).map(x=>x.seller?.id).filter(Boolean))].slice(0,5);ids=(data.results??[]).map(x=>x.id).slice(0,5)}catch{}
-              console.log(JSON.stringify({label,status:response.status,finalHost:new URL(response.url).hostname,contentType:response.headers.get('content-type'),length:body.length,keys,resultCount,sellers,ids,hasStoreName:/Flama Autos/i.test(body)}));
+              const links=[...body.matchAll(/href=["']([^"']{1,550})["']/g)].map(m=>m[1].replaceAll('&amp;','&'));
+              const itemLinks=links.filter(x=>/mercadolibre.*(MLA-?|\/MLA)|\/MLA-?\d+|\/p\/MLA|\/articulo/i.test(x)).slice(0,12);
+              const sellerTokens=[...body.matchAll(/.{0,110}(?:seller_id|sellerId|agenciaflama|MLA\d{8,}).{0,130}/gi)].map(m=>m[0]).slice(0,20);
+              const nextData=[...body.matchAll(/<script[^>]*(?:application\/ld\+json|__NEXT_DATA__)[^>]*>([\s\S]{0,200000}?)<\/script>/gi)].map(m=>m[1].slice(0,1300)).slice(0,3);
+              const productLinks=links.filter(x=>/vehiculos|autos|productos|listado|agenciaflama/i.test(x)).slice(0,18);
+              console.log(JSON.stringify({label,status:response.status,finalHost:new URL(response.url).hostname,contentType:response.headers.get('content-type'),length:body.length,keys,resultCount,sellers,ids,hasStoreName:/Flama Autos/i.test(body),itemLinks,productLinks,sellerTokens,nextData}));
             }catch(e){console.log(JSON.stringify({label,error:String(e).slice(0,180)}))}
           }
           JS
