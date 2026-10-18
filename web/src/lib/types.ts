@@ -10,7 +10,7 @@ export type Vehicle = {
   currency: Currency | null; cash_price: number | null; trade_in_price: number | null;
   down_payment: number | null; list_price?: number | null; branch_id: string | null; status: VehicleStatus;
   source_listing_id?: string | null; source_url?: string | null; source_checked_at?: string | null;
-  source_specs?: Record<string, string>; vehicle_condition?: 'new' | 'used' | null;
+  source_specs?: Record<string, string>; source_review_note?: string | null; vehicle_condition?: 'new' | 'used' | null;
   featured: boolean; created_at: string; updated_at: string;
   branches?: Pick<Branch, 'name' | 'address'> | null;
   vehicle_images?: VehicleImage[];
