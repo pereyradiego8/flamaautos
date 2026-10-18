@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import {generalWhatsAppUrl,FLAMA_WHATSAPP_DISPLAY} from '@/lib/whatsapp';
 import './styles.css';
 export const metadata: Metadata={
  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://flamaautos.vercel.app'),
@@ -15,4 +16,4 @@ export const metadata: Metadata={
  },
  twitter:{card:'summary',title:'Flama Autos | Berazategui'},
 };
-export default function RootLayout({children}:{children:React.ReactNode}){return <html lang="es-AR"><body><header className="header"><Link href="/" className="brand" aria-label="Flama Autos: inicio"><span className="brand-flame">◢</span> FLAMA<small>AUTOS</small></Link><nav aria-label="Navegación principal"><Link href="/">Inicio</Link><Link href="/autos">Vehículos</Link><Link href="/#sucursales">Sucursales</Link><Link href="/#contacto">Contacto</Link></nav><a href="https://linktr.ee/flamaautos" className="header-contact" target="_blank" rel="noopener noreferrer">Consultanos ↗</a></header>{children}<footer><div><strong>FLAMA AUTOS</strong><span>Berazategui · Buenos Aires</span></div><div><Link href="/autos">Catálogo</Link><a href="https://instagram.com/flamaautos" target="_blank" rel="noopener noreferrer">Instagram</a><Link href="/admin">Administración</Link></div><small>© {new Date().getFullYear()} Flama Autos</small></footer></body></html>}
+export default function RootLayout({children}:{children:React.ReactNode}){return <html lang="es-AR"><body><header className="header"><Link href="/" className="brand" aria-label="Flama Autos: inicio"><span className="brand-flame">◢</span> FLAMA<small>AUTOS</small></Link><nav aria-label="Navegación principal"><Link href="/">Inicio</Link><Link href="/autos">Vehículos</Link><Link href="/#sucursales">Sucursales</Link><Link href="/#contacto">Contacto</Link></nav><a href={generalWhatsAppUrl()} className="header-contact" target="_blank" rel="noopener noreferrer" aria-label={`Consultanos por WhatsApp al ${FLAMA_WHATSAPP_DISPLAY}`}>WhatsApp ↗</a></header>{children}<footer><div><strong>FLAMA AUTOS</strong><span>Berazategui · Buenos Aires</span></div><div><Link href="/autos">Catálogo</Link><a href={generalWhatsAppUrl()} target="_blank" rel="noopener noreferrer" aria-label={`WhatsApp: ${FLAMA_WHATSAPP_DISPLAY}`}>WhatsApp</a><a href="https://instagram.com/flamaautos" target="_blank" rel="noopener noreferrer">Instagram</a><Link href="/admin">Administración</Link></div><small>© {new Date().getFullYear()} Flama Autos</small></footer></body></html>}
