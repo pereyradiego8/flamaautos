@@ -28,6 +28,9 @@ jobs:
            ['storefront-cars','https://listado.mercadolibre.com.ar/pagina/agenciaflama/autos/'],
            ['search-seller','https://autos.mercadolibre.com.ar/_SellerId_117436611'],
            ['search-regular','https://api.mercadolibre.com/sites/MLA/search?seller_id=117436611&limit=3'],
+           ['sample-ford','https://auto.mercadolibre.com.ar/MLA-2106857291-ford-territory-18-ecoboost-titanium-at-_JM'],
+           ['sample-ram','https://auto.mercadolibre.com.ar/MLA-3994936646-ram-rampage-20-laramie-gme-at9-4x4-_JM'],
+           ['sample-photo','https://http2.mlstatic.com/D_NQ_NP_862443-MLA117917034949_092026-F.webp'],
           ];
           for (const [label,url] of targets){
             try{
@@ -43,7 +46,7 @@ jobs:
               const mlaIds=[...new Set([...body.matchAll(/MLA[-_]?([0-9]{8,13})/gi)].map(m=>m[1]))].slice(0,30);
               const autoLinks=links.filter(x=>x.includes('agenciaflama/autos') || x.includes('autos.mercadolibre') || x.includes('vehiculos.mercadolibre') || /MLA[0-9]{8,}/.test(x)).slice(0,50);
               const storeMeta=[...body.matchAll(/.{0,130}(?:mshops|sellerId|seller_id|ownerId|searchEndpoint|permalink|publicationId|itemId|__PRELOADED_STATE__|__NEXT_DATA__|\/items\/search).{0,170}/gi)].map(m=>m[0]).slice(-25);
-              console.log(JSON.stringify({label,status:response.status,finalHost:new URL(response.url).hostname,contentType:response.headers.get('content-type'),length:body.length,keys,resultCount,sellers,ids,hasStoreName:/Flama Autos/i.test(body),mlaIds,autoLinks,storeMeta,itemLinks:itemLinks.slice(0,4),productLinks:productLinks.slice(0,8)}));
+              console.log(JSON.stringify({label,status:response.status,finalHost:new URL(response.url).hostname,contentType:response.headers.get('content-type'),length:body.length,keys,resultCount,sellers,ids,hasStoreName:/Flama Autos/i.test(body),containsExpectedSeller:body.includes('117436611'),mlaIds,autoLinks,storeMeta,itemLinks:itemLinks.slice(0,4),productLinks:productLinks.slice(0,8)}));
             }catch(e){console.log(JSON.stringify({label,error:String(e).slice(0,180)}))}
           }
           JS
