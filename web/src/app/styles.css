@@ -326,3 +326,13 @@ input,select,textarea{min-width:0;padding:10px 11px;font-size:14px}
 @media(max-width:520px){
  .branch-admin-item{align-items:flex-start;flex-wrap:wrap}
 }
+
+/* WhatsApp oficial: accesible y adaptable, sin botones superpuestos. */
+.contact-phone{color:#f9f9f9;text-decoration:underline;text-decoration-color:#e8313d;text-underline-offset:4px;font-weight:700}
+.vehicle-bottom-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.vehicle-bottom-actions .small-button{min-width:0;display:inline-flex;align-items:center;justify-content:center;font-size:12px;padding:9px 8px;white-space:nowrap}
+.vehicle-bottom-actions .vehicle-whatsapp{border-color:#44a36c;color:#e0f7e6}
+.vehicle-bottom-actions .vehicle-whatsapp:hover{background:#153323}
+@media(max-width:350px){
+ .vehicle-bottom-actions{grid-template-columns:1fr}
+}
