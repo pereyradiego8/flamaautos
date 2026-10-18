@@ -1,0 +1,3841 @@
+{
+  "seller_id": 117436611,
+  "captured_at": "2026-10-18T18:15:12.495250+00:00",
+  "listings": [
+    {
+      "source_id": "MLA3906243858",
+      "source_url": "https://auto.mercadolibre.com.ar/MLA-3906243858-volkswagen-suran-16-comfortline-101cv-_JM",
+      "source_seller_id": 117436611,
+      "source_status": "active",
+      "name": "Volkswagen Suran 1.6 Comfortline 101cv",
+      "brand": "Volkswagen",
+      "model": "Suran",
+      "version": "1.6 Comfortline 101cv",
+      "model_year": 2015,
+      "mileage_km": 150000,
+      "category": "hatchback",
+      "condition": "used",
+      "fuel": "Nafta",
+      "transmission": "Manual",
+      "currency": "ARS",
+      "cash_price": 13900000,
+      "down_payment": 6400000,
+      "list_price": 14700000,
+      "trade_in_price": null,
+      "description_source": "Volkswagen Suran UNICA MANO, perfectamente cuidada con 4 cubiertas 0km, funcionando perfectamente, para recomendarEste monovolumen cuenta con un motor de 1.6 y 101 hp, acompañado de una transmisión manual de 5 marchas. Su diseño práctico y espacioso lo hace ideal para familias o quienes necesitan un vehículo versátil para el día a día.Equipado con dirección hidráulica, reproductor MP3 y computadora de a bordo, ofrece comodidad y funcionalidad en cada viaje.",
+      "attrs": {
+        "Marca": "Volkswagen",
+        "Modelo": "Suran",
+        "Año": "2015",
+        "Versión": "1.6 Comfortline 101cv",
+        "Color": "Blanco",
+        "Kilómetros": "150.000 km",
+        "Tipo de combustible": "Nafta",
+        "Puertas": "5",
+        "Transmisión": "Manual",
+        "Motor": "1.6",
+        "Tipo de carrocería": "Monovolumen",
+        "Reproductor de MP3": "Sí",
+        "Airbag para conductor y pasajero": "Sí",
+        "Control de tracción": "Delantera",
+        "Capacidad de personas": "5",
+        "Potencia": "101 hp",
+        "Distancia entre ejes": "2.467 mm",
+        "Capacidad del tanque": "50 L",
+        "Válvulas por cilindro": "2",
+        "Computadora de abordo": "Sí",
+        "Comando remoto para radio en el volante": "Sí",
+        "Porta vasos": "Sí",
+        "Dirección": "Hidráulica",
+        "Largo x Altura x Ancho": "4178 mm x 1547 mm x 1660 mm"
+      },
+      "photos": [
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_888468-MLA117075844737_092026-F.webp",
+          "sort_order": 0,
+          "alt_text": "Imagen 1 de 20 de Volkswagen Suran 1.6 Comfortline 101cv",
+          "width": 1200,
+          "height": 1159
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_737729-MLA117075692189_092026-F.webp",
+          "sort_order": 1,
+          "alt_text": "Imagen 2 de 20 de Volkswagen Suran 1.6 Comfortline 101cv",
+          "width": 1200,
+          "height": 1134
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_931929-MLA117075752037_092026-F.webp",
+          "sort_order": 2,
+          "alt_text": "Imagen 3 de 20 de Volkswagen Suran 1.6 Comfortline 101cv",
+          "width": 1088,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_960130-MLA117075722253_092026-F.webp",
+          "sort_order": 3,
+          "alt_text": "Imagen 4 de 20 de Volkswagen Suran 1.6 Comfortline 101cv",
+          "width": 1200,
+          "height": 1057
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_737619-MLA117075840389_092026-F.webp",
+          "sort_order": 4,
+          "alt_text": "Imagen 5 de 20 de Volkswagen Suran 1.6 Comfortline 101cv",
+          "width": 1199,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_968323-MLA115631275230_092026-F.webp",
+          "sort_order": 5,
+          "alt_text": "Imagen 6 de 20 de Volkswagen Suran 1.6 Comfortline 101cv",
+          "width": 987,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_724093-MLA117076075773_092026-F.webp",
+          "sort_order": 6,
+          "alt_text": "Imagen 7 de 20 de Volkswagen Suran 1.6 Comfortline 101cv",
+          "width": 1200,
+          "height": 1174
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_848828-MLA117075722279_092026-F.webp",
+          "sort_order": 7,
+          "alt_text": "Imagen 8 de 20 de Volkswagen Suran 1.6 Comfortline 101cv",
+          "width": 778,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_873527-MLA117075692267_092026-F.webp",
+          "sort_order": 8,
+          "alt_text": "Imagen 9 de 20 de Volkswagen Suran 1.6 Comfortline 101cv",
+          "width": 944,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_958435-MLA117075373601_092026-F.webp",
+          "sort_order": 9,
+          "alt_text": "Imagen 10 de 20 de Volkswagen Suran 1.6 Comfortline 101cv",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_897893-MLA117075197555_092026-F.webp",
+          "sort_order": 10,
+          "alt_text": "Imagen 11 de 20 de Volkswagen Suran 1.6 Comfortline 101cv",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_758055-MLA117075840451_092026-F.webp",
+          "sort_order": 11,
+          "alt_text": "Imagen 12 de 20 de Volkswagen Suran 1.6 Comfortline 101cv",
+          "width": 946,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_854179-MLA117075284657_092026-F.webp",
+          "sort_order": 12,
+          "alt_text": "Imagen 13 de 20 de Volkswagen Suran 1.6 Comfortline 101cv",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_882407-MLA115631245818_092026-F.webp",
+          "sort_order": 13,
+          "alt_text": "Imagen 14 de 20 de Volkswagen Suran 1.6 Comfortline 101cv",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_722810-MLA117076017315_092026-F.webp",
+          "sort_order": 14,
+          "alt_text": "Imagen 15 de 20 de Volkswagen Suran 1.6 Comfortline 101cv",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_678254-MLA117075722349_092026-F.webp",
+          "sort_order": 15,
+          "alt_text": "Imagen 16 de 20 de Volkswagen Suran 1.6 Comfortline 101cv",
+          "width": 864,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_780595-MLA117075692375_092026-F.webp",
+          "sort_order": 16,
+          "alt_text": "Imagen 17 de 20 de Volkswagen Suran 1.6 Comfortline 101cv",
+          "width": 834,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_793624-MLA117075752195_092026-F.webp",
+          "sort_order": 17,
+          "alt_text": "Imagen 18 de 20 de Volkswagen Suran 1.6 Comfortline 101cv",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_824116-MLA117075752209_092026-F.webp",
+          "sort_order": 18,
+          "alt_text": "Imagen 19 de 20 de Volkswagen Suran 1.6 Comfortline 101cv",
+          "width": 1200,
+          "height": 1066
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_990906-MLA117075870481_092026-F.webp",
+          "sort_order": 19,
+          "alt_text": "Imagen 20 de 20 de Volkswagen Suran 1.6 Comfortline 101cv",
+          "width": 900,
+          "height": 1200
+        }
+      ],
+      "year_conflict": false,
+      "captured_at": "2026-10-18T18:14:29.295342+00:00",
+      "price_valid_until": "2026-10-21"
+    },
+    {
+      "source_id": "MLA3732296858",
+      "source_url": "https://auto.mercadolibre.com.ar/MLA-3732296858-chery-qq-11-light-_JM",
+      "source_seller_id": 117436611,
+      "source_status": "active",
+      "name": "Chery Qq 1.1 Light",
+      "brand": "Chery",
+      "model": "QQ",
+      "version": "1.1 Light",
+      "model_year": 2014,
+      "mileage_km": 110000,
+      "category": "hatchback",
+      "condition": "used",
+      "fuel": "Nafta",
+      "transmission": "Manual",
+      "currency": "USD",
+      "cash_price": 5500,
+      "down_payment": 2700,
+      "list_price": 6000,
+      "trade_in_price": null,
+      "description_source": "Hermoso Chery QQ super cuidado funcionando a la perfeccion.Este hatchback con motor de 1.1 litros y 68 hp, cuenta con transmisión manual de 5 marchas y tracción delantera. Equipado con dirección hidráulica, aire acondicionado y radio AM/FM, es adecuado para la ciudad y trayectos cortos.Ofrece capacidad para 5 pasajeros y un diseño práctico con 5 puertas. Su rendimiento es ideal para quienes buscan un vehículo económico y funcional.",
+      "attrs": {
+        "Marca": "Chery",
+        "Modelo": "QQ",
+        "Año": "2014",
+        "Versión": "1.1 Light",
+        "Color": "Azul",
+        "Kilómetros": "110.000 km",
+        "Tipo de combustible": "Nafta",
+        "Puertas": "5",
+        "Transmisión": "Manual",
+        "Motor": "1.1",
+        "Tipo de carrocería": "Hatchback",
+        "Largo x Altura x Ancho": "3550 mm x 1485 mm x 1758 mm",
+        "Airbag para conductor y pasajero": "Sí",
+        "Control de tracción": "Delantera",
+        "Capacidad de personas": "5",
+        "Potencia": "68 hp",
+        "Distancia entre ejes": "2.987 mm",
+        "Capacidad del tanque": "35 L",
+        "Válvulas por cilindro": "4",
+        "Aire acondicionado": "Sí",
+        "Porta vasos": "Sí",
+        "Dirección": "Hidráulica",
+        "AM/FM": "Sí"
+      },
+      "photos": [
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_750577-MLA115812994943_082026-F.webp",
+          "sort_order": 0,
+          "alt_text": "Imagen 1 de 19 de Chery Qq 1.1 Light",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_975486-MLA114420920026_082026-F.webp",
+          "sort_order": 1,
+          "alt_text": "Imagen 2 de 19 de Chery Qq 1.1 Light",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_832043-MLA115662880761_082026-F.webp",
+          "sort_order": 2,
+          "alt_text": "Imagen 3 de 19 de Chery Qq 1.1 Light",
+          "width": 918,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_748003-MLA115663888823_082026-F.webp",
+          "sort_order": 3,
+          "alt_text": "Imagen 4 de 19 de Chery Qq 1.1 Light",
+          "width": 1049,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_664114-MLA115662703591_082026-F.webp",
+          "sort_order": 4,
+          "alt_text": "Imagen 5 de 19 de Chery Qq 1.1 Light",
+          "width": 1046,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_824985-MLA114322253540_082026-F.webp",
+          "sort_order": 5,
+          "alt_text": "Imagen 6 de 19 de Chery Qq 1.1 Light",
+          "width": 961,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_822424-MLA115662288063_082026-F.webp",
+          "sort_order": 6,
+          "alt_text": "Imagen 7 de 19 de Chery Qq 1.1 Light",
+          "width": 932,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_659860-MLA115663739605_082026-F.webp",
+          "sort_order": 7,
+          "alt_text": "Imagen 8 de 19 de Chery Qq 1.1 Light",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_667396-MLA114321751966_082026-F.webp",
+          "sort_order": 8,
+          "alt_text": "Imagen 9 de 19 de Chery Qq 1.1 Light",
+          "width": 1091,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_745542-MLA115663207349_082026-F.webp",
+          "sort_order": 9,
+          "alt_text": "Imagen 10 de 19 de Chery Qq 1.1 Light",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_883741-MLA115663739649_082026-F.webp",
+          "sort_order": 10,
+          "alt_text": "Imagen 11 de 19 de Chery Qq 1.1 Light",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_937008-MLA114321515622_082026-F.webp",
+          "sort_order": 11,
+          "alt_text": "Imagen 12 de 19 de Chery Qq 1.1 Light",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_670963-MLA115663829101_082026-F.webp",
+          "sort_order": 12,
+          "alt_text": "Imagen 13 de 19 de Chery Qq 1.1 Light",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_859332-MLA115662524903_082026-F.webp",
+          "sort_order": 13,
+          "alt_text": "Imagen 14 de 19 de Chery Qq 1.1 Light",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_714643-MLA114322253622_082026-F.webp",
+          "sort_order": 14,
+          "alt_text": "Imagen 15 de 19 de Chery Qq 1.1 Light",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_721046-MLA114322816606_082026-F.webp",
+          "sort_order": 15,
+          "alt_text": "Imagen 16 de 19 de Chery Qq 1.1 Light",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_819418-MLA115663739731_082026-F.webp",
+          "sort_order": 16,
+          "alt_text": "Imagen 17 de 19 de Chery Qq 1.1 Light",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_885002-MLA114321752092_082026-F.webp",
+          "sort_order": 17,
+          "alt_text": "Imagen 18 de 19 de Chery Qq 1.1 Light",
+          "width": 1115,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_845898-MLA115663207465_082026-F.webp",
+          "sort_order": 18,
+          "alt_text": "Imagen 19 de 19 de Chery Qq 1.1 Light",
+          "width": 900,
+          "height": 1200
+        }
+      ],
+      "year_conflict": false,
+      "captured_at": "2026-10-18T18:14:31.655335+00:00",
+      "price_valid_until": "2026-10-21"
+    },
+    {
+      "source_id": "MLA3939938022",
+      "source_url": "https://auto.mercadolibre.com.ar/MLA-3939938022-ford-ecosport-16-se-110cv-4x2-_JM",
+      "source_seller_id": 117436611,
+      "source_status": "active",
+      "name": "Ford Ecosport 1.6 Se 110cv 4x2",
+      "brand": "Ford",
+      "model": "Ecosport",
+      "version": "1.6 Se 110cv 4x2",
+      "model_year": 2016,
+      "mileage_km": 100000,
+      "category": "suv",
+      "condition": "used",
+      "fuel": "Nafta",
+      "transmission": "Manual",
+      "currency": "ARS",
+      "cash_price": 17500000,
+      "down_payment": 8500000,
+      "list_price": 18500000,
+      "trade_in_price": null,
+      "description_source": "",
+      "attrs": {
+        "Marca": "Ford",
+        "Modelo": "Ecosport",
+        "Año": "2016",
+        "Versión": "1.6 Se 110cv 4x2",
+        "Color": "Gris",
+        "Kilómetros": "100.000 km",
+        "Tipo de combustible": "Nafta",
+        "Puertas": "5",
+        "Transmisión": "Manual",
+        "Motor": "1.6",
+        "Tipo de carrocería": "SUV",
+        "Dirección": "Hidráulica",
+        "Alarma": "No",
+        "Frenos ABS": "Sí",
+        "Airbag para conductor y pasajero": "Sí",
+        "Llantas de aleación": "No",
+        "Control de tracción": "4x2",
+        "Capacidad de personas": "5",
+        "Potencia": "110 hp",
+        "Distancia entre ejes": "2.608 mm",
+        "Capacidad del tanque": "52 L",
+        "Válvulas por cilindro": "4",
+        "Aire acondicionado": "Sí",
+        "Computadora de abordo": "Sí",
+        "AM/FM": "Sí",
+        "Largo x Altura x Ancho": "4241 mm x 1693 mm x 1814 mm"
+      },
+      "photos": [
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_808426-MLA117528109635_092026-F.webp",
+          "sort_order": 0,
+          "alt_text": "Imagen 1 de 22 de Ford Ecosport 1.6 Se 110cv 4x2",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_925270-MLA117527925961_092026-F.webp",
+          "sort_order": 1,
+          "alt_text": "Imagen 2 de 22 de Ford Ecosport 1.6 Se 110cv 4x2",
+          "width": 1200,
+          "height": 1190
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_727860-MLA117527896323_092026-F.webp",
+          "sort_order": 2,
+          "alt_text": "Imagen 3 de 22 de Ford Ecosport 1.6 Se 110cv 4x2",
+          "width": 1200,
+          "height": 1079
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_693895-MLA117528103849_092026-F.webp",
+          "sort_order": 3,
+          "alt_text": "Imagen 4 de 22 de Ford Ecosport 1.6 Se 110cv 4x2",
+          "width": 1200,
+          "height": 1088
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_606593-MLA116049843100_092026-F.webp",
+          "sort_order": 4,
+          "alt_text": "Imagen 5 de 22 de Ford Ecosport 1.6 Se 110cv 4x2",
+          "width": 1175,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_843870-MLA117527896359_092026-F.webp",
+          "sort_order": 5,
+          "alt_text": "Imagen 6 de 22 de Ford Ecosport 1.6 Se 110cv 4x2",
+          "width": 1126,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_807162-MLA116049843138_092026-F.webp",
+          "sort_order": 6,
+          "alt_text": "Imagen 7 de 22 de Ford Ecosport 1.6 Se 110cv 4x2",
+          "width": 1200,
+          "height": 1175
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_795909-MLA116049695462_092026-F.webp",
+          "sort_order": 7,
+          "alt_text": "Imagen 8 de 22 de Ford Ecosport 1.6 Se 110cv 4x2",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_935337-MLA117527926053_092026-F.webp",
+          "sort_order": 8,
+          "alt_text": "Imagen 9 de 22 de Ford Ecosport 1.6 Se 110cv 4x2",
+          "width": 1092,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_971394-MLA116049813576_092026-F.webp",
+          "sort_order": 9,
+          "alt_text": "Imagen 10 de 22 de Ford Ecosport 1.6 Se 110cv 4x2",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_924897-MLA116049901232_092026-F.webp",
+          "sort_order": 10,
+          "alt_text": "Imagen 11 de 22 de Ford Ecosport 1.6 Se 110cv 4x2",
+          "width": 1095,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_713472-MLA117527896439_092026-F.webp",
+          "sort_order": 11,
+          "alt_text": "Imagen 12 de 22 de Ford Ecosport 1.6 Se 110cv 4x2",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_850181-MLA117528191501_092026-F.webp",
+          "sort_order": 12,
+          "alt_text": "Imagen 13 de 22 de Ford Ecosport 1.6 Se 110cv 4x2",
+          "width": 915,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_809637-MLA116049843186_092026-F.webp",
+          "sort_order": 13,
+          "alt_text": "Imagen 14 de 22 de Ford Ecosport 1.6 Se 110cv 4x2",
+          "width": 951,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_929363-MLA117528221435_092026-F.webp",
+          "sort_order": 14,
+          "alt_text": "Imagen 15 de 22 de Ford Ecosport 1.6 Se 110cv 4x2",
+          "width": 1168,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_622755-MLA117528103959_092026-F.webp",
+          "sort_order": 15,
+          "alt_text": "Imagen 16 de 22 de Ford Ecosport 1.6 Se 110cv 4x2",
+          "width": 1034,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_732601-MLA116049901262_092026-F.webp",
+          "sort_order": 16,
+          "alt_text": "Imagen 17 de 22 de Ford Ecosport 1.6 Se 110cv 4x2",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_823766-MLA116049843214_092026-F.webp",
+          "sort_order": 17,
+          "alt_text": "Imagen 18 de 22 de Ford Ecosport 1.6 Se 110cv 4x2",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_924643-MLA117528103975_092026-F.webp",
+          "sort_order": 18,
+          "alt_text": "Imagen 19 de 22 de Ford Ecosport 1.6 Se 110cv 4x2",
+          "width": 1200,
+          "height": 1034
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_902148-MLA116049813640_092026-F.webp",
+          "sort_order": 19,
+          "alt_text": "Imagen 20 de 22 de Ford Ecosport 1.6 Se 110cv 4x2",
+          "width": 1200,
+          "height": 979
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_968655-MLA116050281342_092026-F.webp",
+          "sort_order": 20,
+          "alt_text": "Imagen 21 de 22 de Ford Ecosport 1.6 Se 110cv 4x2",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_944010-MLA117527926195_092026-F.webp",
+          "sort_order": 21,
+          "alt_text": "Imagen 22 de 22 de Ford Ecosport 1.6 Se 110cv 4x2",
+          "width": 900,
+          "height": 1200
+        }
+      ],
+      "year_conflict": false,
+      "captured_at": "2026-10-18T18:14:34.495687+00:00",
+      "price_valid_until": "2026-10-21"
+    },
+    {
+      "source_id": "MLA2058031523",
+      "source_url": "https://auto.mercadolibre.com.ar/MLA-2058031523-volkswagen-bora-20-trendline-115cv-_JM",
+      "source_seller_id": 117436611,
+      "source_status": "active",
+      "name": "Volkswagen Bora 2.0 Trendline 115cv",
+      "brand": "Volkswagen",
+      "model": "Bora",
+      "version": "2.0 Trendline 115cv",
+      "model_year": 2010,
+      "mileage_km": 270000,
+      "category": "sedan",
+      "condition": "used",
+      "fuel": "Nafta",
+      "transmission": "Manual",
+      "currency": "USD",
+      "cash_price": 8500,
+      "down_payment": 6000,
+      "list_price": 9100,
+      "trade_in_price": null,
+      "description_source": "Hermoso u nico Volkswagen Bora UNICA MANO super cuidado, impecable interior y exterior, mecanica excelente funcionando a la perfeccion todo su equipamiento con 4 cubiertas en perfectas condiciones, para recomendarEste sedán cuenta con un motor de 2.0 y transmisión manual. Su tracción delantera y dirección hidráulica ofrecen una conducción cómoda y eficiente.Ideal para quienes buscan un vehículo práctico y confiable. Equipado con ventanas eléctricas, frenos ABS, es una opción funcional para la ciudad y viajes, ideal para disfrutar el día a día.",
+      "attrs": {
+        "Marca": "Volkswagen",
+        "Modelo": "Bora",
+        "Año": "2010",
+        "Versión": "2.0 Trendline 115cv",
+        "Color": "Gris",
+        "Kilómetros": "270.000 km",
+        "Tipo de combustible": "Nafta",
+        "Puertas": "4",
+        "Transmisión": "Manual",
+        "Motor": "2.0",
+        "Tipo de carrocería": "Sedán",
+        "Dirección": "Hidráulica",
+        "Alarma": "Sí",
+        "Frenos ABS": "Sí",
+        "Airbag para conductor y pasajero": "Sí",
+        "Llantas de aleación": "Sí",
+        "Control de tracción": "Delantera",
+        "Capacidad de personas": "5",
+        "Potencia": "116 hp",
+        "Distancia entre ejes": "2.518 mm",
+        "Capacidad del tanque": "55 L",
+        "Válvulas por cilindro": "2",
+        "Piloto automático": "Sí",
+        "Porta vasos": "Sí",
+        "Reproductor de MP3": "Sí",
+        "Largo x Altura x Ancho": "4376 mm x 1446 mm x 1735 mm"
+      },
+      "photos": [
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_615525-MLA115641120238_092026-F.webp",
+          "sort_order": 0,
+          "alt_text": "Imagen 1 de 20 de Volkswagen Bora 2.0 Trendline 115cv",
+          "width": 1200,
+          "height": 1117
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_897815-MLA117086588321_092026-F.webp",
+          "sort_order": 1,
+          "alt_text": "Imagen 2 de 20 de Volkswagen Bora 2.0 Trendline 115cv",
+          "width": 1199,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_640420-MLA115641117326_092026-F.webp",
+          "sort_order": 2,
+          "alt_text": "Imagen 3 de 20 de Volkswagen Bora 2.0 Trendline 115cv",
+          "width": 1166,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_607659-MLA117085997443_092026-F.webp",
+          "sort_order": 3,
+          "alt_text": "Imagen 4 de 20 de Volkswagen Bora 2.0 Trendline 115cv",
+          "width": 1174,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_635264-MLA117086558547_092026-F.webp",
+          "sort_order": 4,
+          "alt_text": "Imagen 5 de 20 de Volkswagen Bora 2.0 Trendline 115cv",
+          "width": 1200,
+          "height": 1170
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_658671-MLA117085908441_092026-F.webp",
+          "sort_order": 5,
+          "alt_text": "Imagen 6 de 20 de Volkswagen Bora 2.0 Trendline 115cv",
+          "width": 1042,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_696265-MLA117086588353_092026-F.webp",
+          "sort_order": 6,
+          "alt_text": "Imagen 7 de 20 de Volkswagen Bora 2.0 Trendline 115cv",
+          "width": 1129,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_765678-MLA117086291311_092026-F.webp",
+          "sort_order": 7,
+          "alt_text": "Imagen 8 de 20 de Volkswagen Bora 2.0 Trendline 115cv",
+          "width": 922,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_760040-MLA115641414318_092026-F.webp",
+          "sort_order": 8,
+          "alt_text": "Imagen 9 de 20 de Volkswagen Bora 2.0 Trendline 115cv",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_779036-MLA115640684338_092026-F.webp",
+          "sort_order": 9,
+          "alt_text": "Imagen 10 de 20 de Volkswagen Bora 2.0 Trendline 115cv",
+          "width": 926,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_747888-MLA117085848383_092026-F.webp",
+          "sort_order": 10,
+          "alt_text": "Imagen 11 de 20 de Volkswagen Bora 2.0 Trendline 115cv",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_855516-MLA117087117245_092026-F.webp",
+          "sort_order": 11,
+          "alt_text": "Imagen 12 de 20 de Volkswagen Bora 2.0 Trendline 115cv",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_910764-MLA117086085487_092026-F.webp",
+          "sort_order": 12,
+          "alt_text": "Imagen 13 de 20 de Volkswagen Bora 2.0 Trendline 115cv",
+          "width": 956,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_878194-MLA117086291373_092026-F.webp",
+          "sort_order": 13,
+          "alt_text": "Imagen 14 de 20 de Volkswagen Bora 2.0 Trendline 115cv",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_687882-MLA117085997513_092026-F.webp",
+          "sort_order": 14,
+          "alt_text": "Imagen 15 de 20 de Volkswagen Bora 2.0 Trendline 115cv",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_639533-MLA117086823095_092026-F.webp",
+          "sort_order": 15,
+          "alt_text": "Imagen 16 de 20 de Volkswagen Bora 2.0 Trendline 115cv",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_763350-MLA117085848431_092026-F.webp",
+          "sort_order": 16,
+          "alt_text": "Imagen 17 de 20 de Volkswagen Bora 2.0 Trendline 115cv",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_692849-MLA117086027065_092026-F.webp",
+          "sort_order": 17,
+          "alt_text": "Imagen 18 de 20 de Volkswagen Bora 2.0 Trendline 115cv",
+          "width": 1199,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_629241-MLA115641206262_092026-F.webp",
+          "sort_order": 18,
+          "alt_text": "Imagen 19 de 20 de Volkswagen Bora 2.0 Trendline 115cv",
+          "width": 1200,
+          "height": 1090
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_691674-MLA117086085545_092026-F.webp",
+          "sort_order": 19,
+          "alt_text": "Imagen 20 de 20 de Volkswagen Bora 2.0 Trendline 115cv",
+          "width": 1034,
+          "height": 1200
+        }
+      ],
+      "year_conflict": false,
+      "captured_at": "2026-10-18T18:14:36.007091+00:00",
+      "price_valid_until": "2026-10-21"
+    },
+    {
+      "source_id": "MLA2057557547",
+      "source_url": "https://auto.mercadolibre.com.ar/MLA-2057557547-peugeot-308-16-active-_JM",
+      "source_seller_id": 117436611,
+      "source_status": "active",
+      "name": "Peugeot 308 1.6 Active",
+      "brand": "Peugeot",
+      "model": "308",
+      "version": "1.6 Active",
+      "model_year": 2017,
+      "mileage_km": 87000,
+      "category": "hatchback",
+      "condition": "used",
+      "fuel": "Nafta",
+      "transmission": "Manual",
+      "currency": "ARS",
+      "cash_price": 15400000,
+      "down_payment": 7000000,
+      "list_price": 16400000,
+      "trade_in_price": null,
+      "description_source": "Peugeot 308, muy bien cuidado, vehiculo funcionando erfectamente todo su equipamiento, 4 cubiertas muy buenas.Este hatchback cuenta con un motor de 1.6 y transmisión manual de 5 velocidades. Su tracción delantera y dirección eléctrica ofrecen una conducción cómoda y ágil, ideal para el uso diario en la ciudad. Equipado con ventanas eléctricas, espejos eléctricos y un sistema de audio con MP3, este vehículo también incluye ABS y airbags para mayor seguridad. Su capacidad para 5 pasajeros y un tanque de combustible de 60 litros lo hacen práctico para viajes cortos y largos. Ideal para familias que quieran disfrutar el dia a dia.",
+      "attrs": {
+        "Marca": "Peugeot",
+        "Modelo": "308",
+        "Año": "2017",
+        "Versión": "1.6 Active",
+        "Color": "Gris",
+        "Kilómetros": "87.000 km",
+        "Tipo de combustible": "Nafta",
+        "Puertas": "5",
+        "Transmisión": "Manual",
+        "Motor": "1.6",
+        "Tipo de carrocería": "Hatchback",
+        "Dirección": "Eléctrica",
+        "Reproductor de MP3": "Sí",
+        "Frenos ABS": "Sí",
+        "Airbag para conductor y pasajero": "Sí",
+        "Tracción ASR": "Sí",
+        "Llantas de aleación": "Sí",
+        "Control de tracción": "Delantera",
+        "Capacidad de personas": "5",
+        "Potencia": "115 hp",
+        "Distancia entre ejes": "2.608 mm",
+        "Capacidad del tanque": "60 L",
+        "Válvulas por cilindro": "4",
+        "Computadora de abordo": "Sí",
+        "Comando remoto para radio en el volante": "Sí",
+        "Largo x Altura x Ancho": "4292 mm x 1518 mm x 1800 mm"
+      },
+      "photos": [
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_933990-MLA117076862379_092026-F.webp",
+          "sort_order": 0,
+          "alt_text": "Imagen 1 de 20 de Peugeot 308 1.6 Active",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_723830-MLA115632465896_092026-F.webp",
+          "sort_order": 1,
+          "alt_text": "Imagen 2 de 20 de Peugeot 308 1.6 Active",
+          "width": 1097,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_744500-MLA117076769873_092026-F.webp",
+          "sort_order": 2,
+          "alt_text": "Imagen 3 de 20 de Peugeot 308 1.6 Active",
+          "width": 1029,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_833524-MLA115632525502_092026-F.webp",
+          "sort_order": 3,
+          "alt_text": "Imagen 4 de 20 de Peugeot 308 1.6 Active",
+          "width": 1179,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_933762-MLA117076800055_092026-F.webp",
+          "sort_order": 4,
+          "alt_text": "Imagen 5 de 20 de Peugeot 308 1.6 Active",
+          "width": 1031,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_743226-MLA115632058904_092026-F.webp",
+          "sort_order": 5,
+          "alt_text": "Imagen 6 de 20 de Peugeot 308 1.6 Active",
+          "width": 962,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_968473-MLA115631941214_092026-F.webp",
+          "sort_order": 6,
+          "alt_text": "Imagen 7 de 20 de Peugeot 308 1.6 Active",
+          "width": 1088,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_975833-MLA115632495830_092026-F.webp",
+          "sort_order": 7,
+          "alt_text": "Imagen 8 de 20 de Peugeot 308 1.6 Active",
+          "width": 826,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_835043-MLA115632058946_092026-F.webp",
+          "sort_order": 8,
+          "alt_text": "Imagen 9 de 20 de Peugeot 308 1.6 Active",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_824942-MLA115632525530_092026-F.webp",
+          "sort_order": 9,
+          "alt_text": "Imagen 10 de 20 de Peugeot 308 1.6 Active",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_668650-MLA117075894063_092026-F.webp",
+          "sort_order": 10,
+          "alt_text": "Imagen 11 de 20 de Peugeot 308 1.6 Active",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_645991-MLA117076859373_092026-F.webp",
+          "sort_order": 11,
+          "alt_text": "Imagen 12 de 20 de Peugeot 308 1.6 Active",
+          "width": 872,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_618327-MLA117076829937_092026-F.webp",
+          "sort_order": 12,
+          "alt_text": "Imagen 13 de 20 de Peugeot 308 1.6 Active",
+          "width": 880,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_629023-MLA117075894093_092026-F.webp",
+          "sort_order": 13,
+          "alt_text": "Imagen 14 de 20 de Peugeot 308 1.6 Active",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_640793-MLA117075864157_092026-F.webp",
+          "sort_order": 14,
+          "alt_text": "Imagen 15 de 20 de Peugeot 308 1.6 Active",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_946257-MLA117076040907_092026-F.webp",
+          "sort_order": 15,
+          "alt_text": "Imagen 16 de 20 de Peugeot 308 1.6 Active",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_750741-MLA117076769987_092026-F.webp",
+          "sort_order": 16,
+          "alt_text": "Imagen 17 de 20 de Peugeot 308 1.6 Active",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_852686-MLA117075864171_092026-F.webp",
+          "sort_order": 17,
+          "alt_text": "Imagen 18 de 20 de Peugeot 308 1.6 Active",
+          "width": 1144,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_962874-MLA117077006905_092026-F.webp",
+          "sort_order": 18,
+          "alt_text": "Imagen 19 de 20 de Peugeot 308 1.6 Active",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_791275-MLA117075894115_092026-F.webp",
+          "sort_order": 19,
+          "alt_text": "Imagen 20 de 20 de Peugeot 308 1.6 Active",
+          "width": 1200,
+          "height": 1054
+        }
+      ],
+      "year_conflict": false,
+      "captured_at": "2026-10-18T18:14:38.370052+00:00",
+      "price_valid_until": "2026-10-21"
+    },
+    {
+      "source_id": "MLA2140582151",
+      "source_url": "https://auto.mercadolibre.com.ar/MLA-2140582151-ford-ranger-30-v6-cd-4x4-xls-at-250cv-_JM",
+      "source_seller_id": 117436611,
+      "source_status": "active",
+      "name": "Ford Ranger 3.0 V6 Cd 4x4 Xls At 250cv",
+      "brand": "Ford",
+      "model": "Ranger",
+      "version": "3.0 V6 Cd 4X4 Xls At 250Cv",
+      "model_year": 2024,
+      "mileage_km": 50000,
+      "category": "pickup",
+      "condition": "used",
+      "fuel": "Diésel",
+      "transmission": "Automática",
+      "currency": "ARS",
+      "cash_price": 51900000,
+      "down_payment": 23900000,
+      "list_price": 54500000,
+      "trade_in_price": null,
+      "description_source": "Excelente Vehículo con todos sus service oficiales, el ultimo realizado a los Km51.000, completamente original funcionando perfectamente con agregado de tapa rigida.",
+      "attrs": {
+        "Marca": "Ford",
+        "Modelo": "Ranger",
+        "Año": "2024",
+        "Versión": "3.0 V6 Cd 4X4 Xls At 250Cv",
+        "Color": "Gris",
+        "Kilómetros": "50.000 km",
+        "Tipo de combustible": "Diésel",
+        "Puertas": "4",
+        "Transmisión": "Automática",
+        "Motor": "3.0",
+        "Tipo de carrocería": "Pick-Up",
+        "Control de tracción": "4x4",
+        "Capacidad de personas": "5",
+        "Potencia": "250 hp",
+        "Distancia entre ejes": "3.270 mm",
+        "Capacidad del tanque": "80 L",
+        "Válvulas por cilindro": "4",
+        "Dirección": "Eléctrica",
+        "Largo x Altura x Ancho": "5370 mm x 1884 mm x 2208 mm"
+      },
+      "photos": [
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_767890-MLA118792393991_102026-F.webp",
+          "sort_order": 0,
+          "alt_text": "Imagen 1 de 25 de Ford Ranger 3.0 V6 Cd 4x4 Xls At 250cv",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_779513-MLA117274465648_102026-F.webp",
+          "sort_order": 1,
+          "alt_text": "Imagen 2 de 25 de Ford Ranger 3.0 V6 Cd 4x4 Xls At 250cv",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_673717-MLA116944899868_092026-F.webp",
+          "sort_order": 2,
+          "alt_text": "Imagen 3 de 25 de Ford Ranger 3.0 V6 Cd 4x4 Xls At 250cv",
+          "width": 1035,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_921803-MLA116944693712_092026-F.webp",
+          "sort_order": 3,
+          "alt_text": "Imagen 4 de 25 de Ford Ranger 3.0 V6 Cd 4x4 Xls At 250cv",
+          "width": 1150,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_873031-MLA118508921741_092026-F.webp",
+          "sort_order": 4,
+          "alt_text": "Imagen 5 de 25 de Ford Ranger 3.0 V6 Cd 4x4 Xls At 250cv",
+          "width": 1141,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_741456-MLA118508921749_092026-F.webp",
+          "sort_order": 5,
+          "alt_text": "Imagen 6 de 25 de Ford Ranger 3.0 V6 Cd 4x4 Xls At 250cv",
+          "width": 1068,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_661710-MLA118508451061_092026-F.webp",
+          "sort_order": 6,
+          "alt_text": "Imagen 7 de 25 de Ford Ranger 3.0 V6 Cd 4x4 Xls At 250cv",
+          "width": 1060,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_990668-MLA116945489658_092026-F.webp",
+          "sort_order": 7,
+          "alt_text": "Imagen 8 de 25 de Ford Ranger 3.0 V6 Cd 4x4 Xls At 250cv",
+          "width": 1050,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_685361-MLA118510015231_092026-F.webp",
+          "sort_order": 8,
+          "alt_text": "Imagen 9 de 25 de Ford Ranger 3.0 V6 Cd 4x4 Xls At 250cv",
+          "width": 965,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_816423-MLA118510015273_092026-F.webp",
+          "sort_order": 9,
+          "alt_text": "Imagen 10 de 25 de Ford Ranger 3.0 V6 Cd 4x4 Xls At 250cv",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_961529-MLA116946024334_092026-F.webp",
+          "sort_order": 10,
+          "alt_text": "Imagen 11 de 25 de Ford Ranger 3.0 V6 Cd 4x4 Xls At 250cv",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_702833-MLA116946024358_092026-F.webp",
+          "sort_order": 11,
+          "alt_text": "Imagen 12 de 25 de Ford Ranger 3.0 V6 Cd 4x4 Xls At 250cv",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_875615-MLA116946438430_092026-F.webp",
+          "sort_order": 12,
+          "alt_text": "Imagen 13 de 25 de Ford Ranger 3.0 V6 Cd 4x4 Xls At 250cv",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_796303-MLA116945138580_092026-F.webp",
+          "sort_order": 13,
+          "alt_text": "Imagen 14 de 25 de Ford Ranger 3.0 V6 Cd 4x4 Xls At 250cv",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_960544-MLA118509452267_092026-F.webp",
+          "sort_order": 14,
+          "alt_text": "Imagen 15 de 25 de Ford Ranger 3.0 V6 Cd 4x4 Xls At 250cv",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_816964-MLA116944693816_092026-F.webp",
+          "sort_order": 15,
+          "alt_text": "Imagen 16 de 25 de Ford Ranger 3.0 V6 Cd 4x4 Xls At 250cv",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_805012-MLA118508451181_092026-F.webp",
+          "sort_order": 16,
+          "alt_text": "Imagen 17 de 25 de Ford Ranger 3.0 V6 Cd 4x4 Xls At 250cv",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_873268-MLA116945489748_092026-F.webp",
+          "sort_order": 17,
+          "alt_text": "Imagen 18 de 25 de Ford Ranger 3.0 V6 Cd 4x4 Xls At 250cv",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_772984-MLA116946438478_092026-F.webp",
+          "sort_order": 18,
+          "alt_text": "Imagen 19 de 25 de Ford Ranger 3.0 V6 Cd 4x4 Xls At 250cv",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_662565-MLA118509452311_092026-F.webp",
+          "sort_order": 19,
+          "alt_text": "Imagen 20 de 25 de Ford Ranger 3.0 V6 Cd 4x4 Xls At 250cv",
+          "width": 1011,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_977802-MLA116944930126_092026-F.webp",
+          "sort_order": 20,
+          "alt_text": "Imagen 21 de 25 de Ford Ranger 3.0 V6 Cd 4x4 Xls At 250cv",
+          "width": 973,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_835049-MLA118509422339_092026-F.webp",
+          "sort_order": 21,
+          "alt_text": "Imagen 22 de 25 de Ford Ranger 3.0 V6 Cd 4x4 Xls At 250cv",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_868328-MLA118508921917_092026-F.webp",
+          "sort_order": 22,
+          "alt_text": "Imagen 23 de 25 de Ford Ranger 3.0 V6 Cd 4x4 Xls At 250cv",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_836902-MLA116945138696_092026-F.webp",
+          "sort_order": 23,
+          "alt_text": "Imagen 24 de 25 de Ford Ranger 3.0 V6 Cd 4x4 Xls At 250cv",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_931849-MLA116944900100_092026-F.webp",
+          "sort_order": 24,
+          "alt_text": "Imagen 25 de 25 de Ford Ranger 3.0 V6 Cd 4x4 Xls At 250cv",
+          "width": 900,
+          "height": 1200
+        }
+      ],
+      "year_conflict": false,
+      "captured_at": "2026-10-18T18:14:43.975210+00:00",
+      "price_valid_until": "2026-10-21"
+    },
+    {
+      "source_id": "MLA2058059311",
+      "source_url": "https://auto.mercadolibre.com.ar/MLA-2058059311-toyota-corolla-18-hev-xei-ecvt-_JM",
+      "source_seller_id": 117436611,
+      "source_status": "active",
+      "name": "Toyota Corolla 1.8 Hev Xei Ecvt",
+      "brand": "Toyota",
+      "model": "Corolla",
+      "version": "1.8 Hev Xei Ecvt",
+      "model_year": 2024,
+      "mileage_km": 40000,
+      "category": "sedan",
+      "condition": "used",
+      "fuel": "Híbrido/Nafta",
+      "transmission": "Automática",
+      "currency": "ARS",
+      "cash_price": 38900000,
+      "down_payment": 17900000,
+      "list_price": 41000000,
+      "trade_in_price": null,
+      "description_source": "Toyota Corolla Xei Ecvt UNICA MANO, todo original, vehículo muy bien cuidado, ideal para exigentes, 100% recomendable.El Toyota Corolla 2024 versión 1.8 HEV XEi eCVT se orienta a quienes buscan un sedán equilibrado para el uso diario, con respuesta suave y consumo contenido. Su mecánica híbrida nafta de 1.8 litros entrega 122 hp y trabaja con transmisión automática, una combinación pensada para trayectos urbanos y viajes con manejo relajado.La carrocería sedán de 4 puertas ofrece espacio para 5 personas y un interior pensado para la circulación cotidiana. Con 4630 mm de largo, 1780 mm de ancho, 1435 mm de alto y 2700 mm entre ejes, mantiene proporciones cómodas para el habitáculo y para maniobrar en ciudad.En conducción suma dirección eléctrica, tracción delantera, control de tracción ASR y piloto automático, recursos que aportan una experiencia más estable y cómoda. Las llantas de aleación acompañan un conjunto que combina practicidad y una presencia cuidada.La seguridad está respaldada por frenos ABS, repartidor electrónico de fuerza de frenado y airbags para conductor y pasajero. También incorpora airbags laterales delanteros, airbags de cortina y tercera luz de freno LED, elementos que refuerzan la protección en distintos escenarios de uso.A bordo aparecen detalles útiles como porta vasos, apoyabrazos central trasero con posavasos y equipo con CD y DVD. El tanque de 57 L aportan autonomía conveniente para recorridos frecuentes.",
+      "attrs": {
+        "Marca": "Toyota",
+        "Modelo": "Corolla",
+        "Año": "2024",
+        "Versión": "1.8 Hev Xei Ecvt",
+        "Color": "Gris",
+        "Kilómetros": "40.000 km",
+        "Tipo de combustible": "Híbrido/Nafta",
+        "Puertas": "4",
+        "Transmisión": "Automática",
+        "Motor": "1.8",
+        "Tipo de carrocería": "Sedán",
+        "Piloto automático": "Sí",
+        "Porta vasos": "Sí",
+        "Largo x Altura x Ancho": "4630 mm x 1435 mm x 1780 mm",
+        "Frenos ABS": "Sí",
+        "Airbag para conductor y pasajero": "Sí",
+        "Tercera luz de freno led": "Sí",
+        "Tracción ASR": "Sí",
+        "Llantas de aleación": "Sí",
+        "Control de tracción": "Delantera",
+        "Capacidad de personas": "5",
+        "Potencia": "122 hp",
+        "Distancia entre ejes": "2.700 mm",
+        "Capacidad del tanque": "57 L",
+        "Válvulas por cilindro": "4",
+        "Dirección": "Eléctrica",
+        "CD": "Sí",
+        "DVD": "Sí"
+      },
+      "photos": [
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_951717-MLA117086567057_092026-F.webp",
+          "sort_order": 0,
+          "alt_text": "Imagen 1 de 23 de Toyota Corolla 1.8 Hev Xei Ecvt",
+          "width": 1200,
+          "height": 1158
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_725008-MLA117328152391_092026-F.webp",
+          "sort_order": 1,
+          "alt_text": "Imagen 2 de 23 de Toyota Corolla 1.8 Hev Xei Ecvt",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_632580-MLA115641210630_092026-F.webp",
+          "sort_order": 2,
+          "alt_text": "Imagen 3 de 23 de Toyota Corolla 1.8 Hev Xei Ecvt",
+          "width": 1044,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_650778-MLA115641210660_092026-F.webp",
+          "sort_order": 3,
+          "alt_text": "Imagen 4 de 23 de Toyota Corolla 1.8 Hev Xei Ecvt",
+          "width": 1015,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_770481-MLA117086148683_092026-F.webp",
+          "sort_order": 4,
+          "alt_text": "Imagen 5 de 23 de Toyota Corolla 1.8 Hev Xei Ecvt",
+          "width": 1107,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_913393-MLA115641535642_092026-F.webp",
+          "sort_order": 5,
+          "alt_text": "Imagen 6 de 23 de Toyota Corolla 1.8 Hev Xei Ecvt",
+          "width": 1127,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_741793-MLA117086001843_092026-F.webp",
+          "sort_order": 6,
+          "alt_text": "Imagen 7 de 23 de Toyota Corolla 1.8 Hev Xei Ecvt",
+          "width": 1020,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_671110-MLA115641121704_092026-F.webp",
+          "sort_order": 7,
+          "alt_text": "Imagen 8 de 23 de Toyota Corolla 1.8 Hev Xei Ecvt",
+          "width": 987,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_864699-MLA117087328691_092026-F.webp",
+          "sort_order": 8,
+          "alt_text": "Imagen 9 de 23 de Toyota Corolla 1.8 Hev Xei Ecvt",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_658504-MLA117086089807_092026-F.webp",
+          "sort_order": 9,
+          "alt_text": "Imagen 10 de 23 de Toyota Corolla 1.8 Hev Xei Ecvt",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_742157-MLA117086178861_092026-F.webp",
+          "sort_order": 10,
+          "alt_text": "Imagen 11 de 23 de Toyota Corolla 1.8 Hev Xei Ecvt",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_684467-MLA117085971727_092026-F.webp",
+          "sort_order": 11,
+          "alt_text": "Imagen 12 de 23 de Toyota Corolla 1.8 Hev Xei Ecvt",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_762628-MLA115640981878_092026-F.webp",
+          "sort_order": 12,
+          "alt_text": "Imagen 13 de 23 de Toyota Corolla 1.8 Hev Xei Ecvt",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_784654-MLA117086089833_092026-F.webp",
+          "sort_order": 13,
+          "alt_text": "Imagen 14 de 23 de Toyota Corolla 1.8 Hev Xei Ecvt",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_830787-MLA117086089829_092026-F.webp",
+          "sort_order": 14,
+          "alt_text": "Imagen 15 de 23 de Toyota Corolla 1.8 Hev Xei Ecvt",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_773533-MLA117086296117_092026-F.webp",
+          "sort_order": 15,
+          "alt_text": "Imagen 16 de 23 de Toyota Corolla 1.8 Hev Xei Ecvt",
+          "width": 940,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_657139-MLA117086563231_092026-F.webp",
+          "sort_order": 16,
+          "alt_text": "Imagen 17 de 23 de Toyota Corolla 1.8 Hev Xei Ecvt",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_641697-MLA117086236915_092026-F.webp",
+          "sort_order": 17,
+          "alt_text": "Imagen 18 de 23 de Toyota Corolla 1.8 Hev Xei Ecvt",
+          "width": 1117,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_908211-MLA117086236941_092026-F.webp",
+          "sort_order": 18,
+          "alt_text": "Imagen 19 de 23 de Toyota Corolla 1.8 Hev Xei Ecvt",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_748758-MLA115640981932_092026-F.webp",
+          "sort_order": 19,
+          "alt_text": "Imagen 20 de 23 de Toyota Corolla 1.8 Hev Xei Ecvt",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_955964-MLA117086208789_092026-F.webp",
+          "sort_order": 20,
+          "alt_text": "Imagen 21 de 23 de Toyota Corolla 1.8 Hev Xei Ecvt",
+          "width": 1054,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_821105-MLA117086827563_092026-F.webp",
+          "sort_order": 21,
+          "alt_text": "Imagen 22 de 23 de Toyota Corolla 1.8 Hev Xei Ecvt",
+          "width": 1200,
+          "height": 1098
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_633544-MLA115641210828_092026-F.webp",
+          "sort_order": 22,
+          "alt_text": "Imagen 23 de 23 de Toyota Corolla 1.8 Hev Xei Ecvt",
+          "width": 900,
+          "height": 1200
+        }
+      ],
+      "year_conflict": false,
+      "captured_at": "2026-10-18T18:14:45.526596+00:00",
+      "price_valid_until": "2026-10-21"
+    },
+    {
+      "source_id": "MLA3761008108",
+      "source_url": "https://auto.mercadolibre.com.ar/MLA-3761008108-toyota-hilux-pick-up-28-cd-srv-177cv-4x2-_JM",
+      "source_seller_id": 117436611,
+      "source_status": "active",
+      "name": "Toyota Hilux Pick-up 2.8 Cd Srv 177cv 4x2",
+      "brand": "Toyota",
+      "model": "Hilux Pick-Up",
+      "version": "2.8 Cd Srv 177cv 4x2",
+      "model_year": 2021,
+      "mileage_km": 62000,
+      "category": "pickup",
+      "condition": "used",
+      "fuel": "Diésel",
+      "transmission": "Manual",
+      "currency": "ARS",
+      "cash_price": 50900000,
+      "down_payment": 25900000,
+      "list_price": 54500000,
+      "trade_in_price": null,
+      "description_source": "Hermosa Toyota Hilux segunda mano, increible estado perfectamente cuidada con muchos accesorios, lona marinera cobertor de caja, llantas toyota GR y cubiertas nuevas, interior cuero de fabrica, Fender ruedas original del modelo nuevo 2025 y gancho remolque. Este modelo cuenta con un motor diésel de 2.8 litros y una transmisión manual de 5 velocidades, ofreciendo una potencia de 177 hp. Su color gris le da un toque elegante y robusto, ideal para quienes buscan un vehículo versátil. Equipado con dirección hidráulica, control de tracción 4x2 y frenos ABS, garantiza seguridad y confort en cada viaje. Además, incluye llantas de aleación, faros antiniebla. Perfecto para uso familiar o laboral, combina funcionalidad y estilo en la ciudad y en el campo.Si buscas una Pick Up eterna toyota Hilux es la ideal. Veni a verla!",
+      "attrs": {
+        "Marca": "Toyota",
+        "Modelo": "Hilux Pick-Up",
+        "Año": "2021",
+        "Versión": "2.8 Cd Srv 177cv 4x2",
+        "Color": "Gris",
+        "Kilómetros": "62.000 km",
+        "Tipo de combustible": "Diésel",
+        "Puertas": "4",
+        "Transmisión": "Manual",
+        "Motor": "2.8",
+        "Tipo de carrocería": "Pick-Up",
+        "Piloto automático": "Sí",
+        "Comando remoto para radio en el volante": "Sí",
+        "DVD": "Sí",
+        "Reproductor de MP3": "Sí",
+        "Frenos ABS": "Sí",
+        "Airbag para conductor y pasajero": "Sí",
+        "Control de estabilidad": "Sí",
+        "Tracción ASR": "Sí",
+        "Llantas de aleación": "Sí",
+        "Control de tracción": "4x2",
+        "Capacidad de personas": "5",
+        "Potencia": "177 hp",
+        "Distancia entre ejes": "2.860 mm",
+        "Capacidad del tanque": "80 L",
+        "Válvulas por cilindro": "2",
+        "Dirección": "Hidráulica",
+        "Alarma": "Sí",
+        "Largo x Altura x Ancho": "5260 mm x 1850 mm x 1855 mm"
+      },
+      "photos": [
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_773696-MLA115896071015_082026-F.webp",
+          "sort_order": 0,
+          "alt_text": "Imagen 1 de 23 de Toyota Hilux Pick-up 2.8 Cd Srv 177cv 4x2",
+          "width": 1200,
+          "height": 1157
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_651268-MLA115887820635_082026-F.webp",
+          "sort_order": 1,
+          "alt_text": "Imagen 2 de 23 de Toyota Hilux Pick-up 2.8 Cd Srv 177cv 4x2",
+          "width": 1200,
+          "height": 1088
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_713818-MLA114531573082_082026-F.webp",
+          "sort_order": 2,
+          "alt_text": "Imagen 3 de 23 de Toyota Hilux Pick-up 2.8 Cd Srv 177cv 4x2",
+          "width": 1056,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_908483-MLA114531338748_082026-F.webp",
+          "sort_order": 3,
+          "alt_text": "Imagen 4 de 23 de Toyota Hilux Pick-up 2.8 Cd Srv 177cv 4x2",
+          "width": 1200,
+          "height": 1149
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_690349-MLA115887143729_082026-F.webp",
+          "sort_order": 4,
+          "alt_text": "Imagen 5 de 23 de Toyota Hilux Pick-up 2.8 Cd Srv 177cv 4x2",
+          "width": 1175,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_844939-MLA115887967783_082026-F.webp",
+          "sort_order": 5,
+          "alt_text": "Imagen 6 de 23 de Toyota Hilux Pick-up 2.8 Cd Srv 177cv 4x2",
+          "width": 1200,
+          "height": 1184
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_970451-MLA115887675385_082026-F.webp",
+          "sort_order": 6,
+          "alt_text": "Imagen 7 de 23 de Toyota Hilux Pick-up 2.8 Cd Srv 177cv 4x2",
+          "width": 1114,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_892803-MLA115888289633_082026-F.webp",
+          "sort_order": 7,
+          "alt_text": "Imagen 8 de 23 de Toyota Hilux Pick-up 2.8 Cd Srv 177cv 4x2",
+          "width": 1158,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_924776-MLA115887675393_082026-F.webp",
+          "sort_order": 8,
+          "alt_text": "Imagen 9 de 23 de Toyota Hilux Pick-up 2.8 Cd Srv 177cv 4x2",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_780475-MLA115887820705_082026-F.webp",
+          "sort_order": 9,
+          "alt_text": "Imagen 10 de 23 de Toyota Hilux Pick-up 2.8 Cd Srv 177cv 4x2",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_826129-MLA114531602468_082026-F.webp",
+          "sort_order": 10,
+          "alt_text": "Imagen 11 de 23 de Toyota Hilux Pick-up 2.8 Cd Srv 177cv 4x2",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_654408-MLA115887820715_082026-F.webp",
+          "sort_order": 11,
+          "alt_text": "Imagen 12 de 23 de Toyota Hilux Pick-up 2.8 Cd Srv 177cv 4x2",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_697276-MLA114531164212_082026-F.webp",
+          "sort_order": 12,
+          "alt_text": "Imagen 13 de 23 de Toyota Hilux Pick-up 2.8 Cd Srv 177cv 4x2",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_663326-MLA115887143841_082026-F.webp",
+          "sort_order": 13,
+          "alt_text": "Imagen 14 de 23 de Toyota Hilux Pick-up 2.8 Cd Srv 177cv 4x2",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_896816-MLA115888289667_082026-F.webp",
+          "sort_order": 14,
+          "alt_text": "Imagen 15 de 23 de Toyota Hilux Pick-up 2.8 Cd Srv 177cv 4x2",
+          "width": 974,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_913641-MLA115887820773_082026-F.webp",
+          "sort_order": 15,
+          "alt_text": "Imagen 16 de 23 de Toyota Hilux Pick-up 2.8 Cd Srv 177cv 4x2",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_719235-MLA115887675485_082026-F.webp",
+          "sort_order": 16,
+          "alt_text": "Imagen 17 de 23 de Toyota Hilux Pick-up 2.8 Cd Srv 177cv 4x2",
+          "width": 989,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_673734-MLA115888026763_082026-F.webp",
+          "sort_order": 17,
+          "alt_text": "Imagen 18 de 23 de Toyota Hilux Pick-up 2.8 Cd Srv 177cv 4x2",
+          "width": 1200,
+          "height": 1118
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_642596-MLA115888465219_082026-F.webp",
+          "sort_order": 18,
+          "alt_text": "Imagen 19 de 23 de Toyota Hilux Pick-up 2.8 Cd Srv 177cv 4x2",
+          "width": 1070,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_607268-MLA114531134158_082026-F.webp",
+          "sort_order": 19,
+          "alt_text": "Imagen 20 de 23 de Toyota Hilux Pick-up 2.8 Cd Srv 177cv 4x2",
+          "width": 909,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_855285-MLA114531134160_082026-F.webp",
+          "sort_order": 20,
+          "alt_text": "Imagen 21 de 23 de Toyota Hilux Pick-up 2.8 Cd Srv 177cv 4x2",
+          "width": 855,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_684182-MLA114531573262_082026-F.webp",
+          "sort_order": 21,
+          "alt_text": "Imagen 22 de 23 de Toyota Hilux Pick-up 2.8 Cd Srv 177cv 4x2",
+          "width": 823,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_748503-MLA114531338932_082026-F.webp",
+          "sort_order": 22,
+          "alt_text": "Imagen 23 de 23 de Toyota Hilux Pick-up 2.8 Cd Srv 177cv 4x2",
+          "width": 833,
+          "height": 1200
+        }
+      ],
+      "year_conflict": true,
+      "captured_at": "2026-10-18T18:14:46.965466+00:00",
+      "price_valid_until": "2026-10-21"
+    },
+    {
+      "source_id": "MLA2052064079",
+      "source_url": "https://auto.mercadolibre.com.ar/MLA-2052064079-renault-sandero-16-expression-90cv-abs-_JM",
+      "source_seller_id": 117436611,
+      "source_status": "active",
+      "name": "Renault Sandero 1.6 Expression 90cv Abs",
+      "brand": "Renault",
+      "model": "Sandero",
+      "version": "1.6 Expression 90cv Abs",
+      "model_year": 2013,
+      "mileage_km": 110000,
+      "category": "hatchback",
+      "condition": "used",
+      "fuel": "Nafta",
+      "transmission": "Manual",
+      "currency": "ARS",
+      "cash_price": 11500000,
+      "down_payment": 5500000,
+      "list_price": 12200000,
+      "trade_in_price": null,
+      "description_source": "Excelente Renault Sandero, funcionando perfectamente todo su equipamiento, vehiculo muy bien cuidado.En carrocería hatchback combina formato compacto y buena habitabilidad para el uso diario. Su configuración de 5 puertas y 5 plazas resulta cómoda para traslados urbanos, recorridos cotidianos y salidas en las que se valora un acceso ágil al interior.La mecánica 1.6 a nafta, con 90 hp y transmisión manual de 5 velocidades, apunta a una conducción simple y pareja. La tracción delantera y la dirección hidráulica aportan una respuesta previsible en ciudad y en ruta, con un manejo orientado al uso práctico.En seguridad, suma frenos ABS y airbags para conductor y pasajero, junto con alarma para mayor resguardo. También incorpora faros antiniebla, un recurso útil para mejorar la visibilidad en condiciones climáticas o de iluminación menos favorables.El equipamiento acompaña una experiencia funcional, con reproductor de MP3, computadora de abordo y comando remoto para radio en el volante. A eso se agregan levantavidrios eléctricos delanteros y porta vasos, detalles que hacen más cómodo el día a día a bordo.Por su combinación de motor, equipamiento y formato, es una alternativa práctica para quien valora un auto sencillo de usar, con elementos útiles y una presentación sobria.",
+      "attrs": {
+        "Marca": "Renault",
+        "Modelo": "Sandero",
+        "Año": "2013",
+        "Versión": "1.6 Expression 90cv Abs",
+        "Color": "Blanco",
+        "Kilómetros": "110.000 km",
+        "Tipo de combustible": "Nafta",
+        "Puertas": "5",
+        "Transmisión": "Manual",
+        "Motor": "1.6",
+        "Tipo de carrocería": "Hatchback",
+        "Dirección": "Hidráulica",
+        "Alarma": "Sí",
+        "Frenos ABS": "Sí",
+        "Airbag para conductor y pasajero": "Sí",
+        "Control de tracción": "Delantera",
+        "Capacidad de personas": "5",
+        "Potencia": "90 hp",
+        "Distancia entre ejes": "2.591 mm",
+        "Capacidad del tanque": "50 L",
+        "Válvulas por cilindro": "2",
+        "Computadora de abordo": "Sí",
+        "Comando remoto para radio en el volante": "Sí",
+        "Porta vasos": "Sí",
+        "Reproductor de MP3": "Sí",
+        "Largo x Altura x Ancho": "4023 mm x 1528 mm x 1746 mm"
+      },
+      "photos": [
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_906165-MLA115851377412_092026-F.webp",
+          "sort_order": 0,
+          "alt_text": "Imagen 1 de 21 de Renault Sandero 1.6 Expression 90cv Abs",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_639027-MLA117281026069_092026-F.webp",
+          "sort_order": 1,
+          "alt_text": "Imagen 2 de 21 de Renault Sandero 1.6 Expression 90cv Abs",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_647606-MLA116986338969_082026-F.webp",
+          "sort_order": 2,
+          "alt_text": "Imagen 3 de 21 de Renault Sandero 1.6 Expression 90cv Abs",
+          "width": 1200,
+          "height": 1177
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_810693-MLA116986689373_082026-F.webp",
+          "sort_order": 3,
+          "alt_text": "Imagen 4 de 21 de Renault Sandero 1.6 Expression 90cv Abs",
+          "width": 1046,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_940905-MLA116986040799_082026-F.webp",
+          "sort_order": 4,
+          "alt_text": "Imagen 5 de 21 de Renault Sandero 1.6 Expression 90cv Abs",
+          "width": 1044,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_612521-MLA116986339003_082026-F.webp",
+          "sort_order": 5,
+          "alt_text": "Imagen 6 de 21 de Renault Sandero 1.6 Expression 90cv Abs",
+          "width": 947,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_698346-MLA115550421056_082026-F.webp",
+          "sort_order": 6,
+          "alt_text": "Imagen 7 de 21 de Renault Sandero 1.6 Expression 90cv Abs",
+          "width": 1200,
+          "height": 1071
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_835416-MLA115550597212_082026-F.webp",
+          "sort_order": 7,
+          "alt_text": "Imagen 8 de 21 de Renault Sandero 1.6 Expression 90cv Abs",
+          "width": 1039,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_903087-MLA115549714870_082026-F.webp",
+          "sort_order": 8,
+          "alt_text": "Imagen 9 de 21 de Renault Sandero 1.6 Expression 90cv Abs",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_663860-MLA116986542629_082026-F.webp",
+          "sort_order": 9,
+          "alt_text": "Imagen 10 de 21 de Renault Sandero 1.6 Expression 90cv Abs",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_840622-MLA116985982285_082026-F.webp",
+          "sort_order": 10,
+          "alt_text": "Imagen 11 de 21 de Renault Sandero 1.6 Expression 90cv Abs",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_647410-MLA115550597250_082026-F.webp",
+          "sort_order": 11,
+          "alt_text": "Imagen 12 de 21 de Renault Sandero 1.6 Expression 90cv Abs",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_980304-MLA116986190471_082026-F.webp",
+          "sort_order": 12,
+          "alt_text": "Imagen 13 de 21 de Renault Sandero 1.6 Expression 90cv Abs",
+          "width": 967,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_753749-MLA116987101193_082026-F.webp",
+          "sort_order": 13,
+          "alt_text": "Imagen 14 de 21 de Renault Sandero 1.6 Expression 90cv Abs",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_673606-MLA115550273652_082026-F.webp",
+          "sort_order": 14,
+          "alt_text": "Imagen 15 de 21 de Renault Sandero 1.6 Expression 90cv Abs",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_742745-MLA116985982327_082026-F.webp",
+          "sort_order": 15,
+          "alt_text": "Imagen 16 de 21 de Renault Sandero 1.6 Expression 90cv Abs",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_823515-MLA115550627236_082026-F.webp",
+          "sort_order": 16,
+          "alt_text": "Imagen 17 de 21 de Renault Sandero 1.6 Expression 90cv Abs",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_817262-MLA116986689489_082026-F.webp",
+          "sort_order": 17,
+          "alt_text": "Imagen 18 de 21 de Renault Sandero 1.6 Expression 90cv Abs",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_784499-MLA115550273718_082026-F.webp",
+          "sort_order": 18,
+          "alt_text": "Imagen 19 de 21 de Renault Sandero 1.6 Expression 90cv Abs",
+          "width": 1200,
+          "height": 1171
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_811154-MLA115550124788_082026-F.webp",
+          "sort_order": 19,
+          "alt_text": "Imagen 20 de 21 de Renault Sandero 1.6 Expression 90cv Abs",
+          "width": 1200,
+          "height": 1136
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_841059-MLA115550685704_082026-F.webp",
+          "sort_order": 20,
+          "alt_text": "Imagen 21 de 21 de Renault Sandero 1.6 Expression 90cv Abs",
+          "width": 900,
+          "height": 1200
+        }
+      ],
+      "year_conflict": false,
+      "captured_at": "2026-10-18T18:14:48.120617+00:00",
+      "price_valid_until": "2026-10-21"
+    },
+    {
+      "source_id": "MLA3906178490",
+      "source_url": "https://auto.mercadolibre.com.ar/MLA-3906178490-fiat-500l-14-pop-star-105cv-_JM",
+      "source_seller_id": 117436611,
+      "source_status": "active",
+      "name": "Fiat 500l 1.4 Pop Star 105cv",
+      "brand": "Fiat",
+      "model": "500L",
+      "version": "1.4 Pop Star 105cv",
+      "model_year": 2015,
+      "mileage_km": 120000,
+      "category": "hatchback",
+      "condition": "used",
+      "fuel": "Nafta",
+      "transmission": "Manual",
+      "currency": "ARS",
+      "cash_price": 14900000,
+      "down_payment": 6900000,
+      "list_price": 15900000,
+      "trade_in_price": null,
+      "description_source": "Excelente unidad muy bien cuidado, anda todo su equipamiento a la perfección 4 cubiertas muy buenas tanto como interior y exteriorEste hatchback en un atractivo color rojo combina un motor de 1.4 litros con transmisión manual de 6 velocidades, ofreciendo una potencia de 105 hp. Equipado con dirección asistida, frenos ABS y control de estabilidad, garantiza una conducción segura. El confort se destaca con aire acondicionado, levantavidrios eléctricos delanteros y traseros. Ideal para la ciudad y viajes familiares.",
+      "attrs": {
+        "Marca": "Fiat",
+        "Modelo": "500L",
+        "Año": "2015",
+        "Versión": "1.4 Pop Star 105cv",
+        "Color": "Rojo",
+        "Kilómetros": "120.000 km",
+        "Tipo de combustible": "Nafta",
+        "Puertas": "3",
+        "Transmisión": "Manual",
+        "Motor": "1.4",
+        "Tipo de carrocería": "Hatchback",
+        "Piloto automático": "Sí",
+        "Aire acondicionado": "Sí",
+        "Comando remoto para radio en el volante": "Sí",
+        "AM/FM": "Sí",
+        "Bluetooth": "Sí",
+        "Frenos ABS": "Sí",
+        "Airbag para conductor y pasajero": "Sí",
+        "Control de estabilidad": "Sí",
+        "Tracción ASR": "Sí",
+        "Llantas de aleación": "Sí",
+        "Techo solar eléctrico retráctil": "Sí",
+        "Control de tracción": "Delantera",
+        "Capacidad de personas": "4",
+        "Potencia": "105 hp",
+        "Distancia entre ejes": "2.741 mm",
+        "Capacidad del tanque": "40 L",
+        "Válvulas por cilindro": "4",
+        "Dirección": "Asistida",
+        "Alarma": "Sí",
+        "Tapizado de cuero": "No",
+        "Largo x Altura x Ancho": "3546 mm x 1492 mm x 2069 mm"
+      },
+      "photos": [
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_840312-MLA117076016013_092026-F.webp",
+          "sort_order": 0,
+          "alt_text": "Imagen 1 de 20 de Fiat 500l 1.4 Pop Star 105cv",
+          "width": 1017,
+          "height": 845
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_752287-MLA117075835739_092026-F.webp",
+          "sort_order": 1,
+          "alt_text": "Imagen 2 de 20 de Fiat 500l 1.4 Pop Star 105cv",
+          "width": 1020,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_954751-MLA117075747383_092026-F.webp",
+          "sort_order": 2,
+          "alt_text": "Imagen 3 de 20 de Fiat 500l 1.4 Pop Star 105cv",
+          "width": 1076,
+          "height": 1016
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_978838-MLA117075865723_092026-F.webp",
+          "sort_order": 3,
+          "alt_text": "Imagen 4 de 20 de Fiat 500l 1.4 Pop Star 105cv",
+          "width": 1076,
+          "height": 1022
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_948785-MLA117075835763_092026-F.webp",
+          "sort_order": 4,
+          "alt_text": "Imagen 5 de 20 de Fiat 500l 1.4 Pop Star 105cv",
+          "width": 1076,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_817300-MLA117075835767_092026-F.webp",
+          "sort_order": 5,
+          "alt_text": "Imagen 6 de 20 de Fiat 500l 1.4 Pop Star 105cv",
+          "width": 974,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_652872-MLA117075192775_092026-F.webp",
+          "sort_order": 6,
+          "alt_text": "Imagen 7 de 20 de Fiat 500l 1.4 Pop Star 105cv",
+          "width": 1043,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_616059-MLA117075865737_092026-F.webp",
+          "sort_order": 7,
+          "alt_text": "Imagen 8 de 20 de Fiat 500l 1.4 Pop Star 105cv",
+          "width": 987,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_649674-MLA117075279987_092026-F.webp",
+          "sort_order": 8,
+          "alt_text": "Imagen 9 de 20 de Fiat 500l 1.4 Pop Star 105cv",
+          "width": 737,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_748602-MLA117074694507_092026-F.webp",
+          "sort_order": 9,
+          "alt_text": "Imagen 10 de 20 de Fiat 500l 1.4 Pop Star 105cv",
+          "width": 737,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_861690-MLA117075865751_092026-F.webp",
+          "sort_order": 10,
+          "alt_text": "Imagen 11 de 20 de Fiat 500l 1.4 Pop Star 105cv",
+          "width": 737,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_915449-MLA115631270522_092026-F.webp",
+          "sort_order": 11,
+          "alt_text": "Imagen 12 de 20 de Fiat 500l 1.4 Pop Star 105cv",
+          "width": 737,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_874759-MLA117075835797_092026-F.webp",
+          "sort_order": 12,
+          "alt_text": "Imagen 13 de 20 de Fiat 500l 1.4 Pop Star 105cv",
+          "width": 746,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_713109-MLA117075687529_092026-F.webp",
+          "sort_order": 13,
+          "alt_text": "Imagen 14 de 20 de Fiat 500l 1.4 Pop Star 105cv",
+          "width": 741,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_613192-MLA117075717665_092026-F.webp",
+          "sort_order": 14,
+          "alt_text": "Imagen 15 de 20 de Fiat 500l 1.4 Pop Star 105cv",
+          "width": 735,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_815254-MLA117075747427_092026-F.webp",
+          "sort_order": 15,
+          "alt_text": "Imagen 16 de 20 de Fiat 500l 1.4 Pop Star 105cv",
+          "width": 747,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_967483-MLA115631270542_092026-F.webp",
+          "sort_order": 16,
+          "alt_text": "Imagen 17 de 20 de Fiat 500l 1.4 Pop Star 105cv",
+          "width": 758,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_697079-MLA117075717685_092026-F.webp",
+          "sort_order": 17,
+          "alt_text": "Imagen 18 de 20 de Fiat 500l 1.4 Pop Star 105cv",
+          "width": 1076,
+          "height": 1106
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_710799-MLA115631388400_092026-F.webp",
+          "sort_order": 18,
+          "alt_text": "Imagen 19 de 20 de Fiat 500l 1.4 Pop Star 105cv",
+          "width": 810,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_919768-MLA117075865787_092026-F.webp",
+          "sort_order": 19,
+          "alt_text": "Imagen 20 de 20 de Fiat 500l 1.4 Pop Star 105cv",
+          "width": 1076,
+          "height": 948
+        }
+      ],
+      "year_conflict": false,
+      "captured_at": "2026-10-18T18:14:50.448814+00:00",
+      "price_valid_until": "2026-10-21"
+    },
+    {
+      "source_id": "MLA3940126512",
+      "source_url": "https://auto.mercadolibre.com.ar/MLA-3940126512-peugeot-208-16-like-pack-_JM",
+      "source_seller_id": 117436611,
+      "source_status": "active",
+      "name": "Peugeot 208 1.6 Like Pack",
+      "brand": "Peugeot",
+      "model": "208",
+      "version": "1.6 Like Pack",
+      "model_year": 2021,
+      "mileage_km": 64000,
+      "category": "hatchback",
+      "condition": "used",
+      "fuel": "Nafta",
+      "transmission": "Manual",
+      "currency": "ARS",
+      "cash_price": 20900000,
+      "down_payment": 9900000,
+      "list_price": 232000000,
+      "trade_in_price": null,
+      "description_source": "",
+      "attrs": {
+        "Marca": "Peugeot",
+        "Modelo": "208",
+        "Año": "2021",
+        "Versión": "1.6 Like Pack",
+        "Color": "Blanco",
+        "Kilómetros": "64.000 km",
+        "Tipo de combustible": "Nafta",
+        "Puertas": "5",
+        "Transmisión": "Manual",
+        "Motor": "1.6",
+        "Tipo de carrocería": "Hatchback",
+        "Dirección": "Asistida",
+        "Bluetooth": "Sí",
+        "Reproductor de MP3": "Sí",
+        "Entrada USB": "Sí",
+        "Frenos ABS": "Sí",
+        "Airbag para conductor y pasajero": "Sí",
+        "Tracción ASR": "Sí",
+        "Control de tracción": "Delantera",
+        "Capacidad de personas": "5",
+        "Potencia": "115 hp",
+        "Distancia entre ejes": "2.538 mm",
+        "Capacidad del tanque": "47 L",
+        "Válvulas por cilindro": "4",
+        "Aire acondicionado": "Sí",
+        "Computadora de abordo": "Sí",
+        "Comando remoto para radio en el volante": "Sí",
+        "Largo x Altura x Ancho": "4075 mm x 1453 mm x 1738 mm"
+      },
+      "photos": [
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_822873-MLA117528997085_092026-F.webp",
+          "sort_order": 0,
+          "alt_text": "Imagen 1 de 20 de Peugeot 208 1.6 Like Pack",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_965684-MLA116051116896_092026-F.webp",
+          "sort_order": 1,
+          "alt_text": "Imagen 2 de 20 de Peugeot 208 1.6 Like Pack",
+          "width": 1164,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_908584-MLA117529259735_092026-F.webp",
+          "sort_order": 2,
+          "alt_text": "Imagen 3 de 20 de Peugeot 208 1.6 Like Pack",
+          "width": 1037,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_829174-MLA116051116930_092026-F.webp",
+          "sort_order": 3,
+          "alt_text": "Imagen 4 de 20 de Peugeot 208 1.6 Like Pack",
+          "width": 1166,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_772522-MLA116050296914_092026-F.webp",
+          "sort_order": 4,
+          "alt_text": "Imagen 5 de 20 de Peugeot 208 1.6 Like Pack",
+          "width": 1049,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_792483-MLA117528877603_092026-F.webp",
+          "sort_order": 5,
+          "alt_text": "Imagen 6 de 20 de Peugeot 208 1.6 Like Pack",
+          "width": 1082,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_927050-MLA117528994517_092026-F.webp",
+          "sort_order": 6,
+          "alt_text": "Imagen 7 de 20 de Peugeot 208 1.6 Like Pack",
+          "width": 992,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_949538-MLA116050296948_092026-F.webp",
+          "sort_order": 7,
+          "alt_text": "Imagen 8 de 20 de Peugeot 208 1.6 Like Pack",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_873340-MLA116050969434_092026-F.webp",
+          "sort_order": 8,
+          "alt_text": "Imagen 9 de 20 de Peugeot 208 1.6 Like Pack",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_960495-MLA116051116970_092026-F.webp",
+          "sort_order": 9,
+          "alt_text": "Imagen 10 de 20 de Peugeot 208 1.6 Like Pack",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_644575-MLA117528877639_092026-F.webp",
+          "sort_order": 10,
+          "alt_text": "Imagen 11 de 20 de Peugeot 208 1.6 Like Pack",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_663419-MLA117529289265_092026-F.webp",
+          "sort_order": 11,
+          "alt_text": "Imagen 12 de 20 de Peugeot 208 1.6 Like Pack",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_650607-MLA116050969460_092026-F.webp",
+          "sort_order": 12,
+          "alt_text": "Imagen 13 de 20 de Peugeot 208 1.6 Like Pack",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_774468-MLA117528877681_092026-F.webp",
+          "sort_order": 13,
+          "alt_text": "Imagen 14 de 20 de Peugeot 208 1.6 Like Pack",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_661278-MLA117529081275_092026-F.webp",
+          "sort_order": 14,
+          "alt_text": "Imagen 15 de 20 de Peugeot 208 1.6 Like Pack",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_941243-MLA116050851702_092026-F.webp",
+          "sort_order": 15,
+          "alt_text": "Imagen 16 de 20 de Peugeot 208 1.6 Like Pack",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_660838-MLA116050091784_092026-F.webp",
+          "sort_order": 16,
+          "alt_text": "Imagen 17 de 20 de Peugeot 208 1.6 Like Pack",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_747015-MLA116051087318_092026-F.webp",
+          "sort_order": 17,
+          "alt_text": "Imagen 18 de 20 de Peugeot 208 1.6 Like Pack",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_764320-MLA117528847801_092026-F.webp",
+          "sort_order": 18,
+          "alt_text": "Imagen 19 de 20 de Peugeot 208 1.6 Like Pack",
+          "width": 947,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_852108-MLA117529081323_092026-F.webp",
+          "sort_order": 19,
+          "alt_text": "Imagen 20 de 20 de Peugeot 208 1.6 Like Pack",
+          "width": 900,
+          "height": 1200
+        }
+      ],
+      "year_conflict": false,
+      "captured_at": "2026-10-18T18:14:55.491191+00:00",
+      "price_valid_until": "2026-10-21"
+    },
+    {
+      "source_id": "MLA2137484737",
+      "source_url": "https://auto.mercadolibre.com.ar/MLA-2137484737-peugeot-207-14-quiksilver-75cv-_JM",
+      "source_seller_id": 117436611,
+      "source_status": "active",
+      "name": "Peugeot 207 1.4 Quiksilver 75cv",
+      "brand": "Peugeot",
+      "model": "207",
+      "version": "1.4 Quiksilver 75cv",
+      "model_year": 2011,
+      "mileage_km": 96000,
+      "category": "hatchback",
+      "condition": "used",
+      "fuel": "Nafta",
+      "transmission": "Manual",
+      "currency": "ARS",
+      "cash_price": 10500000,
+      "down_payment": 6900000,
+      "list_price": null,
+      "trade_in_price": null,
+      "description_source": "Hermoso vehiculo muy cuidado tanto de mecanica como estetica, solo 2 dueños, funciona todo perfectamente, solo 97.000km .El más full edición limitada, Peugeot 207 quiksilver es un vehiculo atractivo y eficiente que ofrece una excelente relacion calidad y precio.Este hatchback en un elegante color gris cuenta con un motor de 1.4 litros y una transmisión manual de 5 velocidades. Equipado con dirección hidráulica, aire acondicionado y levantavidrios eléctricos delanteros, proporciona un manejo cómodo y práctico para la ciudad. Su diseño incluye llantas de aleación y faros antiniebla, además de contar con airbags para conductor y pasajero, asegurando un viaje seguro. Ideal para familias o uso diario. Veni a verlo!",
+      "attrs": {
+        "Marca": "Peugeot",
+        "Modelo": "207",
+        "Año": "2011",
+        "Versión": "1.4 Quiksilver 75cv",
+        "Color": "Gris",
+        "Kilómetros": "96.000 km",
+        "Tipo de combustible": "Nafta",
+        "Puertas": "5",
+        "Transmisión": "Manual",
+        "Motor": "1.4",
+        "Tipo de carrocería": "Hatchback",
+        "Dirección": "Hidráulica",
+        "Largo x Altura x Ancho": "3872 mm x 1446 mm x 1669 mm",
+        "Airbag para conductor y pasajero": "Sí",
+        "Llantas de aleación": "Sí",
+        "Control de tracción": "Delantera",
+        "Capacidad de personas": "5",
+        "Potencia": "75 hp",
+        "Distancia entre ejes": "2.443 mm",
+        "Capacidad del tanque": "50 L",
+        "Válvulas por cilindro": "2",
+        "Aire acondicionado": "Sí",
+        "Comando remoto para radio en el volante": "Sí",
+        "Porta vasos": "Sí",
+        "Reproductor de MP3": "Sí"
+      },
+      "photos": [
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_923490-MLA118698253711_102026-F.webp",
+          "sort_order": 0,
+          "alt_text": "Imagen 1 de 22 de Peugeot 207 1.4 Quiksilver 75cv",
+          "width": 1200,
+          "height": 1072
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_787611-MLA117506268706_102026-F.webp",
+          "sort_order": 1,
+          "alt_text": "Imagen 2 de 22 de Peugeot 207 1.4 Quiksilver 75cv",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_955105-MLA110956468589_042026-F.webp",
+          "sort_order": 2,
+          "alt_text": "Imagen 3 de 22 de Peugeot 207 1.4 Quiksilver 75cv",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_695881-MLA109517060364_042026-F.webp",
+          "sort_order": 3,
+          "alt_text": "Imagen 4 de 22 de Peugeot 207 1.4 Quiksilver 75cv",
+          "width": 1099,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_838683-MLA110387855755_042026-F.webp",
+          "sort_order": 4,
+          "alt_text": "Imagen 5 de 22 de Peugeot 207 1.4 Quiksilver 75cv",
+          "width": 1140,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_888147-MLA109516230820_042026-F.webp",
+          "sort_order": 5,
+          "alt_text": "Imagen 6 de 22 de Peugeot 207 1.4 Quiksilver 75cv",
+          "width": 1151,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_937243-MLA110387855787_042026-F.webp",
+          "sort_order": 6,
+          "alt_text": "Imagen 7 de 22 de Peugeot 207 1.4 Quiksilver 75cv",
+          "width": 904,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_602549-MLA109516910838_042026-F.webp",
+          "sort_order": 7,
+          "alt_text": "Imagen 8 de 22 de Peugeot 207 1.4 Quiksilver 75cv",
+          "width": 1137,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_714016-MLA110388985745_042026-F.webp",
+          "sort_order": 8,
+          "alt_text": "Imagen 9 de 22 de Peugeot 207 1.4 Quiksilver 75cv",
+          "width": 1016,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_753518-MLA110388123899_042026-F.webp",
+          "sort_order": 9,
+          "alt_text": "Imagen 10 de 22 de Peugeot 207 1.4 Quiksilver 75cv",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_807360-MLA110388449791_042026-F.webp",
+          "sort_order": 10,
+          "alt_text": "Imagen 11 de 22 de Peugeot 207 1.4 Quiksilver 75cv",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_670336-MLA110388686459_042026-F.webp",
+          "sort_order": 11,
+          "alt_text": "Imagen 12 de 22 de Peugeot 207 1.4 Quiksilver 75cv",
+          "width": 780,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_607281-MLA110387945073_042026-F.webp",
+          "sort_order": 12,
+          "alt_text": "Imagen 13 de 22 de Peugeot 207 1.4 Quiksilver 75cv",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_959134-MLA110388805913_042026-F.webp",
+          "sort_order": 13,
+          "alt_text": "Imagen 14 de 22 de Peugeot 207 1.4 Quiksilver 75cv",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_608279-MLA110388064845_042026-F.webp",
+          "sort_order": 14,
+          "alt_text": "Imagen 15 de 22 de Peugeot 207 1.4 Quiksilver 75cv",
+          "width": 1152,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_653554-MLA110388330291_042026-F.webp",
+          "sort_order": 15,
+          "alt_text": "Imagen 16 de 22 de Peugeot 207 1.4 Quiksilver 75cv",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_816488-MLA109516319892_042026-F.webp",
+          "sort_order": 16,
+          "alt_text": "Imagen 17 de 22 de Peugeot 207 1.4 Quiksilver 75cv",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_727851-MLA109517060354_042026-F.webp",
+          "sort_order": 17,
+          "alt_text": "Imagen 18 de 22 de Peugeot 207 1.4 Quiksilver 75cv",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_611248-MLA109516704738_042026-F.webp",
+          "sort_order": 18,
+          "alt_text": "Imagen 19 de 22 de Peugeot 207 1.4 Quiksilver 75cv",
+          "width": 1200,
+          "height": 974
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_927263-MLA110388746219_042026-F.webp",
+          "sort_order": 19,
+          "alt_text": "Imagen 20 de 22 de Peugeot 207 1.4 Quiksilver 75cv",
+          "width": 768,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_948894-MLA110388686595_042026-F.webp",
+          "sort_order": 20,
+          "alt_text": "Imagen 21 de 22 de Peugeot 207 1.4 Quiksilver 75cv",
+          "width": 754,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_731971-MLA109516764396_042026-F.webp",
+          "sort_order": 21,
+          "alt_text": "Imagen 22 de 22 de Peugeot 207 1.4 Quiksilver 75cv",
+          "width": 773,
+          "height": 1200
+        }
+      ],
+      "year_conflict": false,
+      "captured_at": "2026-10-18T18:14:56.733266+00:00",
+      "price_valid_until": "2026-10-21"
+    },
+    {
+      "source_id": "MLA3809021816",
+      "source_url": "https://auto.mercadolibre.com.ar/MLA-3809021816-mercedes-benz-clase-gla-16-gla200-at-urban-156cv-_JM",
+      "source_seller_id": 117436611,
+      "source_status": "active",
+      "name": "Mercedes-benz Clase Gla 1.6 Gla200 At Urban 156cv",
+      "brand": "Mercedes-Benz",
+      "model": "Clase GLA",
+      "version": "1.6 Gla200 At Urban 156cv",
+      "model_year": 2016,
+      "mileage_km": 70000,
+      "category": "suv",
+      "condition": "used",
+      "fuel": "Nafta",
+      "transmission": "Automática",
+      "currency": "USD",
+      "cash_price": 25900,
+      "down_payment": 13900,
+      "list_price": 27500,
+      "trade_in_price": null,
+      "description_source": "Hermoso GLA 200 UNICA MANO con 4 cubiertas 0km super cuidado vehiculo para subir y disfrutar.Este SUV en color blanco elegante cuenta con un motor de 1.6 litros y 156 hp, con transmisión automática de 7 marchas. Ideal para quienes buscan un vehículo urbano con comodidad y tecnología.Equipado con dirección asistida, aire acondicionado, control de tracción delantera y múltiples airbags, ofrece un viaje seguro y placentero. Su capacidad para 5 pasajeros y el espacio en el techo para equipaje lo hacen práctico para la ciudad y escapadas.Ideal para disfrutar en todo momento.",
+      "attrs": {
+        "Marca": "Mercedes-Benz",
+        "Modelo": "Clase GLA",
+        "Año": "2016",
+        "Versión": "1.6 Gla200 At Urban 156cv",
+        "Color": "Blanco",
+        "Kilómetros": "70.000 km",
+        "Tipo de combustible": "Nafta",
+        "Puertas": "5",
+        "Transmisión": "Automática",
+        "Motor": "1.6",
+        "Tipo de carrocería": "SUV",
+        "Piloto automático": "Sí",
+        "Aire acondicionado": "Sí",
+        "Computadora de abordo": "Sí",
+        "Sensor de lluvia": "Sí",
+        "Comando remoto para radio en el volante": "Sí",
+        "Porta vasos": "Sí",
+        "Frenos ABS": "Sí",
+        "Airbag para conductor y pasajero": "Sí",
+        "Control de estabilidad": "Sí",
+        "Tracción ASR": "Sí",
+        "Llantas de aleación": "Sí",
+        "Porta equipaje en techo": "Sí",
+        "Control de tracción": "Delantera",
+        "Capacidad de personas": "5",
+        "Potencia": "156 hp",
+        "Capacidad del tanque": "56 L",
+        "Válvulas por cilindro": "4",
+        "Dirección": "Asistida",
+        "Alarma": "Sí",
+        "CD": "Sí",
+        "Largo x Altura": "4417 mm x 1494 mm"
+      },
+      "photos": [
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_654377-MLA114985403918_082026-F.webp",
+          "sort_order": 0,
+          "alt_text": "Imagen 1 de 21 de Mercedes-benz Clase Gla 1.6 Gla200 At Urban 156cv",
+          "width": 1200,
+          "height": 1076
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_986120-MLA116367291495_082026-F.webp",
+          "sort_order": 1,
+          "alt_text": "Imagen 2 de 21 de Mercedes-benz Clase Gla 1.6 Gla200 At Urban 156cv",
+          "width": 1200,
+          "height": 1120
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_896401-MLA116367291497_082026-F.webp",
+          "sort_order": 2,
+          "alt_text": "Imagen 3 de 21 de Mercedes-benz Clase Gla 1.6 Gla200 At Urban 156cv",
+          "width": 1093,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_616862-MLA114983821736_082026-F.webp",
+          "sort_order": 3,
+          "alt_text": "Imagen 4 de 21 de Mercedes-benz Clase Gla 1.6 Gla200 At Urban 156cv",
+          "width": 1200,
+          "height": 1050
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_978002-MLA116367853147_082026-F.webp",
+          "sort_order": 4,
+          "alt_text": "Imagen 5 de 21 de Mercedes-benz Clase Gla 1.6 Gla200 At Urban 156cv",
+          "width": 1082,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_816076-MLA116368561317_082026-F.webp",
+          "sort_order": 5,
+          "alt_text": "Imagen 6 de 21 de Mercedes-benz Clase Gla 1.6 Gla200 At Urban 156cv",
+          "width": 1126,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_986653-MLA114983851370_082026-F.webp",
+          "sort_order": 6,
+          "alt_text": "Imagen 7 de 21 de Mercedes-benz Clase Gla 1.6 Gla200 At Urban 156cv",
+          "width": 908,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_735355-MLA116367291557_082026-F.webp",
+          "sort_order": 7,
+          "alt_text": "Imagen 8 de 21 de Mercedes-benz Clase Gla 1.6 Gla200 At Urban 156cv",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_940674-MLA114984352010_082026-F.webp",
+          "sort_order": 8,
+          "alt_text": "Imagen 9 de 21 de Mercedes-benz Clase Gla 1.6 Gla200 At Urban 156cv",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_632329-MLA116367291581_082026-F.webp",
+          "sort_order": 9,
+          "alt_text": "Imagen 10 de 21 de Mercedes-benz Clase Gla 1.6 Gla200 At Urban 156cv",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_801187-MLA116367676729_082026-F.webp",
+          "sort_order": 10,
+          "alt_text": "Imagen 11 de 21 de Mercedes-benz Clase Gla 1.6 Gla200 At Urban 156cv",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_982441-MLA116367291597_082026-F.webp",
+          "sort_order": 11,
+          "alt_text": "Imagen 12 de 21 de Mercedes-benz Clase Gla 1.6 Gla200 At Urban 156cv",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_841712-MLA116368561373_082026-F.webp",
+          "sort_order": 12,
+          "alt_text": "Imagen 13 de 21 de Mercedes-benz Clase Gla 1.6 Gla200 At Urban 156cv",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_823460-MLA114983821838_082026-F.webp",
+          "sort_order": 13,
+          "alt_text": "Imagen 14 de 21 de Mercedes-benz Clase Gla 1.6 Gla200 At Urban 156cv",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_631462-MLA116367882579_082026-F.webp",
+          "sort_order": 14,
+          "alt_text": "Imagen 15 de 21 de Mercedes-benz Clase Gla 1.6 Gla200 At Urban 156cv",
+          "width": 1046,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_853185-MLA116367853247_082026-F.webp",
+          "sort_order": 15,
+          "alt_text": "Imagen 16 de 21 de Mercedes-benz Clase Gla 1.6 Gla200 At Urban 156cv",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_705115-MLA114984322606_082026-F.webp",
+          "sort_order": 16,
+          "alt_text": "Imagen 17 de 21 de Mercedes-benz Clase Gla 1.6 Gla200 At Urban 156cv",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_801996-MLA114983851476_082026-F.webp",
+          "sort_order": 17,
+          "alt_text": "Imagen 18 de 21 de Mercedes-benz Clase Gla 1.6 Gla200 At Urban 156cv",
+          "width": 805,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_694041-MLA114983821896_082026-F.webp",
+          "sort_order": 18,
+          "alt_text": "Imagen 19 de 21 de Mercedes-benz Clase Gla 1.6 Gla200 At Urban 156cv",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_897375-MLA116367853263_082026-F.webp",
+          "sort_order": 19,
+          "alt_text": "Imagen 20 de 21 de Mercedes-benz Clase Gla 1.6 Gla200 At Urban 156cv",
+          "width": 1200,
+          "height": 1169
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_716218-MLA116367882639_082026-F.webp",
+          "sort_order": 20,
+          "alt_text": "Imagen 21 de 21 de Mercedes-benz Clase Gla 1.6 Gla200 At Urban 156cv",
+          "width": 1200,
+          "height": 1182
+        }
+      ],
+      "year_conflict": false,
+      "captured_at": "2026-10-18T18:15:01.069335+00:00",
+      "price_valid_until": "2026-10-21"
+    },
+    {
+      "source_id": "MLA3943834144",
+      "source_url": "https://auto.mercadolibre.com.ar/MLA-3943834144-fiat-cronos-13-precision-cvt-_JM",
+      "source_seller_id": 117436611,
+      "source_status": "active",
+      "name": "Fiat Cronos 1.3 Precision Cvt",
+      "brand": "Fiat",
+      "model": "Cronos",
+      "version": "1.3 Precision Cvt",
+      "model_year": 2023,
+      "mileage_km": 38000,
+      "category": "sedan",
+      "condition": "used",
+      "fuel": "Nafta",
+      "transmission": "Automática",
+      "currency": "ARS",
+      "cash_price": 24900000,
+      "down_payment": 11900000,
+      "list_price": 26200000,
+      "trade_in_price": null,
+      "description_source": "",
+      "attrs": {
+        "Marca": "Fiat",
+        "Modelo": "Cronos",
+        "Año": "2023",
+        "Versión": "1.3 Precision Cvt",
+        "Color": "Gris",
+        "Kilómetros": "38.000 km",
+        "Tipo de combustible": "Nafta",
+        "Puertas": "4",
+        "Transmisión": "Automática",
+        "Motor": "1.3",
+        "Tipo de carrocería": "Sedán",
+        "Dirección": "Eléctrica",
+        "Alarma": "Sí",
+        "AM/FM": "Sí",
+        "Android auto": "Sí",
+        "Apple CarPlay": "Sí",
+        "Frenos ABS": "Sí",
+        "Airbag para conductor y pasajero": "Sí",
+        "Tracción ASR": "Sí",
+        "Llantas de aleación": "Sí",
+        "Control de tracción": "Delantera",
+        "Capacidad de personas": "5",
+        "Potencia": "99 hp",
+        "Distancia entre ejes": "2.521 mm",
+        "Capacidad del tanque": "48 L",
+        "Válvulas por cilindro": "2",
+        "Aire acondicionado": "Sí",
+        "Computadora de abordo": "Sí",
+        "Sensor de lluvia": "Sí",
+        "Porta vasos": "Sí",
+        "Largo x Altura x Ancho": "4364 mm x 1508 mm x 1724 mm"
+      },
+      "photos": [
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_857078-MLA116093684158_092026-F.webp",
+          "sort_order": 0,
+          "alt_text": "Imagen 1 de 24 de Fiat Cronos 1.3 Precision Cvt",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_790390-MLA116198636978_092026-F.webp",
+          "sort_order": 1,
+          "alt_text": "Imagen 2 de 24 de Fiat Cronos 1.3 Precision Cvt",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_795279-MLA117576267959_092026-F.webp",
+          "sort_order": 2,
+          "alt_text": "Imagen 3 de 24 de Fiat Cronos 1.3 Precision Cvt",
+          "width": 915,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_639556-MLA116093681790_092026-F.webp",
+          "sort_order": 3,
+          "alt_text": "Imagen 4 de 24 de Fiat Cronos 1.3 Precision Cvt",
+          "width": 1134,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_954512-MLA116094093940_092026-F.webp",
+          "sort_order": 4,
+          "alt_text": "Imagen 5 de 24 de Fiat Cronos 1.3 Precision Cvt",
+          "width": 1086,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_604935-MLA117575153327_092026-F.webp",
+          "sort_order": 5,
+          "alt_text": "Imagen 6 de 24 de Fiat Cronos 1.3 Precision Cvt",
+          "width": 997,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_651281-MLA116094093964_092026-F.webp",
+          "sort_order": 6,
+          "alt_text": "Imagen 7 de 24 de Fiat Cronos 1.3 Precision Cvt",
+          "width": 984,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_950296-MLA116094093970_092026-F.webp",
+          "sort_order": 7,
+          "alt_text": "Imagen 8 de 24 de Fiat Cronos 1.3 Precision Cvt",
+          "width": 1059,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_958476-MLA117576091539_092026-F.webp",
+          "sort_order": 8,
+          "alt_text": "Imagen 9 de 24 de Fiat Cronos 1.3 Precision Cvt",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_985124-MLA117575153367_092026-F.webp",
+          "sort_order": 9,
+          "alt_text": "Imagen 10 de 24 de Fiat Cronos 1.3 Precision Cvt",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_619885-MLA117576268015_092026-F.webp",
+          "sort_order": 10,
+          "alt_text": "Imagen 11 de 24 de Fiat Cronos 1.3 Precision Cvt",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_807995-MLA116093681838_092026-F.webp",
+          "sort_order": 11,
+          "alt_text": "Imagen 12 de 24 de Fiat Cronos 1.3 Precision Cvt",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_635050-MLA117575620781_092026-F.webp",
+          "sort_order": 12,
+          "alt_text": "Imagen 13 de 24 de Fiat Cronos 1.3 Precision Cvt",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_972193-MLA116093831162_092026-F.webp",
+          "sort_order": 13,
+          "alt_text": "Imagen 14 de 24 de Fiat Cronos 1.3 Precision Cvt",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_739620-MLA116094094020_092026-F.webp",
+          "sort_order": 14,
+          "alt_text": "Imagen 15 de 24 de Fiat Cronos 1.3 Precision Cvt",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_770310-MLA116094094040_092026-F.webp",
+          "sort_order": 15,
+          "alt_text": "Imagen 16 de 24 de Fiat Cronos 1.3 Precision Cvt",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_742940-MLA116093681904_092026-F.webp",
+          "sort_order": 16,
+          "alt_text": "Imagen 17 de 24 de Fiat Cronos 1.3 Precision Cvt",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_607210-MLA117575620813_092026-F.webp",
+          "sort_order": 17,
+          "alt_text": "Imagen 18 de 24 de Fiat Cronos 1.3 Precision Cvt",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_994042-MLA117576091593_092026-F.webp",
+          "sort_order": 18,
+          "alt_text": "Imagen 19 de 24 de Fiat Cronos 1.3 Precision Cvt",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_631133-MLA116094094066_092026-F.webp",
+          "sort_order": 19,
+          "alt_text": "Imagen 20 de 24 de Fiat Cronos 1.3 Precision Cvt",
+          "width": 942,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_643985-MLA117576091605_092026-F.webp",
+          "sort_order": 20,
+          "alt_text": "Imagen 21 de 24 de Fiat Cronos 1.3 Precision Cvt",
+          "width": 1107,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_782174-MLA117575153465_092026-F.webp",
+          "sort_order": 21,
+          "alt_text": "Imagen 22 de 24 de Fiat Cronos 1.3 Precision Cvt",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_741440-MLA117575620877_092026-F.webp",
+          "sort_order": 22,
+          "alt_text": "Imagen 23 de 24 de Fiat Cronos 1.3 Precision Cvt",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_910501-MLA116093681942_092026-F.webp",
+          "sort_order": 23,
+          "alt_text": "Imagen 24 de 24 de Fiat Cronos 1.3 Precision Cvt",
+          "width": 900,
+          "height": 1200
+        }
+      ],
+      "year_conflict": false,
+      "captured_at": "2026-10-18T18:15:03.265135+00:00",
+      "price_valid_until": "2026-10-21"
+    },
+    {
+      "source_id": "MLA3940229480",
+      "source_url": "https://auto.mercadolibre.com.ar/MLA-3940229480-citron-berlingo-furgon-16-bussines-hdi-92cv-am54-_JM",
+      "source_seller_id": 117436611,
+      "source_status": "active",
+      "name": "Citroën Berlingo Furgon 1.6 Bussines Hdi 92cv Am54",
+      "brand": "Citroën",
+      "model": "Berlingo Furgon",
+      "version": "1.6 Bussines Hdi 92cv Am54",
+      "model_year": 2022,
+      "mileage_km": 69000,
+      "category": "utility",
+      "condition": "used",
+      "fuel": "Diésel",
+      "transmission": "Manual",
+      "currency": "ARS",
+      "cash_price": 21500000,
+      "down_payment": 11000000,
+      "list_price": 22500000,
+      "trade_in_price": null,
+      "description_source": "",
+      "attrs": {
+        "Marca": "Citroën",
+        "Modelo": "Berlingo Furgon",
+        "Año": "2022",
+        "Versión": "1.6 Bussines Hdi 92cv Am54",
+        "Color": "Blanco",
+        "Kilómetros": "69.000 km",
+        "Tipo de combustible": "Diésel",
+        "Puertas": "3",
+        "Transmisión": "Manual",
+        "Motor": "1.6",
+        "Tipo de carrocería": "Furgón",
+        "Dirección": "Hidráulica",
+        "AM/FM": "Sí",
+        "Frenos ABS": "Sí",
+        "Airbag para conductor y pasajero": "Sí",
+        "Tracción ASR": "Sí",
+        "Porta equipaje en techo": "Sí",
+        "Control de tracción": "Delantera",
+        "Capacidad de personas": "2",
+        "Potencia": "92 hp",
+        "Distancia entre ejes": "2.693 mm",
+        "Capacidad del tanque": "60 L",
+        "Válvulas por cilindro": "2",
+        "Aire acondicionado": "Sí",
+        "Porta vasos": "Sí",
+        "Largo x Altura x Ancho": "4137 mm x 1858 mm x 1608 mm"
+      },
+      "photos": [
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_888562-MLA116052536714_092026-F.webp",
+          "sort_order": 0,
+          "alt_text": "Imagen 1 de 20 de Citroën Berlingo Furgon 1.6 Bussines Hdi 92cv Am54",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_969963-MLA116100482382_092026-F.webp",
+          "sort_order": 1,
+          "alt_text": "Imagen 2 de 20 de Citroën Berlingo Furgon 1.6 Bussines Hdi 92cv Am54",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_798307-MLA116051738552_092026-F.webp",
+          "sort_order": 2,
+          "alt_text": "Imagen 3 de 20 de Citroën Berlingo Furgon 1.6 Bussines Hdi 92cv Am54",
+          "width": 1164,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_822877-MLA116051738598_092026-F.webp",
+          "sort_order": 3,
+          "alt_text": "Imagen 4 de 20 de Citroën Berlingo Furgon 1.6 Bussines Hdi 92cv Am54",
+          "width": 1100,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_720806-MLA116051768606_092026-F.webp",
+          "sort_order": 4,
+          "alt_text": "Imagen 5 de 20 de Citroën Berlingo Furgon 1.6 Bussines Hdi 92cv Am54",
+          "width": 1076,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_827250-MLA117530292367_092026-F.webp",
+          "sort_order": 5,
+          "alt_text": "Imagen 6 de 20 de Citroën Berlingo Furgon 1.6 Bussines Hdi 92cv Am54",
+          "width": 1047,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_934739-MLA116052091844_092026-F.webp",
+          "sort_order": 6,
+          "alt_text": "Imagen 7 de 20 de Citroën Berlingo Furgon 1.6 Bussines Hdi 92cv Am54",
+          "width": 961,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_715206-MLA116052532754_092026-F.webp",
+          "sort_order": 7,
+          "alt_text": "Imagen 8 de 20 de Citroën Berlingo Furgon 1.6 Bussines Hdi 92cv Am54",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_693258-MLA117530409873_092026-F.webp",
+          "sort_order": 8,
+          "alt_text": "Imagen 9 de 20 de Citroën Berlingo Furgon 1.6 Bussines Hdi 92cv Am54",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_933374-MLA116051945674_092026-F.webp",
+          "sort_order": 9,
+          "alt_text": "Imagen 10 de 20 de Citroën Berlingo Furgon 1.6 Bussines Hdi 92cv Am54",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_927963-MLA116052358620_092026-F.webp",
+          "sort_order": 10,
+          "alt_text": "Imagen 11 de 20 de Citroën Berlingo Furgon 1.6 Bussines Hdi 92cv Am54",
+          "width": 862,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_639992-MLA116052708176_092026-F.webp",
+          "sort_order": 11,
+          "alt_text": "Imagen 12 de 20 de Citroën Berlingo Furgon 1.6 Bussines Hdi 92cv Am54",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_699093-MLA117530409923_092026-F.webp",
+          "sort_order": 12,
+          "alt_text": "Imagen 13 de 20 de Citroën Berlingo Furgon 1.6 Bussines Hdi 92cv Am54",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_690763-MLA116052180992_092026-F.webp",
+          "sort_order": 13,
+          "alt_text": "Imagen 14 de 20 de Citroën Berlingo Furgon 1.6 Bussines Hdi 92cv Am54",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_951512-MLA116052708200_092026-F.webp",
+          "sort_order": 14,
+          "alt_text": "Imagen 15 de 20 de Citroën Berlingo Furgon 1.6 Bussines Hdi 92cv Am54",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_912867-MLA116052358668_092026-F.webp",
+          "sort_order": 15,
+          "alt_text": "Imagen 16 de 20 de Citroën Berlingo Furgon 1.6 Bussines Hdi 92cv Am54",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_810789-MLA117530588279_092026-F.webp",
+          "sort_order": 16,
+          "alt_text": "Imagen 17 de 20 de Citroën Berlingo Furgon 1.6 Bussines Hdi 92cv Am54",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_618460-MLA116052532804_092026-F.webp",
+          "sort_order": 17,
+          "alt_text": "Imagen 18 de 20 de Citroën Berlingo Furgon 1.6 Bussines Hdi 92cv Am54",
+          "width": 1119,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_884620-MLA116052358686_092026-F.webp",
+          "sort_order": 18,
+          "alt_text": "Imagen 19 de 20 de Citroën Berlingo Furgon 1.6 Bussines Hdi 92cv Am54",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_884031-MLA117530292515_092026-F.webp",
+          "sort_order": 19,
+          "alt_text": "Imagen 20 de 20 de Citroën Berlingo Furgon 1.6 Bussines Hdi 92cv Am54",
+          "width": 900,
+          "height": 1200
+        }
+      ],
+      "year_conflict": false,
+      "captured_at": "2026-10-18T18:15:04.370935+00:00",
+      "price_valid_until": "2026-10-21"
+    },
+    {
+      "source_id": "MLA1987825341",
+      "source_url": "https://auto.mercadolibre.com.ar/MLA-1987825341-volkswagen-gol-trend-16-pack-iii-101cv-_JM",
+      "source_seller_id": 117436611,
+      "source_status": "active",
+      "name": "Volkswagen Gol Trend 1.6 Pack Iii 101cv",
+      "brand": "Volkswagen",
+      "model": "Gol Trend",
+      "version": "1.6 Pack Iii 101cv",
+      "model_year": 2009,
+      "mileage_km": 200000,
+      "category": "hatchback",
+      "condition": "used",
+      "fuel": "Nafta",
+      "transmission": "Manual",
+      "currency": "ARS",
+      "cash_price": 10900000,
+      "down_payment": 7400000,
+      "list_price": 11500000,
+      "trade_in_price": null,
+      "description_source": "Volkswagen Gol Trend 2009 en versión 1.6 Pack III, una propuesta compacta y práctica para uso diario. Su formato hatchback de 5 puertas y capacidad para 5 personas lo vuelve cómodo para moverse en ciudad y también para trayectos más largos.Equipa motor nafta 1.6 de 101 hp, con transmisión manual de 5 velocidades y tracción delantera. La dirección hidráulica aporta una conducción agradable, mientras que el tanque de 55 L acompaña mejor los recorridos habituales.En seguridad y confort suma airbag para conductor y pasajero, alarma y comando remoto para radio en el volante. También incorpora levantavidrios eléctricos delanteros y traseros, espejos con ajuste eléctrico y porta vasos, detalles que hacen más práctica la rutina a bordo.El diseño exterior conserva paragolpes del color de la carrocería y llantas de aleación, con una imagen prolija y actual para su segmento. Sus medidas compactas, con 3899 mm de largo, 1656 mm de ancho y 1464 mm de alto, favorecen el maniobrado y el estacionamiento en espacios reducidos.Con 200000 km recorridos, este Gol Trend se perfila como una alternativa funcional para quien valora un auto sencillo de mantener, bien equipado y apto para el uso cotidiano. Su conjunto de prestaciones lo convierte en una opción equilibrada dentro de los autos y camionetas compactos.",
+      "attrs": {
+        "Marca": "Volkswagen",
+        "Modelo": "Gol Trend",
+        "Año": "2009",
+        "Versión": "1.6 Pack Iii 101cv",
+        "Color": "Gris",
+        "Kilómetros": "200.000 km",
+        "Tipo de combustible": "Nafta",
+        "Puertas": "5",
+        "Transmisión": "Manual",
+        "Motor": "1.6",
+        "Tipo de carrocería": "Hatchback",
+        "Largo x Altura x Ancho": "3899 mm x 1464 mm x 1656 mm",
+        "Airbag para conductor y pasajero": "Sí",
+        "Llantas de aleación": "Sí",
+        "Control de tracción": "Delantera",
+        "Capacidad de personas": "5",
+        "Potencia": "101 hp",
+        "Distancia entre ejes": "2.466 mm",
+        "Capacidad del tanque": "55 L",
+        "Válvulas por cilindro": "2",
+        "Comando remoto para radio en el volante": "Sí",
+        "Porta vasos": "Sí",
+        "Dirección": "Hidráulica",
+        "Alarma": "Sí"
+      },
+      "photos": [
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_904840-MLA115141322520_082026-F.webp",
+          "sort_order": 0,
+          "alt_text": "Imagen 1 de 17 de Volkswagen Gol Trend 1.6 Pack Iii 101cv",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_856243-MLA115108452386_082026-F.webp",
+          "sort_order": 1,
+          "alt_text": "Imagen 2 de 17 de Volkswagen Gol Trend 1.6 Pack Iii 101cv",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_614178-MLA116131898745_082026-F.webp",
+          "sort_order": 2,
+          "alt_text": "Imagen 3 de 17 de Volkswagen Gol Trend 1.6 Pack Iii 101cv",
+          "width": 950,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_874013-MLA116131958375_082026-F.webp",
+          "sort_order": 3,
+          "alt_text": "Imagen 4 de 17 de Volkswagen Gol Trend 1.6 Pack Iii 101cv",
+          "width": 1085,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_713891-MLA116131632395_082026-F.webp",
+          "sort_order": 4,
+          "alt_text": "Imagen 5 de 17 de Volkswagen Gol Trend 1.6 Pack Iii 101cv",
+          "width": 1025,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_774500-MLA114762194686_082026-F.webp",
+          "sort_order": 5,
+          "alt_text": "Imagen 6 de 17 de Volkswagen Gol Trend 1.6 Pack Iii 101cv",
+          "width": 1002,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_983022-MLA114763614588_082026-F.webp",
+          "sort_order": 6,
+          "alt_text": "Imagen 7 de 17 de Volkswagen Gol Trend 1.6 Pack Iii 101cv",
+          "width": 1001,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_686863-MLA116132937507_082026-F.webp",
+          "sort_order": 7,
+          "alt_text": "Imagen 8 de 17 de Volkswagen Gol Trend 1.6 Pack Iii 101cv",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_641034-MLA116131781607_082026-F.webp",
+          "sort_order": 8,
+          "alt_text": "Imagen 9 de 17 de Volkswagen Gol Trend 1.6 Pack Iii 101cv",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_858913-MLA116132669529_082026-F.webp",
+          "sort_order": 9,
+          "alt_text": "Imagen 10 de 17 de Volkswagen Gol Trend 1.6 Pack Iii 101cv",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_663291-MLA116131692303_082026-F.webp",
+          "sort_order": 10,
+          "alt_text": "Imagen 11 de 17 de Volkswagen Gol Trend 1.6 Pack Iii 101cv",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_651182-MLA116131958455_082026-F.webp",
+          "sort_order": 11,
+          "alt_text": "Imagen 12 de 17 de Volkswagen Gol Trend 1.6 Pack Iii 101cv",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_685460-MLA116133056387_082026-F.webp",
+          "sort_order": 12,
+          "alt_text": "Imagen 13 de 17 de Volkswagen Gol Trend 1.6 Pack Iii 101cv",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_926990-MLA114763202268_082026-F.webp",
+          "sort_order": 13,
+          "alt_text": "Imagen 14 de 17 de Volkswagen Gol Trend 1.6 Pack Iii 101cv",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_761575-MLA116131781677_082026-F.webp",
+          "sort_order": 14,
+          "alt_text": "Imagen 15 de 17 de Volkswagen Gol Trend 1.6 Pack Iii 101cv",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_693953-MLA116132431771_082026-F.webp",
+          "sort_order": 15,
+          "alt_text": "Imagen 16 de 17 de Volkswagen Gol Trend 1.6 Pack Iii 101cv",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_688513-MLA116132253031_082026-F.webp",
+          "sort_order": 16,
+          "alt_text": "Imagen 17 de 17 de Volkswagen Gol Trend 1.6 Pack Iii 101cv",
+          "width": 940,
+          "height": 1200
+        }
+      ],
+      "year_conflict": false,
+      "captured_at": "2026-10-18T18:15:06.612712+00:00",
+      "price_valid_until": "2026-10-21"
+    },
+    {
+      "source_id": "MLA3917018682",
+      "source_url": "https://auto.mercadolibre.com.ar/MLA-3917018682-volkswagen-amarok-20-cd-tdi-4x4-highline-cuero-hc4-_JM",
+      "source_seller_id": 117436611,
+      "source_status": "active",
+      "name": "Volkswagen Amarok 2.0 Cd Tdi 4x4 Highline Cuero Hc4",
+      "brand": "Volkswagen",
+      "model": "Amarok",
+      "version": "2.0 Cd Tdi 4x4 Highline Cuero Hc4",
+      "model_year": 2012,
+      "mileage_km": 180000,
+      "category": "pickup",
+      "condition": "used",
+      "fuel": "Diésel",
+      "transmission": "Manual",
+      "currency": "ARS",
+      "cash_price": 30500000,
+      "down_payment": 18500000,
+      "list_price": 31900000,
+      "trade_in_price": null,
+      "description_source": "Volkswagen Amarok 4x4, vehiculo super cuidado nada para hacerle, con 4 cubiertas nuevas, funcionando todo su equipamiento a la perfeccion.Este modelo cuenta con un motor diésel de 2.0 litros y 163 hp, con transmisión manual de 6 marchas. Su diseño de pick-up la hacen ideal para quienes buscan un vehículo versátil para trabajo y uso diario.Equipado con tracción 4x4, asientos de cuero, y diversas comodidades como espejos eléctricos y computadora a bordo, este vehículo es adecuado para quienes requieren funcionalidad y confort en sus desplazamientos.",
+      "attrs": {
+        "Marca": "Volkswagen",
+        "Modelo": "Amarok",
+        "Año": "2012",
+        "Versión": "2.0 Cd Tdi 4x4 Highline Cuero Hc4",
+        "Color": "Gris",
+        "Kilómetros": "180.000 km",
+        "Tipo de combustible": "Diésel",
+        "Puertas": "4",
+        "Transmisión": "Manual",
+        "Motor": "2.0",
+        "Tipo de carrocería": "Pick-Up",
+        "Piloto automático": "Sí",
+        "Computadora de abordo": "Sí",
+        "Porta vasos": "Sí",
+        "Frenos ABS": "Sí",
+        "Airbag para conductor y pasajero": "Sí",
+        "Tracción ASR": "Sí",
+        "Llantas de aleación": "Sí",
+        "Porta equipaje en techo": "Sí",
+        "Control de tracción": "4x4",
+        "Capacidad de personas": "5",
+        "Potencia": "163 hp",
+        "Distancia entre ejes": "3.095 mm",
+        "Capacidad del tanque": "80 L",
+        "Válvulas por cilindro": "4",
+        "Dirección": "Hidráulica",
+        "Tapizado de cuero": "Sí",
+        "Largo x Altura x Ancho": "5254 mm x 1834 mm x 1944 mm"
+      },
+      "photos": [
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_895580-MLA115786881904_092026-F.webp",
+          "sort_order": 0,
+          "alt_text": "Imagen 1 de 20 de Volkswagen Amarok 2.0 Cd Tdi 4x4 Highline Cuero Hc4",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_792299-MLA115786411382_092026-F.webp",
+          "sort_order": 1,
+          "alt_text": "Imagen 2 de 20 de Volkswagen Amarok 2.0 Cd Tdi 4x4 Highline Cuero Hc4",
+          "width": 1104,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_709305-MLA117243446831_092026-F.webp",
+          "sort_order": 2,
+          "alt_text": "Imagen 3 de 20 de Volkswagen Amarok 2.0 Cd Tdi 4x4 Highline Cuero Hc4",
+          "width": 1200,
+          "height": 1159
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_775121-MLA115786237470_092026-F.webp",
+          "sort_order": 3,
+          "alt_text": "Imagen 4 de 20 de Volkswagen Amarok 2.0 Cd Tdi 4x4 Highline Cuero Hc4",
+          "width": 1049,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_632879-MLA117243446873_092026-F.webp",
+          "sort_order": 4,
+          "alt_text": "Imagen 5 de 20 de Volkswagen Amarok 2.0 Cd Tdi 4x4 Highline Cuero Hc4",
+          "width": 1070,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_603641-MLA115786411410_092026-F.webp",
+          "sort_order": 5,
+          "alt_text": "Imagen 6 de 20 de Volkswagen Amarok 2.0 Cd Tdi 4x4 Highline Cuero Hc4",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_939123-MLA115786265996_092026-F.webp",
+          "sort_order": 6,
+          "alt_text": "Imagen 7 de 20 de Volkswagen Amarok 2.0 Cd Tdi 4x4 Highline Cuero Hc4",
+          "width": 1050,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_765553-MLA115786761956_092026-F.webp",
+          "sort_order": 7,
+          "alt_text": "Imagen 8 de 20 de Volkswagen Amarok 2.0 Cd Tdi 4x4 Highline Cuero Hc4",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_808742-MLA115786879718_092026-F.webp",
+          "sort_order": 8,
+          "alt_text": "Imagen 9 de 20 de Volkswagen Amarok 2.0 Cd Tdi 4x4 Highline Cuero Hc4",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_708445-MLA117243446927_092026-F.webp",
+          "sort_order": 9,
+          "alt_text": "Imagen 10 de 20 de Volkswagen Amarok 2.0 Cd Tdi 4x4 Highline Cuero Hc4",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_726418-MLA117242681661_092026-F.webp",
+          "sort_order": 10,
+          "alt_text": "Imagen 11 de 20 de Volkswagen Amarok 2.0 Cd Tdi 4x4 Highline Cuero Hc4",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_838159-MLA115786266032_092026-F.webp",
+          "sort_order": 11,
+          "alt_text": "Imagen 12 de 20 de Volkswagen Amarok 2.0 Cd Tdi 4x4 Highline Cuero Hc4",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_955520-MLA115786237540_092026-F.webp",
+          "sort_order": 12,
+          "alt_text": "Imagen 13 de 20 de Volkswagen Amarok 2.0 Cd Tdi 4x4 Highline Cuero Hc4",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_740499-MLA117242681681_092026-F.webp",
+          "sort_order": 13,
+          "alt_text": "Imagen 14 de 20 de Volkswagen Amarok 2.0 Cd Tdi 4x4 Highline Cuero Hc4",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_977853-MLA115786266056_092026-F.webp",
+          "sort_order": 14,
+          "alt_text": "Imagen 15 de 20 de Volkswagen Amarok 2.0 Cd Tdi 4x4 Highline Cuero Hc4",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_969689-MLA115786411518_092026-F.webp",
+          "sort_order": 15,
+          "alt_text": "Imagen 16 de 20 de Volkswagen Amarok 2.0 Cd Tdi 4x4 Highline Cuero Hc4",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_738868-MLA115786411512_092026-F.webp",
+          "sort_order": 16,
+          "alt_text": "Imagen 17 de 20 de Volkswagen Amarok 2.0 Cd Tdi 4x4 Highline Cuero Hc4",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_658265-MLA115786909798_092026-F.webp",
+          "sort_order": 17,
+          "alt_text": "Imagen 18 de 20 de Volkswagen Amarok 2.0 Cd Tdi 4x4 Highline Cuero Hc4",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_901783-MLA117242681737_092026-F.webp",
+          "sort_order": 18,
+          "alt_text": "Imagen 19 de 20 de Volkswagen Amarok 2.0 Cd Tdi 4x4 Highline Cuero Hc4",
+          "width": 1162,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_850756-MLA117242973223_092026-F.webp",
+          "sort_order": 19,
+          "alt_text": "Imagen 20 de 20 de Volkswagen Amarok 2.0 Cd Tdi 4x4 Highline Cuero Hc4",
+          "width": 1200,
+          "height": 1191
+        }
+      ],
+      "year_conflict": false,
+      "captured_at": "2026-10-18T18:15:08.645559+00:00",
+      "price_valid_until": "2026-10-21"
+    },
+    {
+      "source_id": "MLA3940774268",
+      "source_url": "https://auto.mercadolibre.com.ar/MLA-3940774268-volkswagen-amarok-20-cd-tdi-4x4-highline-pack-at-c34-_JM",
+      "source_seller_id": 117436611,
+      "source_status": "active",
+      "name": "Volkswagen Amarok 2.0 Cd Tdi 4x4 Highline Pack At C34",
+      "brand": "Volkswagen",
+      "model": "Amarok",
+      "version": "2.0 Cd Tdi 4x4 Highline Pack At C34",
+      "model_year": 2014,
+      "mileage_km": 190000,
+      "category": "pickup",
+      "condition": "used",
+      "fuel": "Diésel",
+      "transmission": "Automática",
+      "currency": "ARS",
+      "cash_price": 31900000,
+      "down_payment": 16900000,
+      "list_price": 33500000,
+      "trade_in_price": null,
+      "description_source": "",
+      "attrs": {
+        "Marca": "Volkswagen",
+        "Modelo": "Amarok",
+        "Año": "2014",
+        "Versión": "2.0 Cd Tdi 4x4 Highline Pack At C34",
+        "Color": "Gris",
+        "Kilómetros": "190.000 km",
+        "Tipo de combustible": "Diésel",
+        "Puertas": "4",
+        "Transmisión": "Automática",
+        "Motor": "2.0",
+        "Tipo de carrocería": "Pick-Up",
+        "Piloto automático": "Sí",
+        "Computadora de abordo": "Sí",
+        "Porta vasos": "Sí",
+        "Largo x Altura x Ancho": "5254 mm x 1834 mm x 1944 mm",
+        "Frenos ABS": "Sí",
+        "Airbag para conductor y pasajero": "Sí",
+        "Control de estabilidad": "Sí",
+        "Tracción ASR": "Sí",
+        "Llantas de aleación": "Sí",
+        "Porta equipaje en techo": "Sí",
+        "Control de tracción": "4x4",
+        "Capacidad de personas": "5",
+        "Potencia": "180 hp",
+        "Distancia entre ejes": "3.095 mm",
+        "Capacidad del tanque": "80 L",
+        "Válvulas por cilindro": "4",
+        "Dirección": "Hidráulica",
+        "Tapizado de cuero": "Sí"
+      },
+      "photos": [
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_602259-MLA116057076540_092026-F.webp",
+          "sort_order": 0,
+          "alt_text": "Imagen 1 de 23 de Volkswagen Amarok 2.0 Cd Tdi 4x4 Highline Pack At C34",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_920239-MLA117657087235_092026-F.webp",
+          "sort_order": 1,
+          "alt_text": "Imagen 2 de 23 de Volkswagen Amarok 2.0 Cd Tdi 4x4 Highline Pack At C34",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_797776-MLA117535548915_092026-F.webp",
+          "sort_order": 2,
+          "alt_text": "Imagen 3 de 23 de Volkswagen Amarok 2.0 Cd Tdi 4x4 Highline Pack At C34",
+          "width": 1034,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_698338-MLA116057073658_092026-F.webp",
+          "sort_order": 3,
+          "alt_text": "Imagen 4 de 23 de Volkswagen Amarok 2.0 Cd Tdi 4x4 Highline Pack At C34",
+          "width": 1192,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_626420-MLA117535578643_092026-F.webp",
+          "sort_order": 4,
+          "alt_text": "Imagen 5 de 23 de Volkswagen Amarok 2.0 Cd Tdi 4x4 Highline Pack At C34",
+          "width": 1136,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_760465-MLA116057396466_092026-F.webp",
+          "sort_order": 5,
+          "alt_text": "Imagen 6 de 23 de Volkswagen Amarok 2.0 Cd Tdi 4x4 Highline Pack At C34",
+          "width": 1050,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_886458-MLA117535578665_092026-F.webp",
+          "sort_order": 6,
+          "alt_text": "Imagen 7 de 23 de Volkswagen Amarok 2.0 Cd Tdi 4x4 Highline Pack At C34",
+          "width": 1135,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_740494-MLA116057396482_092026-F.webp",
+          "sort_order": 7,
+          "alt_text": "Imagen 8 de 23 de Volkswagen Amarok 2.0 Cd Tdi 4x4 Highline Pack At C34",
+          "width": 1106,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_790065-MLA116057191222_092026-F.webp",
+          "sort_order": 8,
+          "alt_text": "Imagen 9 de 23 de Volkswagen Amarok 2.0 Cd Tdi 4x4 Highline Pack At C34",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_842568-MLA117535403003_092026-F.webp",
+          "sort_order": 9,
+          "alt_text": "Imagen 10 de 23 de Volkswagen Amarok 2.0 Cd Tdi 4x4 Highline Pack At C34",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_643560-MLA116057544088_092026-F.webp",
+          "sort_order": 10,
+          "alt_text": "Imagen 11 de 23 de Volkswagen Amarok 2.0 Cd Tdi 4x4 Highline Pack At C34",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_861385-MLA116057073770_092026-F.webp",
+          "sort_order": 11,
+          "alt_text": "Imagen 12 de 23 de Volkswagen Amarok 2.0 Cd Tdi 4x4 Highline Pack At C34",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_606644-MLA116057485654_092026-F.webp",
+          "sort_order": 12,
+          "alt_text": "Imagen 13 de 23 de Volkswagen Amarok 2.0 Cd Tdi 4x4 Highline Pack At C34",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_630175-MLA117536222589_092026-F.webp",
+          "sort_order": 13,
+          "alt_text": "Imagen 14 de 23 de Volkswagen Amarok 2.0 Cd Tdi 4x4 Highline Pack At C34",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_709352-MLA117535549071_092026-F.webp",
+          "sort_order": 14,
+          "alt_text": "Imagen 15 de 23 de Volkswagen Amarok 2.0 Cd Tdi 4x4 Highline Pack At C34",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_960955-MLA116057396608_092026-F.webp",
+          "sort_order": 15,
+          "alt_text": "Imagen 16 de 23 de Volkswagen Amarok 2.0 Cd Tdi 4x4 Highline Pack At C34",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_686655-MLA116057777736_092026-F.webp",
+          "sort_order": 16,
+          "alt_text": "Imagen 17 de 23 de Volkswagen Amarok 2.0 Cd Tdi 4x4 Highline Pack At C34",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_673472-MLA117535987087_092026-F.webp",
+          "sort_order": 17,
+          "alt_text": "Imagen 18 de 23 de Volkswagen Amarok 2.0 Cd Tdi 4x4 Highline Pack At C34",
+          "width": 882,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_717850-MLA116057191340_092026-F.webp",
+          "sort_order": 18,
+          "alt_text": "Imagen 19 de 23 de Volkswagen Amarok 2.0 Cd Tdi 4x4 Highline Pack At C34",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_810138-MLA116057191350_092026-F.webp",
+          "sort_order": 19,
+          "alt_text": "Imagen 20 de 23 de Volkswagen Amarok 2.0 Cd Tdi 4x4 Highline Pack At C34",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_629900-MLA117536193659_092026-F.webp",
+          "sort_order": 20,
+          "alt_text": "Imagen 21 de 23 de Volkswagen Amarok 2.0 Cd Tdi 4x4 Highline Pack At C34",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_982807-MLA117535549119_092026-F.webp",
+          "sort_order": 21,
+          "alt_text": "Imagen 22 de 23 de Volkswagen Amarok 2.0 Cd Tdi 4x4 Highline Pack At C34",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_771403-MLA116057073922_092026-F.webp",
+          "sort_order": 22,
+          "alt_text": "Imagen 23 de 23 de Volkswagen Amarok 2.0 Cd Tdi 4x4 Highline Pack At C34",
+          "width": 900,
+          "height": 1200
+        }
+      ],
+      "year_conflict": false,
+      "captured_at": "2026-10-18T18:15:10.738026+00:00",
+      "price_valid_until": "2026-10-21"
+    },
+    {
+      "source_id": "MLA1987510969",
+      "source_url": "https://auto.mercadolibre.com.ar/MLA-1987510969-volkswagen-gol-trend-16-comfortline-101cv-_JM",
+      "source_seller_id": 117436611,
+      "source_status": "active",
+      "name": "Volkswagen Gol Trend 1.6 Comfortline 101cv",
+      "brand": "Volkswagen",
+      "model": "Gol Trend",
+      "version": "1.6 Comfortline 101cv",
+      "model_year": 2017,
+      "mileage_km": 80000,
+      "category": "hatchback",
+      "condition": "used",
+      "fuel": "Nafta",
+      "transmission": "Manual",
+      "currency": "ARS",
+      "cash_price": 16900000,
+      "down_payment": 8500000,
+      "list_price": 17700000,
+      "trade_in_price": null,
+      "description_source": "Espectacular Gol Trend Unico dueño con solo Km80.000, vehiculo super cuidado completamente original,y funcionando perfectamente Versión 1.6 Comfortline, una propuesta compacta pensada para uso urbano y trayectos diarios. Su carrocería hatchback de cinco puertas facilita el acceso y acompaña una conducción ágil en ciudad.Equipa motor nafta 1.6 de 101 hp, con transmisión manual de 5 velocidades y tracción delantera. La dirección hidráulica aporta una maniobra más cómoda en estacionamientos y recorridos de baja velocidad.En seguridad y asistencia suma frenos ABS, airbags para conductor y pasajero, y control de tracción ASR. También incorpora computadora de a bordo, un recurso útil para tener información de manejo de forma rápida y clara.Conserva una configuración conocida por su equilibrio entre tamaño contenido, respuesta mecánica y uso práctico. El color blanco aporta una imagen sobria y fácil de combinar con distintos estilos de conducción.Una opción orientada a quienes valoran un hatchback confiable, con equipamiento útil y mecánica simple de mantener en el día a día.",
+      "attrs": {
+        "Marca": "Volkswagen",
+        "Modelo": "Gol Trend",
+        "Año": "2017",
+        "Versión": "1.6 Comfortline 101cv",
+        "Color": "Blanco",
+        "Kilómetros": "80.000 km",
+        "Tipo de combustible": "Nafta",
+        "Puertas": "5",
+        "Transmisión": "Manual",
+        "Motor": "1.6",
+        "Tipo de carrocería": "Hatchback",
+        "Largo x Altura x Ancho": "3899 mm x 1464 mm x 1656 mm",
+        "Frenos ABS": "Sí",
+        "Airbag para conductor y pasajero": "Sí",
+        "Tracción ASR": "Sí",
+        "Control de tracción": "Delantera",
+        "Capacidad de personas": "5",
+        "Potencia": "101 hp",
+        "Distancia entre ejes": "2.466 mm",
+        "Capacidad del tanque": "55 L",
+        "Válvulas por cilindro": "2",
+        "Computadora de abordo": "Sí",
+        "Dirección": "Hidráulica"
+      },
+      "photos": [
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_820058-MLA116537409465_082026-F.webp",
+          "sort_order": 0,
+          "alt_text": "Imagen 1 de 17 de Volkswagen Gol Trend 1.6 Comfortline 101cv",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_879873-MLA116499684343_082026-F.webp",
+          "sort_order": 1,
+          "alt_text": "Imagen 2 de 17 de Volkswagen Gol Trend 1.6 Comfortline 101cv",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_872910-MLA116128686027_082026-F.webp",
+          "sort_order": 2,
+          "alt_text": "Imagen 3 de 17 de Volkswagen Gol Trend 1.6 Comfortline 101cv",
+          "width": 1062,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_732664-MLA116128300153_082026-F.webp",
+          "sort_order": 3,
+          "alt_text": "Imagen 4 de 17 de Volkswagen Gol Trend 1.6 Comfortline 101cv",
+          "width": 1200,
+          "height": 1199
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_781244-MLA116127232711_082026-F.webp",
+          "sort_order": 4,
+          "alt_text": "Imagen 5 de 17 de Volkswagen Gol Trend 1.6 Comfortline 101cv",
+          "width": 1125,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_626610-MLA116128270321_082026-F.webp",
+          "sort_order": 5,
+          "alt_text": "Imagen 6 de 17 de Volkswagen Gol Trend 1.6 Comfortline 101cv",
+          "width": 1029,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_693607-MLA116128389219_082026-F.webp",
+          "sort_order": 6,
+          "alt_text": "Imagen 7 de 17 de Volkswagen Gol Trend 1.6 Comfortline 101cv",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_957147-MLA114759243664_082026-F.webp",
+          "sort_order": 7,
+          "alt_text": "Imagen 8 de 17 de Volkswagen Gol Trend 1.6 Comfortline 101cv",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_669643-MLA116127469985_082026-F.webp",
+          "sort_order": 8,
+          "alt_text": "Imagen 9 de 17 de Volkswagen Gol Trend 1.6 Comfortline 101cv",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_735860-MLA116128152377_082026-F.webp",
+          "sort_order": 9,
+          "alt_text": "Imagen 10 de 17 de Volkswagen Gol Trend 1.6 Comfortline 101cv",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_816783-MLA116128389249_082026-F.webp",
+          "sort_order": 10,
+          "alt_text": "Imagen 11 de 17 de Volkswagen Gol Trend 1.6 Comfortline 101cv",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_788192-MLA116128152417_082026-F.webp",
+          "sort_order": 11,
+          "alt_text": "Imagen 12 de 17 de Volkswagen Gol Trend 1.6 Comfortline 101cv",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_604454-MLA116128092895_082026-F.webp",
+          "sort_order": 12,
+          "alt_text": "Imagen 13 de 17 de Volkswagen Gol Trend 1.6 Comfortline 101cv",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_663979-MLA116128240267_082026-F.webp",
+          "sort_order": 13,
+          "alt_text": "Imagen 14 de 17 de Volkswagen Gol Trend 1.6 Comfortline 101cv",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_919722-MLA114759243724_082026-F.webp",
+          "sort_order": 14,
+          "alt_text": "Imagen 15 de 17 de Volkswagen Gol Trend 1.6 Comfortline 101cv",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_901906-MLA116128745805_082026-F.webp",
+          "sort_order": 15,
+          "alt_text": "Imagen 16 de 17 de Volkswagen Gol Trend 1.6 Comfortline 101cv",
+          "width": 1200,
+          "height": 1106
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_677351-MLA116128152461_082026-F.webp",
+          "sort_order": 16,
+          "alt_text": "Imagen 17 de 17 de Volkswagen Gol Trend 1.6 Comfortline 101cv",
+          "width": 1144,
+          "height": 1200
+        }
+      ],
+      "year_conflict": false,
+      "captured_at": "2026-10-18T18:15:11.804326+00:00",
+      "price_valid_until": "2026-10-21"
+    }
+  ]
+}
