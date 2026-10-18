@@ -21,8 +21,9 @@ La web está desplegada. Supabase es independiente del proyecto de 3020 Automoto
 - Imágenes optimizadas, metadatos SEO, sitemap e imagen para compartir.
 - Diagnóstico de disponibilidad de base de datos mediante la ruta /api/health.
 - Tests automáticos y auditoría responsive en GitHub Actions.
+- WhatsApp oficial centralizado: +54 9 11 7653-7799 (`https://wa.me/5491176537799`), accesible desde la portada, el pie de página, el catálogo y las fichas con mensajes por unidad.
 
-Actualmente no hay vehículos cargados. Se deben confirmar las direcciones comerciales, el WhatsApp y el logotipo oficial de Flama Autos.
+Actualmente no hay vehículos cargados. El WhatsApp oficial está configurado; todavía se deben confirmar las direcciones comerciales y el logotipo oficial de Flama Autos.
 
 ## Desarrollo local
 
