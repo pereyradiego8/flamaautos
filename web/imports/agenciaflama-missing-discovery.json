@@ -1,9 +1,9 @@
 {
   "seller_id": 117436611,
-  "captured_at": "2026-10-18T20:54:37.436752+00:00",
-  "candidate_count": 90,
+  "captured_at": "2026-10-18T21:04:16.864185+00:00",
+  "candidate_count": 91,
   "already_loaded": 21,
-  "checked": 69,
+  "checked": 70,
   "verified_count": 1,
   "rejected": [
     {
@@ -12,79 +12,74 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
-      "source_id": "MLA1971958495",
-      "source_url": "https://auto.mercadolibre.com.ar/MLA-1971958495-ford-territory-15t-titanium-_JM",
-      "reason": "El aviso no pertenece al vendedor verificado"
-    },
-    {
       "source_id": "MLA2070421481",
       "source_url": "https://auto.mercadolibre.com.ar/MLA-2070421481-chevrolet-prisma-14-lt-98cv-_JM",
-      "reason": "El aviso no pertenece al vendedor verificado"
+      "reason": "La publicación del vendedor oficial no está activa (estado: closed)"
     },
     {
-      "source_id": "MLA2004538347",
-      "source_url": "https://auto.mercadolibre.com.ar/MLA-2004538347-renault-captur-20-intens-manual-_JM",
-      "reason": "El aviso no pertenece al vendedor verificado"
+      "source_id": "MLA1971958495",
+      "source_url": "https://auto.mercadolibre.com.ar/MLA-1971958495-ford-territory-15t-titanium-_JM",
+      "reason": "La publicación del vendedor oficial no está activa (estado: closed)"
     },
     {
       "source_id": "MLA1972577487",
       "source_url": "https://auto.mercadolibre.com.ar/MLA-1972577487-chevrolet-spin-18-lt-5as-105cv-_JM",
-      "reason": "El aviso no pertenece al vendedor verificado"
+      "reason": "La publicación del vendedor oficial no está activa (estado: closed)"
+    },
+    {
+      "source_id": "MLA2004538347",
+      "source_url": "https://auto.mercadolibre.com.ar/MLA-2004538347-renault-captur-20-intens-manual-_JM",
+      "reason": "La publicación del vendedor oficial no está activa (estado: closed)"
     },
     {
       "source_id": "MLA1972494541",
       "source_url": "https://auto.mercadolibre.com.ar/MLA-1972494541-toyota-hilux-pick-up-28-cd-srv-177cv-4x4-_JM",
-      "reason": "El aviso no pertenece al vendedor verificado"
+      "reason": "La publicación del vendedor oficial no está activa (estado: closed)"
     },
     {
       "source_id": "MLA3886939792",
       "source_url": "https://auto.mercadolibre.com.ar/MLA-3886939792-ford-ecosport-15-freestyle-123cv-4x2-_JM",
-      "reason": "El aviso no pertenece al vendedor verificado"
+      "reason": "La publicación del vendedor oficial no está activa (estado: closed)"
     },
     {
       "source_id": "MLA1888321465",
       "source_url": "https://auto.mercadolibre.com.ar/MLA-1888321465-byd-dolphin-mini-00-gs-4as-432kwh-_JM",
-      "reason": "El aviso no pertenece al vendedor verificado"
+      "reason": "La publicación del vendedor oficial no está activa (estado: closed)"
     },
     {
       "source_id": "MLA1987495433",
       "source_url": "https://auto.mercadolibre.com.ar/MLA-1987495433-chevrolet-tracker-18-ltz-awd-at-140cv-_JM",
-      "reason": "El aviso no pertenece al vendedor verificado"
+      "reason": "La publicación del vendedor oficial no está activa (estado: closed)"
     },
     {
       "source_id": "MLA3294159410",
       "source_url": "https://auto.mercadolibre.com.ar/MLA-3294159410-peugeot-208-16-like-pack-_JM",
-      "reason": "El aviso no pertenece al vendedor verificado"
-    },
-    {
-      "source_id": "MLA3808391168",
-      "source_url": "https://auto.mercadolibre.com.ar/MLA-3808391168-peugeot-207-14-quiksilver-75cv-_JM",
-      "reason": "El aviso no pertenece al vendedor verificado"
-    },
-    {
-      "source_id": "MLA3195043602",
-      "source_url": "https://auto.mercadolibre.com.ar/MLA-3195043602-peugeot-2008-16-feline-_JM",
-      "reason": "El aviso no pertenece al vendedor verificado"
+      "reason": "La publicación del vendedor oficial no está activa (estado: closed)"
     },
     {
       "source_id": "MLA3709048924",
       "source_url": "https://auto.mercadolibre.com.ar/MLA-3709048924-peugeot-207-16-feline-106cv-_JM",
-      "reason": "El aviso no pertenece al vendedor verificado"
+      "reason": "La publicación del vendedor oficial no está activa (estado: closed)"
     },
     {
-      "source_id": "MLA3664419436",
-      "source_url": "https://auto.mercadolibre.com.ar/MLA-3664419436-chevrolet-cruze-ii-14-lt-153cv-_JM",
-      "reason": "El aviso no pertenece al vendedor verificado"
+      "source_id": "MLA3808391168",
+      "source_url": "https://auto.mercadolibre.com.ar/MLA-3808391168-peugeot-207-14-quiksilver-75cv-_JM",
+      "reason": "La publicación del vendedor oficial no está activa (estado: closed)"
+    },
+    {
+      "source_id": "MLA3195043602",
+      "source_url": "https://auto.mercadolibre.com.ar/MLA-3195043602-peugeot-2008-16-feline-_JM",
+      "reason": "La publicación del vendedor oficial no está activa (estado: closed)"
     },
     {
       "source_id": "MLA3915248136",
       "source_url": "https://auto.mercadolibre.com.ar/MLA-3915248136-renault-duster-16-ph2-4x2-dynamique-110cv-_JM",
-      "reason": "El aviso no pertenece al vendedor verificado"
+      "reason": "La publicación del vendedor oficial no está activa (estado: closed)"
     },
     {
-      "source_id": "MLA3906247178",
-      "source_url": "https://auto.mercadolibre.com.ar/MLA-3906247178-volkswagen-suran-16-imotion-highline-11d-cuero-_JM",
-      "reason": "El aviso no pertenece al vendedor verificado"
+      "source_id": "MLA3664419436",
+      "source_url": "https://auto.mercadolibre.com.ar/MLA-3664419436-chevrolet-cruze-ii-14-lt-153cv-_JM",
+      "reason": "La publicación del vendedor oficial no está activa (estado: closed)"
     },
     {
       "source_id": "MLA2303132834",
@@ -92,259 +87,269 @@
       "reason": "HTTP Error 404: Not Found"
     },
     {
+      "source_id": "MLA3906247178",
+      "source_url": "https://auto.mercadolibre.com.ar/MLA-3906247178-volkswagen-suran-16-imotion-highline-11d-cuero-_JM",
+      "reason": "La publicación del vendedor oficial no está activa (estado: closed)"
+    },
+    {
       "source_id": "MLA3939927550",
       "source_url": "https://auto.mercadolibre.com.ar/MLA-3939927550-byd-dolphin-mini-00-gs-4as-432kwh-_JM",
-      "reason": "El aviso no pertenece al vendedor verificado"
+      "reason": "La publicación del vendedor oficial no está activa (estado: paused)"
     },
     {
       "source_id": "MLA3906242268",
       "source_url": "https://auto.mercadolibre.com.ar/MLA-3906242268-volkswagen-amarok-20-cd-tdi-140cv-trendline-_JM",
-      "reason": "El aviso no pertenece al vendedor verificado"
+      "reason": "La publicación del vendedor oficial no está activa (estado: closed)"
+    },
+    {
+      "source_id": "MLA3940349218",
+      "source_url": "https://auto.mercadolibre.com.ar/MLA-3940349218-peugeot-208-16l-allure-tiptronic-_JM",
+      "reason": "La publicación del vendedor oficial no está activa (estado: closed)"
     },
     {
       "source_id": "MLA1734685255",
       "source_url": "https://auto.mercadolibre.com.ar/MLA-1734685255-fiat-500l-14-16v-_JM",
-      "reason": "El aviso no pertenece al vendedor verificado"
-    },
-    {
-      "source_id": "MLA2206342497",
-      "source_url": "https://auto.mercadolibre.com.ar/MLA-2206342497-ram-dakota-22td-laramie-4wd-at8-_JM",
-      "reason": "El aviso no pertenece al vendedor verificado"
-    },
-    {
-      "source_id": "MLA2204478651",
-      "source_url": "https://auto.mercadolibre.com.ar/MLA-2204478651-jeep-grand-cherokee-36-limited-286hp-techo-llantas-18-_JM",
-      "reason": "El aviso no pertenece al vendedor verificado"
+      "reason": "La publicación del vendedor oficial no está activa (estado: closed)"
     },
     {
       "source_id": "MLA4091015344",
       "source_url": "https://auto.mercadolibre.com.ar/MLA-4091015344-chevrolet-spin-18-premier-7as-at-105cv-2026-fr-03fia-_JM",
-      "reason": "El aviso no pertenece al vendedor verificado"
+      "reason": "El aviso no pertenece al vendedor verificado (ID de cuenta distinto)"
     },
     {
-      "source_id": "MLA4086053332",
-      "source_url": "https://auto.mercadolibre.com.ar/MLA-4086053332-fiat-fastback-13-t270-at6-dc-_JM",
-      "reason": "El aviso no pertenece al vendedor verificado"
+      "source_id": "MLA2204478651",
+      "source_url": "https://auto.mercadolibre.com.ar/MLA-2204478651-jeep-grand-cherokee-36-limited-286hp-techo-llantas-18-_JM",
+      "reason": "El aviso no pertenece al vendedor verificado (ID de cuenta distinto)"
+    },
+    {
+      "source_id": "MLA2206342497",
+      "source_url": "https://auto.mercadolibre.com.ar/MLA-2206342497-ram-dakota-22td-laramie-4wd-at8-_JM",
+      "reason": "El aviso no pertenece al vendedor verificado (ID de cuenta distinto)"
     },
     {
       "source_id": "MLA2205082043",
       "source_url": "https://auto.mercadolibre.com.ar/MLA-2205082043-chevrolet-captiva-phev-15-phev-premier-2026-fr-03fia-_JM",
-      "reason": "El aviso no pertenece al vendedor verificado"
+      "reason": "El aviso no pertenece al vendedor verificado (ID de cuenta distinto)"
+    },
+    {
+      "source_id": "MLA4086053332",
+      "source_url": "https://auto.mercadolibre.com.ar/MLA-4086053332-fiat-fastback-13-t270-at6-dc-_JM",
+      "reason": "El aviso no pertenece al vendedor verificado (ID de cuenta distinto)"
     },
     {
       "source_id": "MLA2205075675",
       "source_url": "https://auto.mercadolibre.com.ar/MLA-2205075675-baic-bj30-15t-bj30-4wd-hybrid-_JM",
-      "reason": "El aviso no pertenece al vendedor verificado"
-    },
-    {
-      "source_id": "MLA1987199279",
-      "source_url": "https://auto.mercadolibre.com.ar/MLA-1987199279-land-rover-defender-hse-x-dynamic-phev-2026-0km-ditecar-_JM",
-      "reason": "El aviso no pertenece al vendedor verificado"
-    },
-    {
-      "source_id": "MLA2205070159",
-      "source_url": "https://auto.mercadolibre.com.ar/MLA-2205070159-chevrolet-tracker-12-turbo-ltz-at-2025-fr-03fia-_JM",
-      "reason": "El aviso no pertenece al vendedor verificado"
+      "reason": "El aviso no pertenece al vendedor verificado (ID de cuenta distinto)"
     },
     {
       "source_id": "MLA3784677394",
       "source_url": "https://auto.mercadolibre.com.ar/MLA-3784677394-land-rover-defender-20-110-p400e-hse-x-dynamic-2026-ditecar-_JM",
-      "reason": "El aviso no pertenece al vendedor verificado"
+      "reason": "El aviso no pertenece al vendedor verificado (ID de cuenta distinto)"
     },
     {
-      "source_id": "MLA3964011534",
-      "source_url": "https://auto.mercadolibre.com.ar/MLA-3964011534-land-rover-defender-octa-0km-ditecar-_JM",
-      "reason": "El aviso no pertenece al vendedor verificado"
-    },
-    {
-      "source_id": "MLA4091456250",
-      "source_url": "https://auto.mercadolibre.com.ar/MLA-4091456250-peugeot-207-14-allure-75cv-_JM",
-      "reason": "El aviso no pertenece al vendedor verificado"
+      "source_id": "MLA1987199279",
+      "source_url": "https://auto.mercadolibre.com.ar/MLA-1987199279-land-rover-defender-hse-x-dynamic-phev-2026-0km-ditecar-_JM",
+      "reason": "El aviso no pertenece al vendedor verificado (ID de cuenta distinto)"
     },
     {
       "source_id": "MLA3271518738",
       "source_url": "https://auto.mercadolibre.com.ar/MLA-3271518738-land-rover-defender-90-v8-_JM",
-      "reason": "El aviso no pertenece al vendedor verificado"
+      "reason": "El aviso no pertenece al vendedor verificado (ID de cuenta distinto)"
+    },
+    {
+      "source_id": "MLA2205070159",
+      "source_url": "https://auto.mercadolibre.com.ar/MLA-2205070159-chevrolet-tracker-12-turbo-ltz-at-2025-fr-03fia-_JM",
+      "reason": "El aviso no pertenece al vendedor verificado (ID de cuenta distinto)"
+    },
+    {
+      "source_id": "MLA3964011534",
+      "source_url": "https://auto.mercadolibre.com.ar/MLA-3964011534-land-rover-defender-octa-0km-ditecar-_JM",
+      "reason": "El aviso no pertenece al vendedor verificado (ID de cuenta distinto)"
+    },
+    {
+      "source_id": "MLA4091456250",
+      "source_url": "https://auto.mercadolibre.com.ar/MLA-4091456250-peugeot-207-14-allure-75cv-_JM",
+      "reason": "El aviso no pertenece al vendedor verificado (ID de cuenta distinto)"
     },
     {
       "source_id": "MLA4085241470",
       "source_url": "https://auto.mercadolibre.com.ar/MLA-4085241470-volkswagen-tera-16-msi-trend-mt-_JM",
-      "reason": "El aviso no pertenece al vendedor verificado"
-    },
-    {
-      "source_id": "MLA2205092803",
-      "source_url": "https://auto.mercadolibre.com.ar/MLA-2205092803-volkswagen-amarok-30-cd-tdi-258cv-v6-highline-4x4-at-_JM",
-      "reason": "El aviso no pertenece al vendedor verificado"
+      "reason": "El aviso no pertenece al vendedor verificado (ID de cuenta distinto)"
     },
     {
       "source_id": "MLA2204682593",
       "source_url": "https://auto.mercadolibre.com.ar/MLA-2204682593-volkswagen-amarok-20-cd-tdi-180cv-highline-at-_JM",
-      "reason": "El aviso no pertenece al vendedor verificado"
+      "reason": "El aviso no pertenece al vendedor verificado (ID de cuenta distinto)"
+    },
+    {
+      "source_id": "MLA2205092803",
+      "source_url": "https://auto.mercadolibre.com.ar/MLA-2205092803-volkswagen-amarok-30-cd-tdi-258cv-v6-highline-4x4-at-_JM",
+      "reason": "El aviso no pertenece al vendedor verificado (ID de cuenta distinto)"
     },
     {
       "source_id": "MLA4066491900",
       "source_url": "https://auto.mercadolibre.com.ar/MLA-4066491900-volkswagen-tera-2026-trend-msi-mt-03mde-_JM",
-      "reason": "El aviso no pertenece al vendedor verificado"
+      "reason": "El aviso no pertenece al vendedor verificado (ID de cuenta distinto)"
     },
     {
       "source_id": "MLA2200198349",
       "source_url": "https://auto.mercadolibre.com.ar/MLA-2200198349-chevrolet-onix-10-turbo-premier-at-_JM",
-      "reason": "El aviso no pertenece al vendedor verificado"
+      "reason": "El aviso no pertenece al vendedor verificado (ID de cuenta distinto)"
     },
     {
       "source_id": "MLA4090958848",
       "source_url": "https://auto.mercadolibre.com.ar/MLA-4090958848-arcfox-t1-pro-423-kwh-bev-mm-_JM",
-      "reason": "El aviso no pertenece al vendedor verificado"
-    },
-    {
-      "source_id": "MLA2204665327",
-      "source_url": "https://auto.mercadolibre.com.ar/MLA-2204665327-hyundai-new-creta-safety--_JM",
-      "reason": "El aviso no pertenece al vendedor verificado"
+      "reason": "El aviso no pertenece al vendedor verificado (ID de cuenta distinto)"
     },
     {
       "source_id": "MLA4089729224",
       "source_url": "https://auto.mercadolibre.com.ar/MLA-4089729224-ford-ranger-20-cd-4x4-limited-at-210cv-_JM",
-      "reason": "El aviso no pertenece al vendedor verificado"
+      "reason": "El aviso no pertenece al vendedor verificado (ID de cuenta distinto)"
+    },
+    {
+      "source_id": "MLA2204665327",
+      "source_url": "https://auto.mercadolibre.com.ar/MLA-2204665327-hyundai-new-creta-safety--_JM",
+      "reason": "El aviso no pertenece al vendedor verificado (ID de cuenta distinto)"
     },
     {
       "source_id": "MLA2196240193",
       "source_url": "https://auto.mercadolibre.com.ar/MLA-2196240193-nissan-kait-16-advance-cvt-_JM",
-      "reason": "El aviso no pertenece al vendedor verificado"
+      "reason": "El aviso no pertenece al vendedor verificado (ID de cuenta distinto)"
     },
     {
       "source_id": "MLA4086050468",
       "source_url": "https://auto.mercadolibre.com.ar/MLA-4086050468-fiat-titano-22-multijet-endurance-rwd-mt-_JM",
-      "reason": "El aviso no pertenece al vendedor verificado"
-    },
-    {
-      "source_id": "MLA4086392312",
-      "source_url": "https://auto.mercadolibre.com.ar/MLA-4086392312-citron-c3-16-16v-vti-115-xtr-at-_JM",
-      "reason": "El aviso no pertenece al vendedor verificado"
+      "reason": "El aviso no pertenece al vendedor verificado (ID de cuenta distinto)"
     },
     {
       "source_id": "MLA1544283253",
       "source_url": "https://auto.mercadolibre.com.ar/MLA-1544283253-peugeot-3008-16-gt-tiptronic-l25-_JM",
-      "reason": "El aviso no pertenece al vendedor verificado"
+      "reason": "El aviso no pertenece al vendedor verificado (ID de cuenta distinto)"
+    },
+    {
+      "source_id": "MLA4086392312",
+      "source_url": "https://auto.mercadolibre.com.ar/MLA-4086392312-citron-c3-16-16v-vti-115-xtr-at-_JM",
+      "reason": "El aviso no pertenece al vendedor verificado (ID de cuenta distinto)"
     },
     {
       "source_id": "MLA4089724298",
       "source_url": "https://auto.mercadolibre.com.ar/MLA-4089724298-mg3-luxury-0km-2026-hybrido-autos-chinos-confort-suv-208-_JM",
-      "reason": "El aviso no pertenece al vendedor verificado"
-    },
-    {
-      "source_id": "MLA2204666499",
-      "source_url": "https://auto.mercadolibre.com.ar/MLA-2204666499-hyundai-hb20-16-comfort-plus-mt-_JM",
-      "reason": "El aviso no pertenece al vendedor verificado"
-    },
-    {
-      "source_id": "MLA3184129470",
-      "source_url": "https://auto.mercadolibre.com.ar/MLA-3184129470-peugeot-3008-16-thp-gt-180cv-at-venta-directa-especial-sh-_JM",
-      "reason": "El aviso no pertenece al vendedor verificado"
+      "reason": "El aviso no pertenece al vendedor verificado (ID de cuenta distinto)"
     },
     {
       "source_id": "MLA4087256776",
       "source_url": "https://auto.mercadolibre.com.ar/MLA-4087256776-chevrolet-captuva-phev-premier-hibrida-enchufable-n-02ava-_JM",
-      "reason": "El aviso no pertenece al vendedor verificado"
+      "reason": "El aviso no pertenece al vendedor verificado (ID de cuenta distinto)"
+    },
+    {
+      "source_id": "MLA2204666499",
+      "source_url": "https://auto.mercadolibre.com.ar/MLA-2204666499-hyundai-hb20-16-comfort-plus-mt-_JM",
+      "reason": "El aviso no pertenece al vendedor verificado (ID de cuenta distinto)"
+    },
+    {
+      "source_id": "MLA3184129470",
+      "source_url": "https://auto.mercadolibre.com.ar/MLA-3184129470-peugeot-3008-16-thp-gt-180cv-at-venta-directa-especial-sh-_JM",
+      "reason": "El aviso no pertenece al vendedor verificado (ID de cuenta distinto)"
     },
     {
       "source_id": "MLA2198814319",
       "source_url": "https://auto.mercadolibre.com.ar/MLA-2198814319-peugeot-2008-10t-gt-_JM",
-      "reason": "El aviso no pertenece al vendedor verificado"
+      "reason": "El aviso no pertenece al vendedor verificado (ID de cuenta distinto)"
     },
     {
       "source_id": "MLA4086908752",
       "source_url": "https://auto.mercadolibre.com.ar/MLA-4086908752-jeep-avenger-longitude-t200-0km-_JM",
-      "reason": "El aviso no pertenece al vendedor verificado"
+      "reason": "El aviso no pertenece al vendedor verificado (ID de cuenta distinto)"
     },
     {
       "source_id": "MLA2196444805",
       "source_url": "https://auto.mercadolibre.com.ar/MLA-2196444805-peugeot-boxer-22-hdi-l3h2-140-_JM",
-      "reason": "El aviso no pertenece al vendedor verificado"
+      "reason": "El aviso no pertenece al vendedor verificado (ID de cuenta distinto)"
     },
     {
       "source_id": "MLA2201135003",
       "source_url": "https://auto.mercadolibre.com.ar/MLA-2201135003-fiat-cronos-entrega-inmediata-p-uber-didi-cabify-taxi-jv6-_JM",
-      "reason": "El aviso no pertenece al vendedor verificado"
+      "reason": "El aviso no pertenece al vendedor verificado (ID de cuenta distinto)"
     },
     {
       "source_id": "MLA2205673195",
       "source_url": "https://auto.mercadolibre.com.ar/MLA-2205673195-peugeot-208-15-active-_JM",
-      "reason": "El aviso no pertenece al vendedor verificado"
-    },
-    {
-      "source_id": "MLA2186454547",
-      "source_url": "https://auto.mercadolibre.com.ar/MLA-2186454547-fiat-strada-13-freedom-cd-rae-_JM",
-      "reason": "El aviso no pertenece al vendedor verificado"
+      "reason": "El aviso no pertenece al vendedor verificado (ID de cuenta distinto)"
     },
     {
       "source_id": "MLA4087696030",
       "source_url": "https://auto.mercadolibre.com.ar/MLA-4087696030-fiat-600-hibrido-12-entrega-inmediata-credito-cuota-fija-mg-_JM",
-      "reason": "El aviso no pertenece al vendedor verificado"
+      "reason": "El aviso no pertenece al vendedor verificado (ID de cuenta distinto)"
     },
     {
       "source_id": "MLA2205151787",
       "source_url": "https://auto.mercadolibre.com.ar/MLA-2205151787-jeep-commander-13-t270-limited-4x2-at6-_JM",
-      "reason": "El aviso no pertenece al vendedor verificado"
+      "reason": "El aviso no pertenece al vendedor verificado (ID de cuenta distinto)"
     },
     {
-      "source_id": "MLA2144248895",
-      "source_url": "https://auto.mercadolibre.com.ar/MLA-2144248895-peugeot-3008-gt-16-180cv-_JM",
-      "reason": "El aviso no pertenece al vendedor verificado"
+      "source_id": "MLA2186454547",
+      "source_url": "https://auto.mercadolibre.com.ar/MLA-2186454547-fiat-strada-13-freedom-cd-rae-_JM",
+      "reason": "El aviso no pertenece al vendedor verificado (ID de cuenta distinto)"
     },
     {
       "source_id": "MLA1780320083",
       "source_url": "https://auto.mercadolibre.com.ar/MLA-1780320083-peugeot-3008-16-gt-pack-165cv-_JM",
-      "reason": "El aviso no pertenece al vendedor verificado"
+      "reason": "El aviso no pertenece al vendedor verificado (ID de cuenta distinto)"
     },
     {
       "source_id": "MLA3964382362",
       "source_url": "https://auto.mercadolibre.com.ar/MLA-3964382362-peugeot-3008-16-gt-pack-165cv-_JM",
-      "reason": "El aviso no pertenece al vendedor verificado"
+      "reason": "El aviso no pertenece al vendedor verificado (ID de cuenta distinto)"
+    },
+    {
+      "source_id": "MLA2144248895",
+      "source_url": "https://auto.mercadolibre.com.ar/MLA-2144248895-peugeot-3008-gt-16-180cv-_JM",
+      "reason": "El aviso no pertenece al vendedor verificado (ID de cuenta distinto)"
     },
     {
       "source_id": "MLA2001771037",
       "source_url": "https://auto.mercadolibre.com.ar/MLA-2001771037-peugeot-3008-16-gt-pack-165cv-_JM",
-      "reason": "El aviso no pertenece al vendedor verificado"
-    },
-    {
-      "source_id": "MLA2002537879",
-      "source_url": "https://auto.mercadolibre.com.ar/MLA-2002537879-ds-ds7-16-pallas-215-at8-_JM",
-      "reason": "El aviso no pertenece al vendedor verificado"
-    },
-    {
-      "source_id": "MLA3518869288",
-      "source_url": "https://auto.mercadolibre.com.ar/MLA-3518869288-bmw-m4-competition-m-2024-0km-_JM",
-      "reason": "El aviso no pertenece al vendedor verificado"
+      "reason": "El aviso no pertenece al vendedor verificado (ID de cuenta distinto)"
     },
     {
       "source_id": "MLA4086375294",
       "source_url": "https://auto.mercadolibre.com.ar/MLA-4086375294-audi-q8-30-55-tfsi-quattro-_JM",
-      "reason": "El aviso no pertenece al vendedor verificado"
+      "reason": "El aviso no pertenece al vendedor verificado (ID de cuenta distinto)"
+    },
+    {
+      "source_id": "MLA3518869288",
+      "source_url": "https://auto.mercadolibre.com.ar/MLA-3518869288-bmw-m4-competition-m-2024-0km-_JM",
+      "reason": "El aviso no pertenece al vendedor verificado (ID de cuenta distinto)"
+    },
+    {
+      "source_id": "MLA2002537879",
+      "source_url": "https://auto.mercadolibre.com.ar/MLA-2002537879-ds-ds7-16-pallas-215-at8-_JM",
+      "reason": "El aviso no pertenece al vendedor verificado (ID de cuenta distinto)"
     },
     {
       "source_id": "MLA4087314408",
       "source_url": "https://auto.mercadolibre.com.ar/MLA-4087314408-fiat-cronos-0km-financia-no-contado-tomo-usado-con-dni-st6-_JM",
-      "reason": "El aviso no pertenece al vendedor verificado"
-    },
-    {
-      "source_id": "MLA4074140954",
-      "source_url": "https://auto.mercadolibre.com.ar/MLA-4074140954-fiat-cronos-13-gse-drive-plus-_JM",
-      "reason": "El aviso no pertenece al vendedor verificado"
+      "reason": "El aviso no pertenece al vendedor verificado (ID de cuenta distinto)"
     },
     {
       "source_id": "MLA4092008182",
       "source_url": "https://auto.mercadolibre.com.ar/MLA-4092008182-toyota-hilux-pick-up-30-cd-srv-cuero-171cv-4x4-5at-_JM",
-      "reason": "El aviso no pertenece al vendedor verificado"
+      "reason": "El aviso no pertenece al vendedor verificado (ID de cuenta distinto)"
+    },
+    {
+      "source_id": "MLA4074140954",
+      "source_url": "https://auto.mercadolibre.com.ar/MLA-4074140954-fiat-cronos-13-gse-drive-plus-_JM",
+      "reason": "El aviso no pertenece al vendedor verificado (ID de cuenta distinto)"
     },
     {
       "source_id": "MLA2090255365",
       "source_url": "https://auto.mercadolibre.com.ar/MLA-2090255365-dfsk-c31-minitruck-_JM",
-      "reason": "El aviso no pertenece al vendedor verificado"
+      "reason": "El aviso no pertenece al vendedor verificado (ID de cuenta distinto)"
     },
     {
       "source_id": "MLA3573151928",
       "source_url": "https://auto.mercadolibre.com.ar/MLA-3573151928-jacx200-20-mt-cs-luxury-_JM",
-      "reason": "El aviso no pertenece al vendedor verificado"
+      "reason": "El aviso no pertenece al vendedor verificado (ID de cuenta distinto)"
     }
   ]
 }
