@@ -8,7 +8,7 @@ Repositorio: https://github.com/pereyradiego8/flamaautos
 
 Next.js 15, React 19, Supabase y Vercel. Node.js 24 en Vercel y GitHub Actions.
 
-## Estado al 17 de octubre de 2026
+## Estado al 18 de octubre de 2026
 
 La web está desplegada. Supabase es independiente del proyecto de 3020 Automotores.
 
@@ -23,7 +23,7 @@ La web está desplegada. Supabase es independiente del proyecto de 3020 Automoto
 - Tests automáticos y auditoría responsive en GitHub Actions.
 - WhatsApp oficial centralizado: +54 9 11 7653-7799 (`https://wa.me/5491176537799`), accesible desde la portada, el pie de página, el catálogo y las fichas con mensajes por unidad.
 
-Actualmente no hay vehículos cargados. El WhatsApp oficial está configurado; todavía se deben confirmar las direcciones comerciales y el logotipo oficial de Flama Autos.
+El catálogo incorpora **21 vehículos extraídos de publicaciones verificadas de Agenciaflama**, de los que 19 están publicados y 2 quedan en borrador para revisión, con 447 fotografías enlazadas a las galerías originales. Los importes de contado, anticipo y lista son campos separados; no se inventa precio de permuta. Ver [detalle de la importación](web/imports/README.md). La extracción es una captura puntual, sin sincronización automática. El WhatsApp oficial está configurado; todavía se deben confirmar las direcciones comerciales y el logotipo oficial de Flama Autos.
 
 ## Desarrollo local
 
@@ -47,12 +47,12 @@ npm run build
 
 ## Migraciones
 
-Los archivos de supabase/migrations están destinados exclusivamente a la base Flama Autos. Incluyen el esquema inicial, endurecimiento de permisos, autorización inicial ya consumida, optimización RLS y ordenación segura de fotografías.
+Los archivos de supabase/migrations están destinados exclusivamente a la base Flama Autos. Incluyen el esquema inicial, endurecimiento de permisos, autorización inicial ya consumida, optimización RLS, ordenación segura de fotografías y las migraciones de la importación trazable del inventario de Agenciaflama.
 
 ## Antes de usar como sitio comercial definitivo
 
 - Confirmar direcciones, horarios, logo y medios de contacto.
-- Cargar unidades reales con fotos y precios comprobados.
+- Revisar periódicamente los precios, las disponibilidades y las fotos de las unidades importadas desde Mercado Libre (captura del 18/10/2026).
 - Probar alta y edición de unidades, carga de imágenes e invitación de nuevo personal desde una sesión autorizada.
 - Confirmar en Supabase Auth las URL de retorno hacia el sitio en Vercel.
 - Recordar que el bucket de fotografías es público: no subir documentos o fotos confidenciales.
