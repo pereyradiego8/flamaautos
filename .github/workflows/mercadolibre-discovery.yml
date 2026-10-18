@@ -23,7 +23,11 @@ jobs:
            ['store','https://www.mercadolibre.com.ar/pagina/agenciaflama'],
            ['listing','https://listado.mercadolibre.com.ar/pagina/agenciaflama/'],
            ['nickname-search','https://api.mercadolibre.com/sites/MLA/search?nickname=AGENCIAFLAMA&limit=3'],
-           ['user-public','https://api.mercadolibre.com/users/AGENCIAFLAMA'],
+           ['user-public','https://api.mercadolibre.com/users/117436611'],
+           ['seller-items','https://api.mercadolibre.com/users/117436611/items/search?limit=50'],
+           ['storefront-cars','https://listado.mercadolibre.com.ar/pagina/agenciaflama/autos/'],
+           ['search-seller','https://autos.mercadolibre.com.ar/_SellerId_117436611'],
+           ['search-regular','https://api.mercadolibre.com/sites/MLA/search?seller_id=117436611&limit=3'],
           ];
           for (const [label,url] of targets){
             try{
