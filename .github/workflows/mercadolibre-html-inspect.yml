@@ -1,0 +1,49 @@
+name: Explorar estructura de publicaciones de Mercado Libre
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/mercadolibre-html-inspect.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    steps:
+      - uses: actions/checkout@v4
+      - name: Ver estructura pública de fichas y tienda
+        run: |
+          python - <<'PY'
+          import urllib.request,re,html,json
+          from html.parser import HTMLParser
+          class Tags(HTMLParser):
+            def __init__(self):
+              super().__init__();self.metatags=[];self.links=[];self.scripts=[];self.scriptopen=False;self.current={}
+            def handle_starttag(self,tag,attrs):
+              a=dict(attrs)
+              if tag=='meta' and ('og:' in str(a) or 'description' in str(a)):self.metatags.append(a)
+              if tag=='a' and ('producto' in str(a) or '/MLA' in str(a) or 'search' in str(a)):self.links.append(a)
+              if tag=='script' and a.get('type')=='application/ld+json':self.scriptopen=True;self.current={'attrs':a,'data':''}
+            def handle_data(self,data):
+              if self.scriptopen:self.current['data']+=data
+            def handle_endtag(self,tag):
+              if tag=='script' and self.scriptopen:self.scripts.append(self.current);self.scriptopen=False
+          for url in [
+            'https://www.mercadolibre.com.ar/pagina/agenciaflama',
+            'https://auto.mercadolibre.com.ar/MLA-3906243858-volkswagen-suran-16-comfortline-101cv-_JM',
+          ]:
+            req=urllib.request.Request(url,headers={'User-Agent':'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/131.0 Safari/537.36','Accept-Language':'es-AR,es;q=0.9'})
+            with urllib.request.urlopen(req,timeout=18) as res: s=res.read().decode('utf8','replace')
+            tag=Tags();tag.feed(s)
+            print('URL',url,'LENGTH',len(s),'META',len(tag.metatags),'LINKS',len(tag.links),'JSONLD',len(tag.scripts))
+            print('META_SAMPLES',json.dumps(tag.metatags[:12],ensure_ascii=False)[:6000])
+            print('LD_SAMPLES',json.dumps(tag.scripts,ensure_ascii=False)[:11000])
+            print('LINK_SAMPLES',json.dumps(tag.links[:30],ensure_ascii=False)[:9000])
+            urls=list(dict.fromkeys(re.findall(r'https?:(?:\\/\\/|//)[^"<>\\\s]{15,350}(?:webp|jpg|jpeg|png)',s)))
+            print('PHOTO_URLS',json.dumps(urls[:25],ensure_ascii=False)[:8000])
+            for needle in ['Ver productos','"seller_id"','"sellerId"','"seller":{"id"','"pictures"','"images"','"variations"','"seller_id":','"seller_id"', 'sellerSearchUrl']:
+              pos=s.lower().find(needle.lower())
+              print('NEEDLE',needle,pos,repr(s[max(0,pos-180):pos+500])[:900] if pos>=0 else '')
+          PY
