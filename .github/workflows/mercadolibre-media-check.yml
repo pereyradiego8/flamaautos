@@ -22,7 +22,7 @@ jobs:
             for photo in samples:
               url=photo['url']
               try:
-                req=urllib.request.Request(url,method='HEAD',headers={'User-Agent':'Mozilla/5.0'})
+                req=urllib.request.Request(url,method='GET',headers={'User-Agent':'Mozilla/5.0','Range':'bytes=0-2047'})
                 with urllib.request.urlopen(req,timeout=15) as r:
                   ok=r.status==200 and r.headers.get('Content-Type','').startswith('image/')
                   print('IMAGE',item['source_id'],photo['sort_order'],r.status,r.headers.get('Content-Type'),r.headers.get('Content-Length'), 'OK' if ok else 'INVALID')
