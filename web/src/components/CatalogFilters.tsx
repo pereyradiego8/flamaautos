@@ -3,6 +3,7 @@ import { useMemo,useState } from 'react';
 import VehicleCard from './VehicleCard';
 import {CATEGORIES,comparePrices} from '@/lib/catalog';
 import type {Vehicle,Branch} from '@/lib/types';
+import {generalWhatsAppUrl} from '@/lib/whatsapp';
 export default function CatalogFilters({vehicles,branches,rate,updatedAt,initialCategory=''}:{vehicles:Vehicle[];branches:Branch[];rate:number|null;updatedAt:string|null;initialCategory?:string}) {
   const [search,setSearch] = useState('');
   const [category,setCategory] = useState(initialCategory);
@@ -32,6 +33,6 @@ export default function CatalogFilters({vehicles,branches,rate,updatedAt,initial
     </div>
     {priceSort && (rate ? <p className="sort-note">Ordenamiento por equivalente en ARS. Dólar blue venta: ARS {rate.toLocaleString('es-AR')} · {updatedAt ? new Date(updatedAt).toLocaleString('es-AR') : 'actualización disponible'}. Los precios originales se mantienen en su moneda.</p> : <p className="sort-note warning">No se pudo verificar una cotización reciente del dólar blue. Los vehículos en USD quedarán después de los que tienen precio en ARS; el orden mixto no es comparable.</p>)}
     <p className="results" aria-live="polite">{filtered.length} {filtered.length === 1 ? 'vehículo' : 'vehículos'}</p>
-    {filtered.length ? <div className="vehicle-grid">{filtered.map(v=><VehicleCard key={v.id} vehicle={v}/>)}</div> : <div className="empty"><h2>No encontramos vehículos para estos filtros.</h2><p>Probá otra categoría o consultá el inventario por nuestros canales oficiales.</p><a className="btn" href="https://linktr.ee/flamaautos" target="_blank" rel="noopener noreferrer">Consultar disponibilidad ↗</a></div>}
+    {filtered.length ? <div className="vehicle-grid">{filtered.map(v=><VehicleCard key={v.id} vehicle={v}/>)}</div> : <div className="empty"><h2>No encontramos vehículos para estos filtros.</h2><p>Probá otra categoría o consultá el inventario por nuestros canales oficiales.</p><a className="btn" href={generalWhatsAppUrl()} target="_blank" rel="noopener noreferrer">Consultar disponibilidad por WhatsApp ↗</a></div>}
   </>;
 }
