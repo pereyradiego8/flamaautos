@@ -350,3 +350,8 @@ input,select,textarea{min-width:0;padding:10px 11px;font-size:14px}
 @media(max-width:760px){
  .extra-specs .details-list{grid-template-columns:1fr}
 }
+
+/* Valores comerciales de Mercado Libre diferenciados claramente. */
+.card-commercial-values{display:flex;flex-direction:column;gap:4px;font-size:11px;color:#c1cbd0;overflow-wrap:anywhere}
+.card-commercial-values span{display:block}
+.card-commercial-values b{color:#f8f9fa;font-weight:700}
