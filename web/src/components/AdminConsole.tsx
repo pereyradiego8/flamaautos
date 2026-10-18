@@ -153,9 +153,18 @@ export default function AdminConsole(){
   }
   setWorking(false);setMessage('Vehículo guardado correctamente.');setFormOpen(false);await refresh();
  }
+ async function resolveImportReview(v:Vehicle){
+  if(!client||role!=='admin'||working||!v.source_review_note)return;
+  if(!window.confirm('¿Revisaste y corregiste los datos de esta publicación? La advertencia se quitará; para publicar tendrás que elegir el estado Publicado.'))return;
+  setWorking(true);setError('');setMessage('');
+  const {error:err}=await client.from('vehicles').update({source_review_note:null}).eq('id',v.id);
+  if(err)setError('No se pudo confirmar la revisión. Intentalo nuevamente.');
+  else{setMessage('Observación resuelta. Confirmá los datos antes de publicar.');await refresh();}
+  setWorking(false);
+ }
  async function changeStatus(id:string,status:VehicleStatus){if(!client||!role||working)return;setWorking(true);setError('');setMessage('');
   const {error:err}=await client.from('vehicles').update({status}).eq('id',id).select('id').single();
-  if(err)setError('No se pudo actualizar el estado. Revisá que tenga año y precio si intentás publicarlo.');
+  if(err)setError('No se pudo actualizar el estado. Si intentás publicar, verificá año, precio y que no haya revisiones pendientes.');
   else {setVehicles(old=>old.map(v=>v.id===id?{...v,status}:v));setMessage('Estado actualizado.');}
   setWorking(false);
  }
@@ -276,6 +285,10 @@ export default function AdminConsole(){
     <div className="actions"><button className="btn" disabled={working} type="submit">{working?'Guardando…':'Guardar vehículo'}</button><button className="small-button" type="button" onClick={()=>setFormOpen(false)}>Cancelar</button></div>
    </form>}
    {vehicles.length>0&&<div className="admin-searchbar"><label>Buscar unidades<input type="search" value={adminSearch} onChange={e=>setAdminSearch(e.target.value)} placeholder="Marca, modelo, año o versión"/></label><label>Estado<select value={adminStatus} onChange={e=>setAdminStatus(e.target.value)}><option value="all">Todos</option>{statuses.map(s=><option value={s.value} key={s.value}>{s.label}</option>)}</select></label><span className="fine" aria-live="polite">Mostrando {shownVehicles.length} de {vehicles.length}</span></div>}
-   <div className="admin-list">{vehicles.length===0&&<div className="empty">Todavía no hay vehículos cargados. Empezá por “Agregar vehículo”.</div>}{vehicles.length>0&&shownVehicles.length===0&&<div className="empty">No hay vehículos que coincidan con los filtros.</div>}{shownVehicles.map(v=><article className="admin-row" key={v.id}><div><strong>{v.brand} {v.model} {v.model_year??''}</strong><p>{v.version??''} · {formatPrice(v.cash_price,v.currency)} · {v.branches?.name??'Sin sucursal'}</p></div><div className="admin-controls"><label>Estado<select aria-label={`Estado de ${v.brand} ${v.model}`} disabled={working} value={v.status} onChange={e=>void changeStatus(v.id,e.target.value as VehicleStatus)}>{statuses.map(s=><option value={s.value} key={s.value}>{s.label}</option>)}</select></label><button type="button" className="small-button" onClick={()=>startEdit(v)}>Editar</button><button type="button" className="small-button" onClick={()=>startDuplicate(v)}>Duplicar</button></div></article>)}</div>
+   <div className="admin-list">{vehicles.length===0&&<div className="empty">Todavía no hay vehículos cargados. Empezá por “Agregar vehículo”.</div>}{vehicles.length>0&&shownVehicles.length===0&&<div className="empty">No hay vehículos que coincidan con los filtros.</div>}{shownVehicles.map(v=><article className="admin-row" key={v.id}><div><strong>{v.brand} {v.model} {v.model_year??''}</strong><p>{v.version??''} · {formatPrice(v.cash_price,v.currency)} · {v.branches?.name??'Sin sucursal'}</p>
+ {v.list_price!=null&&<p>Lista: {formatPrice(v.list_price,v.currency)}</p>}
+ {v.source_review_note&&<p className="import-review-alert" role="note"><strong>Revisar importación:</strong> {v.source_review_note}</p>}
+ {v.source_url&&<a className="admin-source-link" href={v.source_url} target="_blank" rel="noopener noreferrer">Ver publicación original ↗</a>}
+ </div><div className="admin-controls"><label>Estado<select aria-label={`Estado de ${v.brand} ${v.model}`} disabled={working} value={v.status} onChange={e=>void changeStatus(v.id,e.target.value as VehicleStatus)}>{statuses.map(s=><option value={s.value} key={s.value}>{s.label}</option>)}</select></label><button type="button" className="small-button" onClick={()=>startEdit(v)}>Editar</button>{v.source_review_note&&role==='admin'&&<button type="button" disabled={working} className="small-button" onClick={()=>void resolveImportReview(v)}>Revisión resuelta</button>}<button type="button" className="small-button" onClick={()=>startDuplicate(v)}>Duplicar</button></div></article>)}</div>
   </div>;
 }
