@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import {useCallback,useRef,useState} from 'react';
+import {useCallback,useEffect,useRef,useState} from 'react';
 import type {KeyboardEvent,TouchEvent} from 'react';
 
 export type GalleryPhoto = {
@@ -29,27 +29,22 @@ export default function VehicleGallery({photos,vehicleName}:Props){
   const showPhoto=useCallback((index:number)=>{
     if(count<2)return;
     setCurrentIndex((index+count)%count);
-    // Desplazamiento horizontal del selector, sin desplazar la página.
-    const strip=thumbnailRefs.current[0]?.parentElement;
-    const target=thumbnailRefs.current[(index+count)%count];
-    if(strip&&target){
-      const left=target.offsetLeft-(strip.clientWidth-target.clientWidth)/2;
-      strip.scrollTo({left,behavior:'smooth'});
-    }
   },[count]);
 
   const step=useCallback((delta:number)=>{
     if(count<2)return;
-    setCurrentIndex(previous=>{
-      const next=(previous+delta+count)%count;
-      const strip=thumbnailRefs.current[0]?.parentElement;
-      const target=thumbnailRefs.current[next];
-      if(strip&&target){
-        strip.scrollTo({left:target.offsetLeft-(strip.clientWidth-target.clientWidth)/2,behavior:'smooth'});
-      }
-      return next;
-    });
+    setCurrentIndex(previous=>(previous+delta+count)%count);
   },[count]);
+
+  useEffect(()=>{
+    const target=thumbnailRefs.current[currentIndex];
+    const strip=target?.parentElement;
+    if(!target||!strip)return;
+    const stripBounds=strip.getBoundingClientRect();
+    const targetBounds=target.getBoundingClientRect();
+    const offset=(targetBounds.left+targetBounds.width/2)-(stripBounds.left+stripBounds.width/2);
+    strip.scrollTo({left:strip.scrollLeft+offset,behavior:'smooth'});
+  },[currentIndex]);
 
   function handleKeyDown(event:KeyboardEvent<HTMLElement>){
     if(event.key==='ArrowLeft'){
@@ -129,7 +124,7 @@ export default function VehicleGallery({photos,vehicleName}:Props){
       <button
         type="button"
         className="vehicle-carousel-expand"
-        onClick={()=>dialogRef.current?.showModal()}
+        onClick={()=>{if(dialogRef.current&&!dialogRef.current.open)dialogRef.current.showModal();}}
         aria-label="Ampliar fotografía"
       >Ampliar <span aria-hidden="true">↗</span></button>
     </div>
