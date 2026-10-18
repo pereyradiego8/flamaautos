@@ -1,0 +1,37 @@
+name: Diagnóstico de avisos excluidos de Flama
+on:
+  push:
+    branches: [main]
+    paths: [".github/workflows/mercadolibre-rejected-audit.yml"]
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Comprobar vendedor y redirecciones de los avisos cuestionados
+        run: |
+          node --input-type=module <<'JS'
+          const ids=[
+            'MLA2004538347','MLA3940349218','MLA1888321465',
+            'MLA3294159410','MLA1971958495','MLA3709048924'
+          ];
+          const paths=[
+            'renault-captur-20-intens-manual','peugeot-208-16l-allure-tiptronic',
+            'byd-dolphin-mini-00-gs-4as-432kwh','peugeot-208-16-like-pack',
+            'ford-territory-15t-titanium','peugeot-207-16-feline-106cv'
+          ];
+          for(let i=0;i<ids.length;i++){
+            const id=ids[i];
+            const url='https://auto.mercadolibre.com.ar/'+id.replace('MLA','MLA-')+'-'+paths[i]+'-_JM';
+            try{
+              const response=await fetch(url,{headers:{'User-Agent':'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/131.0 Safari/537.36'},signal:AbortSignal.timeout(15000)});
+              const body=await response.text();
+              const sellers=[...new Set([...body.matchAll(/"(?:seller_id|sellerId)"\s*:\s*"?([0-9]+)"?/g)].map(m=>m[1]))].slice(0,20);
+              const itemIds=[...new Set([...body.matchAll(/"(?:itemId|productID|sku)"\s*:\s*"(MLA[0-9]{9,12})"/g)].map(m=>m[1]))].slice(0,8);
+              const status=body.match(/"item_status"\s*:\s*"([^"]+)"/)?.[1]??null;
+              console.log(JSON.stringify({id,http:response.status,finalUrl:response.url,sellers,itemIds,status,hasAgencyName:/Agenciaflama/i.test(body),length:body.length}));
+            }catch(e){console.log(JSON.stringify({id,error:String(e).slice(0,120)}))}
+          }
+          JS
