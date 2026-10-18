@@ -336,3 +336,17 @@ input,select,textarea{min-width:0;padding:10px 11px;font-size:14px}
 @media(max-width:350px){
  .vehicle-bottom-actions{grid-template-columns:1fr}
 }
+
+/* Datos comerciales importados: procedencia visible y revisión sin confusiones de precio. */
+.extra-specs{margin-top:18px}
+.extra-specs .details-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:24px}
+.extra-specs .details-list>div{min-width:0}
+.extra-specs .details-list dd{overflow-wrap:anywhere}
+.marketplace-provenance{border-top:1px solid #344149;margin-top:18px;padding-top:14px}
+.marketplace-provenance>a,.admin-source-link{color:#ff9a9e;text-decoration:underline;text-underline-offset:3px;font-size:13px}
+.marketplace-provenance .fine{margin:9px 0 0}
+.import-review-alert{color:#ffd2a3!important;background:#3d3021;padding:10px;border-radius:8px;line-height:1.4;max-width:75ch}
+.import-review-alert strong{color:#ffe5c8}
+@media(max-width:760px){
+ .extra-specs .details-list{grid-template-columns:1fr}
+}
