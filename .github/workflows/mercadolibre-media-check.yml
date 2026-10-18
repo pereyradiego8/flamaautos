@@ -1,0 +1,36 @@
+name: Validar fotos originales de Agencia Flama
+on:
+  push:
+    branches: [main]
+    paths: [".github/workflows/mercadolibre-media-check.yml"]
+permissions: {contents: read}
+jobs:
+  photos:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verificar disponibilidad real de fotos originales
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json,urllib.request,urllib.error
+          data=json.load(open('web/imports/agenciaflama-extracted.json'))
+          good=bad=0
+          for item in data['listings']:
+            samples=[item['photos'][0]]
+            if len(item['photos'])>1:samples.append(item['photos'][-1])
+            for photo in samples:
+              url=photo['url']
+              try:
+                req=urllib.request.Request(url,method='HEAD',headers={'User-Agent':'Mozilla/5.0'})
+                with urllib.request.urlopen(req,timeout=15) as r:
+                  ok=r.status==200 and r.headers.get('Content-Type','').startswith('image/')
+                  print('IMAGE',item['source_id'],photo['sort_order'],r.status,r.headers.get('Content-Type'),r.headers.get('Content-Length'), 'OK' if ok else 'INVALID')
+                  if ok:good+=1
+                  else:bad+=1
+              except Exception as e:
+                print('IMAGE',item['source_id'],photo['sort_order'],'ERROR',type(e).__name__,str(e)[:130])
+                bad+=1
+          print('IMAGE_SUMMARY',good,bad)
+          if bad:raise SystemExit(1)
+          PY
