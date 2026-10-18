@@ -1,0 +1,55 @@
+name: Extraer avisos adicionales de Agencia Flama
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/mercadolibre-extra-collect.yml"
+      - "web/imports/agenciaflama-additional-sources.json"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Dependencias
+        run: pip install beautifulsoup4==4.14.2 lxml==6.0.2
+      - name: Verificar identidad real y descargar campos estructurados
+        shell: bash
+        run: |
+          python - <<'PY'
+          import importlib.util,json,time
+          from pathlib import Path
+          from datetime import datetime,timezone
+          src=Path('web/scripts/collect_mercadolibre.py').resolve()
+          spec=importlib.util.spec_from_file_location('collector',src)
+          module=importlib.util.module_from_spec(spec)
+          spec.loader.exec_module(module)
+          data=json.loads(Path('web/imports/agenciaflama-additional-sources.json').read_text())
+          ok=[];errors=[]
+          for url in data['urls']:
+            try:
+              item=module.parse(url)
+              ok.append(item)
+              print('VERIFIED',item['source_id'],item['name'],item['cash_price'],item['currency'],len(item['photos']),flush=True)
+            except Exception as e:
+              errors.append({'source_url':url,'error':str(e)[:200]})
+              print('REJECTED',url,str(e)[:200],flush=True)
+            time.sleep(.5)
+          Path('web/imports/agenciaflama-additional-extracted.json').write_text(json.dumps({'seller_id':117436611,'captured_at':datetime.now(timezone.utc).isoformat(),'listings':ok,'errors':errors},ensure_ascii=False,indent=2)+'\n')
+          print('SUMMARY',len(ok),'verified',len(errors),'rejected')
+          PY
+      - name: Guardar resultados para revisión
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add web/imports/agenciaflama-additional-extracted.json
+          if ! git diff --cached --quiet; then
+            git commit -m "data(import): verified additional agency listings"
+            git push origin HEAD:main
+          fi
