@@ -5,6 +5,10 @@ const nextConfig: NextConfig = {
       protocol: 'https',
       hostname: 'kldsrenndnyttvfuoauf.supabase.co',
       pathname: '/storage/v1/object/public/vehicle-images/**'
+    },{
+      protocol: 'https',
+      hostname: 'http2.mlstatic.com',
+      pathname: '/D_NQ_NP_**'
     }],
     formats: ['image/webp'],
   },
