@@ -101,6 +101,20 @@ try {
         await inspect(page, 'inventario-fixture', width, height);
       }
       if (pathname === '/autos') {
+        // Regresión real: al filtrar Utilitarios queda una unidad, pero nunca debe
+        // ocupar todo el ancho disponible en escritorio/notebook.
+        await page.getByRole('combobox',{name:'Categoría'}).selectOption('utility');
+        await page.getByText('1 vehículo',{exact:true}).waitFor({timeout:15000});
+        const unit=page.locator('.vehicle-grid > .vehicle-card');
+        assert.equal(await unit.count(),1,'Utilitarios debe devolver una tarjeta');
+        const card=await unit.boundingBox();
+        assert.ok(card,'La tarjeta debe ser visible');
+        const size=Math.round(card.width);
+        const maxAllowed=width>480?361:width;
+        assert.ok(size<=maxAllowed,
+          `Tarjeta de utilitarios demasiado ancha: ${size}px en pantalla de ${width}px (máximo ${maxAllowed}px)`);
+        await inspect(page,'catalogo-utilitarios-una-unidad',width,height);
+
         // Ficha técnica y tarjetas sintéticas para comprobar el diseño sin inventar stock real.
         await page.evaluate(() => {
           const main = document.querySelector('main.catalog');
