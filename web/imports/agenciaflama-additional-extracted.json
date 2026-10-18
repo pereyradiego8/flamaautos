@@ -1,6 +1,6 @@
 {
   "seller_id": 117436611,
-  "captured_at": "2026-10-18T18:31:02.823377+00:00",
+  "captured_at": "2026-10-18T20:57:29.764965+00:00",
   "listings": [
     {
       "source_id": "MLA2106857291",
@@ -235,7 +235,7 @@
         }
       ],
       "year_conflict": false,
-      "captured_at": "2026-10-18T18:30:59.502883+00:00",
+      "captured_at": "2026-10-18T20:57:25.548338+00:00",
       "price_valid_until": "2026-10-21"
     },
     {
@@ -458,13 +458,17 @@
         }
       ],
       "year_conflict": false,
-      "captured_at": "2026-10-18T18:31:00.969978+00:00",
+      "captured_at": "2026-10-18T20:57:27.037834+00:00",
       "price_valid_until": "2026-10-21"
     }
   ],
   "errors": [
     {
       "source_url": "https://auto.mercadolibre.com.ar/MLA-3939927550-byd-dolphin-mini-00-gs-4as-432kwh-_JM",
+      "error": "El aviso no pertenece al vendedor verificado"
+    },
+    {
+      "source_url": "https://auto.mercadolibre.com.ar/MLA-3940349218-peugeot-208-16l-allure-tiptronic-_JM",
       "error": "El aviso no pertenece al vendedor verificado"
     }
   ]
