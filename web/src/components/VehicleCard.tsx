@@ -17,7 +17,11 @@ export default function VehicleCard({vehicle}: {vehicle:Vehicle}) {
       <h3>{vehicle.brand} {vehicle.model}</h3>
       <p>{vehicle.version || 'Consultar versión'}</p>
       <div className="specs"><span>{vehicle.model_year ?? 'Año a consultar'}</span><span>{formatKm(vehicle.mileage_km)}</span></div>
-      <div className="vehicle-bottom"><strong>{formatPrice(vehicle.cash_price,vehicle.currency)}</strong><div className="vehicle-bottom-actions"><Link className="small-button" href={`/autos/${vehicle.slug}`}>Ver ficha →</Link><a className="small-button vehicle-whatsapp" href={vehicleWhatsAppUrl(vehicle)} target="_blank" rel="noopener noreferrer" aria-label={`Consultar por WhatsApp sobre ${vehicle.brand} ${vehicle.model}`}>WhatsApp ↗</a></div></div>
+      <div className="vehicle-bottom"><strong>{formatPrice(vehicle.cash_price,vehicle.currency)}</strong>
+      {(vehicle.down_payment!=null||vehicle.list_price!=null)&&<div className="card-commercial-values">
+       {vehicle.down_payment!=null&&<span>Anticipo: <b>{formatPrice(vehicle.down_payment,vehicle.currency)}</b></span>}
+       {vehicle.list_price!=null&&vehicle.list_price!==vehicle.cash_price&&<span>Precio de lista: <b>{formatPrice(vehicle.list_price,vehicle.currency)}</b></span>}
+      </div>}<div className="vehicle-bottom-actions"><Link className="small-button" href={`/autos/${vehicle.slug}`}>Ver ficha →</Link><a className="small-button vehicle-whatsapp" href={vehicleWhatsAppUrl(vehicle)} target="_blank" rel="noopener noreferrer" aria-label={`Consultar por WhatsApp sobre ${vehicle.brand} ${vehicle.model}`}>WhatsApp ↗</a></div></div>
     </div>
   </article>;
 }
