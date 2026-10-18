@@ -15,7 +15,13 @@ export function publicSupabase(): SupabaseClient | null {
   return createClient(url, publishableKey, {auth: {persistSession: false, autoRefreshToken: false, detectSessionInUrl: false}});
 }
 export function publicPhotoUrl(path: string): string | null {
-  if (!url || !path) return null;
+  if (!path) return null;
+  // Fotografías provenientes de publicaciones originales verificadas de Agencia Flama.
+  // Restricción estricta de dominio y nombre; nunca aceptar URLs arbitrarias.
+  if (/^https:\/\/http2\.mlstatic\.com\/D_NQ_NP_[0-9]+-MLA[0-9]+_[0-9]{6}-[A-Z0-9]+\.webp$/.test(path)) {
+    return path;
+  }
+  if (!url || /^(https?:)?\/\//i.test(path)) return null;
   const parts = path.split('/').map(encodeURIComponent).join('/');
   return `${url}/storage/v1/object/public/vehicle-images/${parts}`;
 }
