@@ -1,6 +1,6 @@
 {
   "seller_id": 117436611,
-  "captured_at": "2026-10-18T18:15:12.495250+00:00",
+  "captured_at": "2026-10-18T21:03:15.500020+00:00",
   "listings": [
     {
       "source_id": "MLA3906243858",
@@ -192,7 +192,7 @@
         }
       ],
       "year_conflict": false,
-      "captured_at": "2026-10-18T18:14:29.295342+00:00",
+      "captured_at": "2026-10-18T21:02:35.416867+00:00",
       "price_valid_until": "2026-10-21"
     },
     {
@@ -377,7 +377,7 @@
         }
       ],
       "year_conflict": false,
-      "captured_at": "2026-10-18T18:14:31.655335+00:00",
+      "captured_at": "2026-10-18T21:02:37.718591+00:00",
       "price_valid_until": "2026-10-21"
     },
     {
@@ -586,7 +586,7 @@
         }
       ],
       "year_conflict": false,
-      "captured_at": "2026-10-18T18:14:34.495687+00:00",
+      "captured_at": "2026-10-18T21:02:40.320835+00:00",
       "price_valid_until": "2026-10-21"
     },
     {
@@ -781,7 +781,7 @@
         }
       ],
       "year_conflict": false,
-      "captured_at": "2026-10-18T18:14:36.007091+00:00",
+      "captured_at": "2026-10-18T21:02:41.651795+00:00",
       "price_valid_until": "2026-10-21"
     },
     {
@@ -976,7 +976,7 @@
         }
       ],
       "year_conflict": false,
-      "captured_at": "2026-10-18T18:14:38.370052+00:00",
+      "captured_at": "2026-10-18T21:02:44.275019+00:00",
       "price_valid_until": "2026-10-21"
     },
     {
@@ -1199,7 +1199,7 @@
         }
       ],
       "year_conflict": false,
-      "captured_at": "2026-10-18T18:14:43.975210+00:00",
+      "captured_at": "2026-10-18T21:02:48.522478+00:00",
       "price_valid_until": "2026-10-21"
     },
     {
@@ -1417,7 +1417,7 @@
         }
       ],
       "year_conflict": false,
-      "captured_at": "2026-10-18T18:14:45.526596+00:00",
+      "captured_at": "2026-10-18T21:02:49.850890+00:00",
       "price_valid_until": "2026-10-21"
     },
     {
@@ -1636,7 +1636,7 @@
         }
       ],
       "year_conflict": true,
-      "captured_at": "2026-10-18T18:14:46.965466+00:00",
+      "captured_at": "2026-10-18T21:02:50.809158+00:00",
       "price_valid_until": "2026-10-21"
     },
     {
@@ -1838,7 +1838,7 @@
         }
       ],
       "year_conflict": false,
-      "captured_at": "2026-10-18T18:14:48.120617+00:00",
+      "captured_at": "2026-10-18T21:02:51.795839+00:00",
       "price_valid_until": "2026-10-21"
     },
     {
@@ -2039,7 +2039,7 @@
         }
       ],
       "year_conflict": false,
-      "captured_at": "2026-10-18T18:14:50.448814+00:00",
+      "captured_at": "2026-10-18T21:02:54.174056+00:00",
       "price_valid_until": "2026-10-21"
     },
     {
@@ -2236,7 +2236,7 @@
         }
       ],
       "year_conflict": false,
-      "captured_at": "2026-10-18T18:14:55.491191+00:00",
+      "captured_at": "2026-10-18T21:02:58.573516+00:00",
       "price_valid_until": "2026-10-21"
     },
     {
@@ -2444,7 +2444,7 @@
         }
       ],
       "year_conflict": false,
-      "captured_at": "2026-10-18T18:14:56.733266+00:00",
+      "captured_at": "2026-10-18T21:02:59.542092+00:00",
       "price_valid_until": "2026-10-21"
     },
     {
@@ -2652,7 +2652,7 @@
         }
       ],
       "year_conflict": false,
-      "captured_at": "2026-10-18T18:15:01.069335+00:00",
+      "captured_at": "2026-10-18T21:03:03.752304+00:00",
       "price_valid_until": "2026-10-21"
     },
     {
@@ -2880,7 +2880,7 @@
         }
       ],
       "year_conflict": false,
-      "captured_at": "2026-10-18T18:15:03.265135+00:00",
+      "captured_at": "2026-10-18T21:03:06.081387+00:00",
       "price_valid_until": "2026-10-21"
     },
     {
@@ -3075,7 +3075,7 @@
         }
       ],
       "year_conflict": false,
-      "captured_at": "2026-10-18T18:15:04.370935+00:00",
+      "captured_at": "2026-10-18T21:03:07.395309+00:00",
       "price_valid_until": "2026-10-21"
     },
     {
@@ -3247,7 +3247,7 @@
         }
       ],
       "year_conflict": false,
-      "captured_at": "2026-10-18T18:15:06.612712+00:00",
+      "captured_at": "2026-10-18T21:03:09.407764+00:00",
       "price_valid_until": "2026-10-21"
     },
     {
@@ -3444,7 +3444,7 @@
         }
       ],
       "year_conflict": false,
-      "captured_at": "2026-10-18T18:15:08.645559+00:00",
+      "captured_at": "2026-10-18T21:03:11.331262+00:00",
       "price_valid_until": "2026-10-21"
     },
     {
@@ -3663,7 +3663,7 @@
         }
       ],
       "year_conflict": false,
-      "captured_at": "2026-10-18T18:15:10.738026+00:00",
+      "captured_at": "2026-10-18T21:03:13.301225+00:00",
       "price_valid_until": "2026-10-21"
     },
     {
@@ -3834,7 +3834,7 @@
         }
       ],
       "year_conflict": false,
-      "captured_at": "2026-10-18T18:15:11.804326+00:00",
+      "captured_at": "2026-10-18T21:03:14.603239+00:00",
       "price_valid_until": "2026-10-21"
     }
   ]
