@@ -1,0 +1,471 @@
+{
+  "seller_id": 117436611,
+  "captured_at": "2026-10-18T18:31:02.823377+00:00",
+  "listings": [
+    {
+      "source_id": "MLA2106857291",
+      "source_url": "https://auto.mercadolibre.com.ar/MLA-2106857291-ford-territory-18-ecoboost-titanium-at-_JM",
+      "source_seller_id": 117436611,
+      "source_status": "active",
+      "name": "Ford Territory 1.8 Ecoboost Titanium At",
+      "brand": "Ford",
+      "model": "Territory",
+      "version": "1.8 Ecoboost Titanium At",
+      "model_year": 2023,
+      "mileage_km": 60000,
+      "category": "suv",
+      "condition": "used",
+      "fuel": "Nafta",
+      "transmission": "Automática",
+      "currency": "ARS",
+      "cash_price": 41900000,
+      "down_payment": 16900000,
+      "list_price": 43900000,
+      "trade_in_price": null,
+      "description_source": "",
+      "attrs": {
+        "Marca": "Ford",
+        "Modelo": "Territory",
+        "Año": "2023",
+        "Versión": "1.8 Ecoboost Titanium At",
+        "Color": "Azul",
+        "Kilómetros": "60.000 km",
+        "Tipo de combustible": "Nafta",
+        "Puertas": "5",
+        "Transmisión": "Automática",
+        "Motor": "1.8",
+        "Tipo de carrocería": "SUV",
+        "Piloto automático": "Sí",
+        "Computadora de abordo": "Sí",
+        "Comando remoto para radio en el volante": "Sí",
+        "Reproductor de MP3": "Sí",
+        "Tapizado de cuero": "Sí",
+        "Frenos ABS": "Sí",
+        "Sensor de estacionamiento": "Sí",
+        "Airbag para conductor y pasajero": "Sí",
+        "Control de estabilidad": "Sí",
+        "Tracción ASR": "Sí",
+        "Llantas de aleación": "Sí",
+        "Techo solar eléctrico retráctil": "Sí",
+        "Control de tracción": "Delantera",
+        "Capacidad de personas": "5",
+        "Potencia": "185 hp",
+        "Distancia entre ejes": "2.726 mm",
+        "Capacidad del tanque": "60 L",
+        "Válvulas por cilindro": "4",
+        "Dirección": "Eléctrica",
+        "Alarma": "Sí",
+        "Largo x Altura x Ancho": "4630 mm x 1706 mm x 2177 mm"
+      },
+      "photos": [
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_862443-MLA117917034949_092026-F.webp",
+          "sort_order": 0,
+          "alt_text": "Imagen 1 de 25 de Ford Territory 1.8 Ecoboost Titanium At",
+          "width": 1200,
+          "height": 1180
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_846685-MLA117968251657_092026-F.webp",
+          "sort_order": 1,
+          "alt_text": "Imagen 2 de 25 de Ford Territory 1.8 Ecoboost Titanium At",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_888936-MLA116416216206_092026-F.webp",
+          "sort_order": 2,
+          "alt_text": "Imagen 3 de 25 de Ford Territory 1.8 Ecoboost Titanium At",
+          "width": 970,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_747650-MLA116415869698_092026-F.webp",
+          "sort_order": 3,
+          "alt_text": "Imagen 4 de 25 de Ford Territory 1.8 Ecoboost Titanium At",
+          "width": 999,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_886082-MLA117915856045_092026-F.webp",
+          "sort_order": 4,
+          "alt_text": "Imagen 5 de 25 de Ford Territory 1.8 Ecoboost Titanium At",
+          "width": 1064,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_978502-MLA116415252292_092026-F.webp",
+          "sort_order": 5,
+          "alt_text": "Imagen 6 de 25 de Ford Territory 1.8 Ecoboost Titanium At",
+          "width": 972,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_801150-MLA116416216250_092026-F.webp",
+          "sort_order": 6,
+          "alt_text": "Imagen 7 de 25 de Ford Territory 1.8 Ecoboost Titanium At",
+          "width": 1023,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_628402-MLA117916500621_092026-F.webp",
+          "sort_order": 7,
+          "alt_text": "Imagen 8 de 25 de Ford Territory 1.8 Ecoboost Titanium At",
+          "width": 887,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_819182-MLA116416216264_092026-F.webp",
+          "sort_order": 8,
+          "alt_text": "Imagen 9 de 25 de Ford Territory 1.8 Ecoboost Titanium At",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_834719-MLA116416216280_092026-F.webp",
+          "sort_order": 9,
+          "alt_text": "Imagen 10 de 25 de Ford Territory 1.8 Ecoboost Titanium At",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_680224-MLA116416216282_092026-F.webp",
+          "sort_order": 10,
+          "alt_text": "Imagen 11 de 25 de Ford Territory 1.8 Ecoboost Titanium At",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_761357-MLA117916736551_092026-F.webp",
+          "sort_order": 11,
+          "alt_text": "Imagen 12 de 25 de Ford Territory 1.8 Ecoboost Titanium At",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_862082-MLA116415869752_092026-F.webp",
+          "sort_order": 12,
+          "alt_text": "Imagen 13 de 25 de Ford Territory 1.8 Ecoboost Titanium At",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_604569-MLA117916236343_092026-F.webp",
+          "sort_order": 13,
+          "alt_text": "Imagen 14 de 25 de Ford Territory 1.8 Ecoboost Titanium At",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_966941-MLA116415869754_092026-F.webp",
+          "sort_order": 14,
+          "alt_text": "Imagen 15 de 25 de Ford Territory 1.8 Ecoboost Titanium At",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_898059-MLA117915944521_092026-F.webp",
+          "sort_order": 15,
+          "alt_text": "Imagen 16 de 25 de Ford Territory 1.8 Ecoboost Titanium At",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_899915-MLA116415869780_092026-F.webp",
+          "sort_order": 16,
+          "alt_text": "Imagen 17 de 25 de Ford Territory 1.8 Ecoboost Titanium At",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_867750-MLA116415869788_092026-F.webp",
+          "sort_order": 17,
+          "alt_text": "Imagen 18 de 25 de Ford Territory 1.8 Ecoboost Titanium At",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_752026-MLA116416216362_092026-F.webp",
+          "sort_order": 18,
+          "alt_text": "Imagen 19 de 25 de Ford Territory 1.8 Ecoboost Titanium At",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_873417-MLA117915856139_092026-F.webp",
+          "sort_order": 19,
+          "alt_text": "Imagen 20 de 25 de Ford Territory 1.8 Ecoboost Titanium At",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_916028-MLA117916236379_092026-F.webp",
+          "sort_order": 20,
+          "alt_text": "Imagen 21 de 25 de Ford Territory 1.8 Ecoboost Titanium At",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_656330-MLA117916855151_092026-F.webp",
+          "sort_order": 21,
+          "alt_text": "Imagen 22 de 25 de Ford Territory 1.8 Ecoboost Titanium At",
+          "width": 1011,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_776902-MLA117916736613_092026-F.webp",
+          "sort_order": 22,
+          "alt_text": "Imagen 23 de 25 de Ford Territory 1.8 Ecoboost Titanium At",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_980882-MLA117916500723_092026-F.webp",
+          "sort_order": 23,
+          "alt_text": "Imagen 24 de 25 de Ford Territory 1.8 Ecoboost Titanium At",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_719660-MLA116428378198_092026-F.webp",
+          "sort_order": 24,
+          "alt_text": "Imagen 25 de 25 de Ford Territory 1.8 Ecoboost Titanium At",
+          "width": 1200,
+          "height": 1200
+        }
+      ],
+      "year_conflict": false,
+      "captured_at": "2026-10-18T18:30:59.502883+00:00",
+      "price_valid_until": "2026-10-21"
+    },
+    {
+      "source_id": "MLA3994936646",
+      "source_url": "https://auto.mercadolibre.com.ar/MLA-3994936646-ram-rampage-20-laramie-gme-at9-4x4-_JM",
+      "source_seller_id": 117436611,
+      "source_status": "active",
+      "name": "Ram Rampage 2.0 Laramie Gme At9 4x4",
+      "brand": "RAM",
+      "model": "Rampage",
+      "version": "2.0 Laramie Gme At9 4X4",
+      "model_year": 2025,
+      "mileage_km": 20000,
+      "category": "pickup",
+      "condition": "used",
+      "fuel": "Nafta",
+      "transmission": "Automática",
+      "currency": "ARS",
+      "cash_price": 52900000,
+      "down_payment": 24900000,
+      "list_price": 55500000,
+      "trade_in_price": null,
+      "description_source": "Excelente RAM Rampage 2025 Unica mano sin detalle, vehiculo igual a 0Km",
+      "attrs": {
+        "Marca": "RAM",
+        "Modelo": "Rampage",
+        "Año": "2025",
+        "Versión": "2.0 Laramie Gme At9 4X4",
+        "Color": "Gris",
+        "Kilómetros": "20.000 km",
+        "Tipo de combustible": "Nafta",
+        "Puertas": "4",
+        "Transmisión": "Automática",
+        "Motor": "2.0",
+        "Tipo de carrocería": "Pick-Up",
+        "Control de tracción": "4x4",
+        "Capacidad de personas": "5",
+        "Potencia": "272 hp",
+        "Distancia entre ejes": "2.994 mm",
+        "Capacidad del tanque": "55 L",
+        "Válvulas por cilindro": "4",
+        "Dirección": "Eléctrica",
+        "Largo x Altura x Ancho": "5028 mm x 1717 mm x 1886 mm"
+      },
+      "photos": [
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_891382-MLA116757361672_092026-F.webp",
+          "sort_order": 0,
+          "alt_text": "Imagen 1 de 25 de Ram Rampage 2.0 Laramie Gme At9 4x4",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_673018-MLA116861744594_092026-F.webp",
+          "sort_order": 1,
+          "alt_text": "Imagen 2 de 25 de Ram Rampage 2.0 Laramie Gme At9 4x4",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_645659-MLA118250801133_092026-F.webp",
+          "sort_order": 2,
+          "alt_text": "Imagen 3 de 25 de Ram Rampage 2.0 Laramie Gme At9 4x4",
+          "width": 1004,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_927167-MLA116702468082_092026-F.webp",
+          "sort_order": 3,
+          "alt_text": "Imagen 4 de 25 de Ram Rampage 2.0 Laramie Gme At9 4x4",
+          "width": 1092,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_934273-MLA116702380240_092026-F.webp",
+          "sort_order": 4,
+          "alt_text": "Imagen 5 de 25 de Ram Rampage 2.0 Laramie Gme At9 4x4",
+          "width": 1096,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_889000-MLA118250801165_092026-F.webp",
+          "sort_order": 5,
+          "alt_text": "Imagen 6 de 25 de Ram Rampage 2.0 Laramie Gme At9 4x4",
+          "width": 1041,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_835282-MLA116702615204_092026-F.webp",
+          "sort_order": 6,
+          "alt_text": "Imagen 7 de 25 de Ram Rampage 2.0 Laramie Gme At9 4x4",
+          "width": 962,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_639763-MLA116702468112_092026-F.webp",
+          "sort_order": 7,
+          "alt_text": "Imagen 8 de 25 de Ram Rampage 2.0 Laramie Gme At9 4x4",
+          "width": 1078,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_891203-MLA116703171994_092026-F.webp",
+          "sort_order": 8,
+          "alt_text": "Imagen 9 de 25 de Ram Rampage 2.0 Laramie Gme At9 4x4",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_708373-MLA118250421323_092026-F.webp",
+          "sort_order": 9,
+          "alt_text": "Imagen 10 de 25 de Ram Rampage 2.0 Laramie Gme At9 4x4",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_775814-MLA118250567069_092026-F.webp",
+          "sort_order": 10,
+          "alt_text": "Imagen 11 de 25 de Ram Rampage 2.0 Laramie Gme At9 4x4",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_861894-MLA116702731882_092026-F.webp",
+          "sort_order": 11,
+          "alt_text": "Imagen 12 de 25 de Ram Rampage 2.0 Laramie Gme At9 4x4",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_763464-MLA116703112620_092026-F.webp",
+          "sort_order": 12,
+          "alt_text": "Imagen 13 de 25 de Ram Rampage 2.0 Laramie Gme At9 4x4",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_772625-MLA116702410038_092026-F.webp",
+          "sort_order": 13,
+          "alt_text": "Imagen 14 de 25 de Ram Rampage 2.0 Laramie Gme At9 4x4",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_700253-MLA116702410062_092026-F.webp",
+          "sort_order": 14,
+          "alt_text": "Imagen 15 de 25 de Ram Rampage 2.0 Laramie Gme At9 4x4",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_752728-MLA116702468204_092026-F.webp",
+          "sort_order": 15,
+          "alt_text": "Imagen 16 de 25 de Ram Rampage 2.0 Laramie Gme At9 4x4",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_655701-MLA116703172074_092026-F.webp",
+          "sort_order": 16,
+          "alt_text": "Imagen 17 de 25 de Ram Rampage 2.0 Laramie Gme At9 4x4",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_864268-MLA116702790480_092026-F.webp",
+          "sort_order": 17,
+          "alt_text": "Imagen 18 de 25 de Ram Rampage 2.0 Laramie Gme At9 4x4",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_997952-MLA116702615324_092026-F.webp",
+          "sort_order": 18,
+          "alt_text": "Imagen 19 de 25 de Ram Rampage 2.0 Laramie Gme At9 4x4",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_900365-MLA116702380412_092026-F.webp",
+          "sort_order": 19,
+          "alt_text": "Imagen 20 de 25 de Ram Rampage 2.0 Laramie Gme At9 4x4",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_746968-MLA118250421441_092026-F.webp",
+          "sort_order": 20,
+          "alt_text": "Imagen 21 de 25 de Ram Rampage 2.0 Laramie Gme At9 4x4",
+          "width": 1012,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_825652-MLA116702497960_092026-F.webp",
+          "sort_order": 21,
+          "alt_text": "Imagen 22 de 25 de Ram Rampage 2.0 Laramie Gme At9 4x4",
+          "width": 1200,
+          "height": 1152
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_888113-MLA116702380440_092026-F.webp",
+          "sort_order": 22,
+          "alt_text": "Imagen 23 de 25 de Ram Rampage 2.0 Laramie Gme At9 4x4",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_716591-MLA118250772569_092026-F.webp",
+          "sort_order": 23,
+          "alt_text": "Imagen 24 de 25 de Ram Rampage 2.0 Laramie Gme At9 4x4",
+          "width": 854,
+          "height": 1200
+        },
+        {
+          "url": "https://http2.mlstatic.com/D_NQ_NP_921250-MLA118250304053_092026-F.webp",
+          "sort_order": 24,
+          "alt_text": "Imagen 25 de 25 de Ram Rampage 2.0 Laramie Gme At9 4x4",
+          "width": 900,
+          "height": 1200
+        }
+      ],
+      "year_conflict": false,
+      "captured_at": "2026-10-18T18:31:00.969978+00:00",
+      "price_valid_until": "2026-10-21"
+    }
+  ],
+  "errors": [
+    {
+      "source_url": "https://auto.mercadolibre.com.ar/MLA-3939927550-byd-dolphin-mini-00-gs-4as-432kwh-_JM",
+      "error": "El aviso no pertenece al vendedor verificado"
+    }
+  ]
+}
