@@ -132,7 +132,7 @@ try {
           'Solo una fotografía principal a la vez');
         assert.ok(await gallery.locator('.vehicle-carousel-thumbnail').count()>1,
           'Las miniaturas de varias fotos están disponibles');
-        assert.match(await gallery.locator('.vehicle-carousel-counter').innerText(),/Foto 1 de \\d+/);
+        assert.match(await gallery.locator('.vehicle-carousel-counter').innerText(),/Foto 1 de [0-9]+/);
         await gallery.getByRole('button',{name:'Foto siguiente',exact:true}).click();
         await page.waitForFunction(()=>document.querySelector('.vehicle-carousel-counter')?.textContent?.includes('Foto 2 de'));
         await gallery.getByRole('button',{name:/Ver foto 5 de/}).click();
