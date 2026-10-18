@@ -6,13 +6,22 @@ Los avisos se verificaron mediante el identificador de vendedor `117436611`, el 
 
 ## Resultado en Supabase
 
-- 21 vehículos importados en `public.vehicles`.
-- 19 vehículos publicados y 2 borradores para revisión.
-- 447 referencias originales a fotografías de Mercado Libre en `public.vehicle_images`.
-- 21 anticipos; 19 precios de lista verificados; 0 precios expresamente identificados como valor de permuta.
+- **22 vehículos** importados en `public.vehicles`.
+- **20 vehículos publicados y 2 borradores** pendientes de revisión.
+- **472 fotografías referenciadas** desde las galerías originales de Mercado Libre.
+- 22 anticipos, 20 precios de lista y 0 importes explícitos verificables de permuta.
 - Precio contado, anticipo, lista y permuta se almacenan en campos distintos; no se extrapola precio de permuta desde el precio de lista.
 - Cada unidad conserva el ID original MLA, el enlace de su aviso y la fecha de relevamiento.
 - La ficha pública detalla las características extraídas de los atributos y enlaza la publicación de origen.
+
+## Ampliación y última auditoría — 18/10/2026
+
+- Se sumó **Dodge Journey SXT 2017** (MLA3917054036), con ARS 25.900.000 de contado, ARS 11.900.000 de anticipo, ARS 27.200.000 de lista y 25 fotografías originales.
+- La cantidad de plazas del aviso es contradictoria (descripción: 7; atributo estructurado: 5). El dato contradictorio no se muestra como confirmado y la ficha pública advierte que debe consultarse con la agencia.
+- Se examinaron **91 identificadores de avisos**: 21 que ya estaban cargados, 1 nueva publicación activa verificada y 69 rechazados por cierre, vendedor diferente o inaccesibilidad.
+- Evidencias: `agenciaflama-missing-extracted.json` y `agenciaflama-missing-discovery.json`. La nueva ficha se incorporó mediante `2026101800106_agenciaflama_missing_journey.sql`.
+- El importador identifica explícitamente publicaciones cerradas del vendedor, en lugar de confundirlas con publicaciones ajenas.
+- **La búsqueda no garantiza cubrir todas las publicaciones.** El listado completo de la tienda requiere verificación de cuenta al consultarlo sin sesión; para añadir cualquier otro aviso es necesaria una exportación de publicaciones/IDs o una conexión autorizada a la API oficial de Mercado Libre.
 
 ## Vehículos que necesitan revisión
 
