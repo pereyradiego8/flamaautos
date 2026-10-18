@@ -1,0 +1,37 @@
+name: Diagnóstico de fuentes Mercado Libre
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/mercadolibre-discovery.yml'
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Verificar acceso sin autenticación a publicaciones del vendedor
+        shell: bash
+        run: |
+          node --input-type=module <<'JS'
+          const targets=[
+           ['store','https://www.mercadolibre.com.ar/pagina/agenciaflama'],
+           ['listing','https://listado.mercadolibre.com.ar/pagina/agenciaflama/'],
+           ['nickname-search','https://api.mercadolibre.com/sites/MLA/search?nickname=AGENCIAFLAMA&limit=3'],
+           ['user-public','https://api.mercadolibre.com/users/AGENCIAFLAMA'],
+          ];
+          for (const [label,url] of targets){
+            try{
+              const response=await fetch(url,{headers:{'User-Agent':'Mozilla/5.0 (compatible; FlamaAutosCatalogImporter/1.0)','Accept':'application/json,text/html'},signal:AbortSignal.timeout(12000),redirect:'follow'});
+              const body=await response.text();
+              let keys=[];let resultCount=null;let sellers=[];let ids=[];
+              try{const data=JSON.parse(body);keys=Object.keys(data).slice(0,12);resultCount=data.paging?.total??null;sellers=[...new Set((data.results??[]).map(x=>x.seller?.id).filter(Boolean))].slice(0,5);ids=(data.results??[]).map(x=>x.id).slice(0,5)}catch{}
+              console.log(JSON.stringify({label,status:response.status,finalHost:new URL(response.url).hostname,contentType:response.headers.get('content-type'),length:body.length,keys,resultCount,sellers,ids,hasStoreName:/Flama Autos/i.test(body)}));
+            }catch(e){console.log(JSON.stringify({label,error:String(e).slice(0,180)}))}
+          }
+          JS
