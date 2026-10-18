@@ -6,15 +6,15 @@ import {CATEGORIES,formatPrice,slugify} from '@/lib/catalog';
 import type {Branch,Vehicle,VehicleStatus,Currency,Category} from '@/lib/types';
 
 const statuses: {value:VehicleStatus;label:string}[] = [{value:'draft',label:'Borrador'},{value:'published',label:'Publicado'},{value:'reserved',label:'Reservado'},{value:'sold',label:'Vendido'}];
-type VehicleForm={brand:string;model:string;version:string;model_year:string;mileage_km:string;category:Category;fuel:string;transmission:string;description:string;currency:Currency;cash_price:string;down_payment:string;trade_in_price:string;branch_id:string;featured:boolean;status:VehicleStatus};
-const newForm:VehicleForm={brand:'',model:'',version:'',model_year:'',mileage_km:'',category:'sedan',fuel:'',transmission:'',description:'',currency:'ARS',cash_price:'',down_payment:'',trade_in_price:'',branch_id:'',featured:false,status:'draft'};
-function toForm(v:Vehicle):VehicleForm {return {brand:v.brand,model:v.model,version:v.version??'',model_year:v.model_year?.toString()??'',mileage_km:v.mileage_km?.toString()??'',category:v.category,fuel:v.fuel??'',transmission:v.transmission??'',description:v.description??'',currency:v.currency??'ARS',cash_price:v.cash_price?.toString()??'',down_payment:v.down_payment?.toString()??'',trade_in_price:v.trade_in_price?.toString()??'',branch_id:v.branch_id??'',featured:v.featured,status:v.status};}
+type VehicleForm={brand:string;model:string;version:string;model_year:string;mileage_km:string;category:Category;fuel:string;transmission:string;description:string;currency:Currency;cash_price:string;list_price:string;down_payment:string;trade_in_price:string;branch_id:string;featured:boolean;status:VehicleStatus};
+const newForm:VehicleForm={brand:'',model:'',version:'',model_year:'',mileage_km:'',category:'sedan',fuel:'',transmission:'',description:'',currency:'ARS',cash_price:'',list_price:'',down_payment:'',trade_in_price:'',branch_id:'',featured:false,status:'draft'};
+function toForm(v:Vehicle):VehicleForm {return {brand:v.brand,model:v.model,version:v.version??'',model_year:v.model_year?.toString()??'',mileage_km:v.mileage_km?.toString()??'',category:v.category,fuel:v.fuel??'',transmission:v.transmission??'',description:v.description??'',currency:v.currency??'ARS',cash_price:v.cash_price?.toString()??'',list_price:v.list_price?.toString()??'',down_payment:v.down_payment?.toString()??'',trade_in_price:v.trade_in_price?.toString()??'',branch_id:v.branch_id??'',featured:v.featured,status:v.status};}
 function toNum(value:string):number|null{return value.trim()===''?null:Number(value);}
-function makePayload(form:VehicleForm){return {brand:form.brand.trim(),model:form.model.trim(),version:form.version.trim()||null,model_year:toNum(form.model_year),mileage_km:toNum(form.mileage_km),category:form.category,fuel:form.fuel.trim()||null,transmission:form.transmission.trim()||null,description:form.description.trim()||null,currency:form.currency,cash_price:toNum(form.cash_price),down_payment:toNum(form.down_payment),trade_in_price:toNum(form.trade_in_price),branch_id:form.branch_id||null,featured:form.featured,status:form.status};}
+function makePayload(form:VehicleForm){return {brand:form.brand.trim(),model:form.model.trim(),version:form.version.trim()||null,model_year:toNum(form.model_year),mileage_km:toNum(form.mileage_km),category:form.category,fuel:form.fuel.trim()||null,transmission:form.transmission.trim()||null,description:form.description.trim()||null,currency:form.currency,cash_price:toNum(form.cash_price),list_price:toNum(form.list_price),down_payment:toNum(form.down_payment),trade_in_price:toNum(form.trade_in_price),branch_id:form.branch_id||null,featured:form.featured,status:form.status};}
 function validate(form:VehicleForm):string|null{
  if(!form.brand.trim()||!form.model.trim())return 'Completá marca y modelo.';
  const year=toNum(form.model_year);if(year!==null&&(!Number.isInteger(year)||year<1950||year>2100))return 'Ingresá un año válido.';
- for(const [label,value] of [['Kilometraje',form.mileage_km],['Precio',form.cash_price],['Anticipo',form.down_payment],['Permuta',form.trade_in_price]]){const n=toNum(value);if(n!==null&&(!Number.isFinite(n)||n<0))return `${label}: ingresá un número positivo.`;}
+ for(const [label,value] of [['Kilometraje',form.mileage_km],['Precio',form.cash_price],['Lista',form.list_price],['Anticipo',form.down_payment],['Permuta',form.trade_in_price]]){const n=toNum(value);if(n!==null&&(!Number.isFinite(n)||n<0))return `${label}: ingresá un número positivo.`;}
  if(form.status==='published'&&(!form.model_year||!form.currency||toNum(form.cash_price)===null))return 'Para publicar, indicá año, moneda y precio de contado.';
  return null;
 }
@@ -180,7 +180,12 @@ export default function AdminConsole(){
   // Se retira primero la referencia pública; una falla posterior deja únicamente un archivo huérfano, no una ficha rota.
   const {error:err}=await client.from('vehicle_images').delete().eq('id',imageId);
   if(err){setError('No se pudo quitar la fotografía.');setWorking(false);return;}
-  const removed=await client.storage.from('vehicle-images').remove([path]);if(removed.error)setError('Se quitó la foto de la ficha, pero quedó pendiente limpiar el archivo del Storage.');
+  // Las imágenes importadas son URLs públicas de Mercado Libre, no archivos de Storage.
+  // Al quitarlas no se debe intentar borrar recursos ajenos al bucket de Flama Autos.
+  if(!/^https:\/\//.test(path)){
+   const removed=await client.storage.from('vehicle-images').remove([path]);
+   if(removed.error)setError('Se quitó la foto de la ficha, pero quedó pendiente limpiar el archivo del Storage.');
+  }
   await refresh();setWorking(false);
  }
  if(!client)return <div className="empty"><h2>Panel no configurado</h2><p>Para habilitar la administración hay que conectar un proyecto Supabase nuevo y exclusivo de Flama Autos. No se reutilizarán las claves de 3020.</p></div>;
@@ -259,6 +264,7 @@ export default function AdminConsole(){
      <label>Transmisión<input maxLength={80} value={form.transmission} onChange={e=>setForm({...form,transmission:e.target.value})}/></label>
      <label>Moneda<select value={form.currency} onChange={e=>setForm({...form,currency:e.target.value as Currency})}><option value="ARS">Pesos argentinos</option><option value="USD">Dólares estadounidenses</option></select></label>
      <label>Precio de contado<input type="number" min="0" step="0.01" value={form.cash_price} onChange={e=>setForm({...form,cash_price:e.target.value})}/></label>
+     <label>Precio de lista<input type="number" min="0" step="0.01" value={form.list_price} onChange={e=>setForm({...form,list_price:e.target.value})}/></label>
      <label>Anticipo<input type="number" min="0" step="0.01" value={form.down_payment} onChange={e=>setForm({...form,down_payment:e.target.value})}/></label>
      <label>Precio de permuta<input type="number" min="0" step="0.01" value={form.trade_in_price} onChange={e=>setForm({...form,trade_in_price:e.target.value})}/></label>
      <label>Sucursal<select value={form.branch_id} onChange={e=>setForm({...form,branch_id:e.target.value})}><option value="">Sin asignar</option>{branches.map(b=><option key={b.id} value={b.id}>{b.name}</option>)}</select></label>
