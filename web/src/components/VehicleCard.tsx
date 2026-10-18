@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { formatKm,formatPrice } from '@/lib/catalog';
 import { publicPhotoUrl } from '@/lib/supabase';
 import type { Vehicle } from '@/lib/types';
+import {vehicleWhatsAppUrl} from '@/lib/whatsapp';
 export default function VehicleCard({vehicle}: {vehicle:Vehicle}) {
   const image = vehicle.vehicle_images?.[0];
   const src = image ? publicPhotoUrl(image.storage_path) : null;
@@ -16,7 +17,7 @@ export default function VehicleCard({vehicle}: {vehicle:Vehicle}) {
       <h3>{vehicle.brand} {vehicle.model}</h3>
       <p>{vehicle.version || 'Consultar versión'}</p>
       <div className="specs"><span>{vehicle.model_year ?? 'Año a consultar'}</span><span>{formatKm(vehicle.mileage_km)}</span></div>
-      <div className="vehicle-bottom"><strong>{formatPrice(vehicle.cash_price,vehicle.currency)}</strong><Link className="small-button" href={`/autos/${vehicle.slug}`}>Ver ficha →</Link></div>
+      <div className="vehicle-bottom"><strong>{formatPrice(vehicle.cash_price,vehicle.currency)}</strong><div className="vehicle-bottom-actions"><Link className="small-button" href={`/autos/${vehicle.slug}`}>Ver ficha →</Link><a className="small-button vehicle-whatsapp" href={vehicleWhatsAppUrl(vehicle)} target="_blank" rel="noopener noreferrer" aria-label={`Consultar por WhatsApp sobre ${vehicle.brand} ${vehicle.model}`}>WhatsApp ↗</a></div></div>
     </div>
   </article>;
 }
