@@ -150,7 +150,7 @@ footer strong{font-size:15px}
 .filters{grid-template-columns:minmax(0,1.8fr) repeat(3,minmax(0,1fr));gap:12px;margin:24px 0 14px}
 .filters label,.admin-controls label{min-width:0}
 input,select,textarea{min-width:0;padding:10px 11px;font-size:14px}
-.vehicle-grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,225px),1fr));gap:14px;margin-top:18px}
+.vehicle-grid{grid-template-columns:repeat(auto-fill,minmax(min(100%,275px),1fr));gap:14px;margin-top:18px}
 .vehicle-card{min-width:0}
 .vehicle-body{padding:15px}
 .vehicle-body h3{font-size:clamp(16px,1.45vw,19px);line-height:1.25;overflow-wrap:anywhere}
@@ -194,7 +194,7 @@ input,select,textarea{min-width:0;padding:10px 11px;font-size:14px}
 @media(max-width:1080px){
  .filters{grid-template-columns:repeat(2,minmax(0,1fr))}
  .header nav{gap:12px}
- .vehicle-grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,210px),1fr))}
+ .vehicle-grid{grid-template-columns:repeat(auto-fill,minmax(min(100%,260px),1fr))}
 }
 @media(max-width:800px){
  .header{min-height:65px}
@@ -229,7 +229,7 @@ input,select,textarea{min-width:0;padding:10px 11px;font-size:14px}
  .branches{grid-template-columns:minmax(0,1fr)}
  .section-title{align-items:flex-start;flex-direction:column;gap:8px}
  .filters{grid-template-columns:minmax(0,1fr)}
- .vehicle-grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,225px),1fr))}
+ .vehicle-grid{grid-template-columns:repeat(auto-fill,minmax(min(100%,245px),1fr))}
  .admin-page>h1{margin-bottom:18px}
  .admin-top{gap:11px}
  .admin-top .actions{width:100%;justify-content:flex-start}
@@ -602,4 +602,12 @@ input,select,textarea{min-width:0;padding:10px 11px;font-size:14px}
 @media(max-width:360px){
  .header .brand{width:142px}
  .header nav{gap:6px}
+}
+
+/* Catálogo: las tarjetas no crecen cuando un filtro deja solo una o dos unidades.
+   auto-fill mantiene columnas vacías; max-width evita fotos gigantes. */
+.vehicle-grid{justify-content:start}
+.vehicle-grid > .vehicle-card{width:100%;max-width:360px}
+@media(max-width:480px){
+ .vehicle-grid > .vehicle-card{max-width:none}
 }
