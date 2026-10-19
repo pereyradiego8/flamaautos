@@ -7,7 +7,7 @@ import {publishedVehicle} from '@/lib/vehicles';
 import {formatKm,formatPrice,CATEGORIES} from '@/lib/catalog';
 import {publicPhotoUrl} from '@/lib/supabase';
 import {vehicleWhatsAppUrl} from '@/lib/whatsapp';
-export const dynamic = 'force-dynamic';
+export const revalidate = 60;
 type Props={params:Promise<{slug:string}>};
 export async function generateMetadata({params}:Props):Promise<Metadata>{
  const {slug}=await params;const v=await publishedVehicle(slug);
