@@ -1,9 +1,10 @@
 import { publicSupabase } from './supabase';
 import type { Vehicle, VehicleCardData } from './types';
 import {cache} from 'react';
+import {unstable_cache} from 'next/cache';
 const select = '*,branches(name,address),vehicle_images(id,vehicle_id,storage_path,alt_text,sort_order)';
 /** Una sola portada por unidad; no devolver las cientos de fotos o fichas largas al catálogo. */
-export async function publishedVehicles(): Promise<VehicleCardData[]> {
+export const publishedVehicles=unstable_cache(async ():Promise<VehicleCardData[]>=>{
   const client=publicSupabase();
   if(!client)return [];
   const {data,error}=await client.from('vehicle_cards')
@@ -11,7 +12,7 @@ export async function publishedVehicles(): Promise<VehicleCardData[]> {
     .order('created_at',{ascending:false}).limit(250);
   if(error){console.error('Flama Autos: error al consultar tarjetas:',error.code);return [];}
   return (data??[]) as VehicleCardData[];
-}
+},['public-catalog-v3'],{revalidate:60,tags:['public-vehicles']});
 
 /** Una única consulta por slug se comparte entre metadata y render de la ficha. */
 export const publishedVehicle=cache(async (slug:string):Promise<Vehicle|null>=>{
