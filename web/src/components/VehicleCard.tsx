@@ -9,7 +9,7 @@ export default function VehicleCard({vehicle,priority=false}: {vehicle:VehicleCa
   const src = image ? publicPhotoUrl(image.storage_path) : null;
   return <article className="vehicle-card">
     <Link href={`/autos/${vehicle.slug}`} className="vehicle-media" aria-label={`Ver ${vehicle.brand} ${vehicle.model}`}>
-      {src ? <Image loading={priority?undefined:"lazy"} priority={priority} fill sizes="(max-width: 480px) 90vw, (max-width: 720px) 45vw, 320px" src={src} alt={image?.alt_text || `${vehicle.brand} ${vehicle.model}`} /> : <span>Fotografías próximamente</span>}
+      {src ? <Image loading={priority?undefined:"lazy"} priority={priority} quality={65} fill sizes="(max-width: 480px) 90vw, (max-width: 720px) 45vw, 320px" src={src} alt={image?.alt_text || `${vehicle.brand} ${vehicle.model}`} /> : <span>Fotografías próximamente</span>}
       {vehicle.featured && <small className="featured">Destacado</small>}
     </Link>
     <div className="vehicle-body">

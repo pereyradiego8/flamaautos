@@ -652,3 +652,45 @@ input,select,textarea{min-width:0;padding:10px 11px;font-size:14px}
  color:#f4eef0;font-size:clamp(13px,1.5vw,17px);
  line-height:1.6;pointer-events:none;
 }
+
+/* Descripciones editoriales: párrafos legibles, viñetas semánticas y detalles progresivos. */
+.vehicle-description{min-width:0}
+.vehicle-description-text{display:grid;gap:clamp(12px,1.5vw,18px)}
+.vehicle-description-text p{
+ margin:0;color:#d6dfe3;
+ font-size:clamp(14px,1.12vw,16px);
+ line-height:1.82;letter-spacing:.005em;
+ overflow-wrap:break-word;
+}
+.vehicle-description-text p:first-child{color:#f1f4f5;font-size:clamp(15px,1.2vw,17px)}
+.vehicle-description-text p:last-child:not(:first-child){margin-bottom:2px}
+.vehicle-features{margin-top:clamp(20px,2.6vw,30px);padding-top:clamp(17px,2vw,22px);border-top:1px solid #34434c}
+.vehicle-features h3{font-size:clamp(17px,1.6vw,20px);margin:0 0 8px;letter-spacing:-.3px;color:#f8f9fa}
+.vehicle-features .fine{margin:0 0 18px;line-height:1.65}
+.vehicle-features-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,215px),1fr));gap:clamp(12px,1.8vw,18px)}
+.vehicle-feature-group{
+ min-width:0;padding:16px 16px 12px;
+ border-radius:11px;background:#10191e;border:1px solid #33434d;
+}
+.vehicle-feature-group h4{font-size:14px;line-height:1.35;color:#f1f5f6;margin:0 0 12px}
+.vehicle-feature-group ul{padding:0 0 0 20px;margin:0;display:grid;gap:8px;list-style-type:disc}
+.vehicle-feature-group li{font-size:14px;line-height:1.5;color:#ccd8dc;padding-left:1px}
+.vehicle-feature-group li::marker{color:#ff767e}
+.vehicle-spec-disclosure{margin-top:14px}
+.vehicle-spec-disclosure summary{
+ cursor:pointer;display:list-item;padding:13px 15px;
+ color:#f8f9fa;border:1px solid #566872;border-radius:9px;
+ background:#1c292f;font-size:14px;font-weight:700;
+}
+.vehicle-spec-disclosure summary:hover{background:#263840}
+.vehicle-spec-disclosure summary:focus-visible{outline:3px solid #ff9297;outline-offset:3px}
+.vehicle-spec-disclosure[open] summary{border-radius:9px 9px 0 0}
+.vehicle-spec-disclosure .details-list{padding:10px 15px 2px;border:1px solid #34454f;border-top:0;border-radius:0 0 9px 9px}
+@media(max-width:640px){
+ .vehicle-description-text p{font-size:15px;line-height:1.75}
+ .vehicle-features-grid{grid-template-columns:1fr}
+ .vehicle-feature-group{padding:14px 16px}
+ .vehicle-spec-disclosure .details-list{padding-inline:10px}
+ .vehicle-spec-disclosure .details-list>div{gap:8px;flex-wrap:wrap}
+ .vehicle-spec-disclosure .details-list dd{text-align:left;overflow-wrap:anywhere}
+}
