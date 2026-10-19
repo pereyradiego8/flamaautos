@@ -157,6 +157,7 @@ export default function VehicleGallery({photos,vehicleName}:Props){
           width={112}
           height={84}
           sizes="(max-width: 600px) 72px, 94px"
+          quality={60}
           loading="lazy"
         />
       </button>)}
