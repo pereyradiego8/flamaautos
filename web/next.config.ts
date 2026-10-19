@@ -11,6 +11,8 @@ const nextConfig: NextConfig = {
       pathname: '/D_NQ_NP_**'
     }],
     formats: ['image/webp'],
+    qualities: [60,65,75],
+    minimumCacheTTL: 86400,
   },
   poweredByHeader: false,
 
