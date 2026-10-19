@@ -1,6 +1,6 @@
 import type {MetadataRoute} from 'next';
 import {publishedVehicles} from '@/lib/vehicles';
-export const dynamic='force-dynamic';
+export const revalidate=600;
 export default async function sitemap():Promise<MetadataRoute.Sitemap>{
  const base=process.env.NEXT_PUBLIC_SITE_URL;if(!base)return [];
  const root=base.replace(/\/$/,'');const vehicles=await publishedVehicles();
