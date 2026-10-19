@@ -1,0 +1,79 @@
+name: Auditoría integral Lighthouse y dependencias
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/audit-site.yml'
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 19
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+      - name: Comprobar Chrome disponible
+        shell: bash
+        run: |
+          command -v google-chrome || command -v google-chrome-stable
+          google-chrome --version || google-chrome-stable --version
+      - name: Instalar dependencias con el lockfile
+        run: npm ci --prefix web --no-audit --no-fund
+      - name: Examinar alertas de dependencias
+        shell: bash
+        run: |
+          mkdir -p audit-artifacts
+          (cd web && npm audit --json --omit=dev) > audit-artifacts/npm-audit.json || true
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          const j=JSON.parse(fs.readFileSync('audit-artifacts/npm-audit.json','utf8'));
+          console.log('DEPENDENCY_AUDIT',JSON.stringify({
+            counts:j.metadata?.vulnerabilities??{},
+            findings:Object.entries(j.vulnerabilities??{}).map(([name,info])=>({
+              name,severity:info.severity,
+              via:(info.via??[]).map(a=>typeof a==='string'?a:(a.title||a.name||a.url)).slice(0,3),
+              fixAvailable:info.fixAvailable
+            })).slice(0,30)
+          }));
+          JS
+      - name: Ejecutar Lighthouse sin acceder al panel autenticado
+        shell: bash
+        run: |
+          set +e
+          mkdir -p audit-artifacts
+          URLS=(
+            'https://flamaautos.vercel.app/'
+            'https://flamaautos.vercel.app/autos'
+            'https://flamaautos.vercel.app/autos/dodge-journey-2017-mla3917054036'
+            'https://flamaautos.vercel.app/admin'
+          )
+          LABELS=(inicio catalogo ficha admin)
+          for i in "${!URLS[@]}"; do
+            echo "AUDIT_START ${LABELS[$i]} ${URLS[$i]}"
+            npx --yes lighthouse@12 "${URLS[$i]}"               --chrome-flags='--headless --no-sandbox --disable-gpu'               --preset=perf               --only-categories=performance,accessibility,best-practices,seo               --output=json --output-path="audit-artifacts/lighthouse-${LABELS[$i]}.json"               --quiet --max-wait-for-load=35000 2>&1 | tail -30
+            node --input-type=module - "${LABELS[$i]}" <<'JS'
+          import fs from 'node:fs';
+          const label=process.argv[2];
+          try {
+            const j=JSON.parse(fs.readFileSync(`audit-artifacts/lighthouse-${label}.json`,'utf8'));
+            const ids=['first-contentful-paint','largest-contentful-paint','speed-index','total-blocking-time','cumulative-layout-shift','server-response-time','interactive'];
+            const metrics=Object.fromEntries(ids.map(id=>[id,j.audits?.[id]?.numericValue??null]));
+            const failed=Object.values(j.audits??{}).filter(x=>x.score!==null&&x.score<.9&&!x.informative&&!x.manual&&x.details?.type!=='opportunity').map(x=>({id:x.id,title:x.title,score:x.score,display:x.displayValue})).slice(0,18);
+            console.log('LIGHTHOUSE_RESULT',JSON.stringify({label,requestedUrl:j.requestedUrl,finalUrl:j.finalUrl,runWarnings:j.runWarnings?.slice(0,3),scores:Object.fromEntries(Object.entries(j.categories??{}).map(([name,c])=>[name,Math.round(100*(c.score??0))])),metrics,failed}));
+          } catch(e) {console.log('LIGHTHOUSE_ERROR',label,String(e));}
+          JS
+          done
+      - name: Conservar reportes de auditoría
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: flama-lighthouse-security-audit
+          path: audit-artifacts/
+          retention-days: 7
+          if-no-files-found: ignore
