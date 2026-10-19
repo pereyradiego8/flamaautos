@@ -15,3 +15,9 @@ export type Vehicle = {
   branches?: Pick<Branch, 'name' | 'address'> | null;
   vehicle_images?: VehicleImage[];
 };
+
+/** Datos mínimos de las tarjetas; nunca transportar galerías completas al catálogo. */
+export type VehicleCardData = Pick<Vehicle,
+  'id'|'slug'|'brand'|'model'|'version'|'model_year'|'mileage_km'|'category'|
+  'currency'|'cash_price'|'down_payment'|'list_price'|'branch_id'|'featured'|
+  'created_at'|'updated_at'|'branches'|'vehicle_images'>;
