@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import type {Metadata} from 'next';
 import Image from 'next/image';
 import VehicleCard from '@/components/VehicleCard';
 import {publishedVehicles} from '@/lib/vehicles';
@@ -7,6 +8,7 @@ import {publicSupabase} from '@/lib/supabase';
 import type {Branch} from '@/lib/types';
 import {generalWhatsAppUrl,branchesWhatsAppUrl,FLAMA_WHATSAPP_DISPLAY} from '@/lib/whatsapp';
 export const revalidate=60;
+export const metadata:Metadata={alternates:{canonical:'/'}};
 export default async function Home(){
  const client=publicSupabase();
  const [stock,branchResult]=await Promise.all([
