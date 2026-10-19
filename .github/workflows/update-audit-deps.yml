@@ -2,7 +2,7 @@ name: Actualizar dependencias auditadas (rama de pruebas)
 on:
   push:
     branches: [mejoras-auditoria-20261019]
-    paths: ['.github/workflows/update-audit-deps.yml', 'web/eslint.config.mjs']
+    paths: ['.github/workflows/update-audit-deps.yml', 'web/eslint.config.mjs', 'web/src/components/AdminConsole.tsx']
 permissions:
   contents: write
 jobs:
