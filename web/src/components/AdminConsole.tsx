@@ -38,7 +38,7 @@ export default function AdminConsole(){
  const [branchName,setBranchName]=useState('');
  const [branchAddress,setBranchAddress]=useState('');
  const [branchActive,setBranchActive]=useState(true);
- const [loading,setLoading]=useState(true);const [working,setWorking]=useState(false);
+ const [loading,setLoading]=useState(Boolean(client));const [working,setWorking]=useState(false);
  const [message,setMessage]=useState('');const [error,setError]=useState('');
  const [vehicles,setVehicles]=useState<Vehicle[]>([]);const [branches,setBranches]=useState<Branch[]>([]);
  const [editing,setEditing]=useState<string|null>(null);const [form,setForm]=useState<VehicleForm>({...newForm});
@@ -46,10 +46,10 @@ export default function AdminConsole(){
  const [formOpen,setFormOpen]=useState(false);
 
  useEffect(()=>{
-  if(!client){setLoading(false);return;}
+  if(!client)return;
   let active=true;
   client.auth.getUser().then(({data})=>{if(active){setUser(data.user);if(!data.user)setLoading(false);}}).catch(()=>{if(active)setLoading(false);});
-  const {data:{subscription}}=client.auth.onAuthStateChange((_event,session)=>{if(active){setLoading(Boolean(session?.user));setUser(session?.user??null);setRole(null);}});
+  const {data:{subscription}}=client.auth.onAuthStateChange((_event,session)=>{if(active){setLoading(Boolean(session?.user));setUser(session?.user??null);setRole(null);if(!session?.user)setVehicles([]);}});
   return ()=>{active=false;subscription.unsubscribe();};
  // client estable; se genera una sola instancia en el navegador.
  },[client]);
@@ -60,7 +60,7 @@ export default function AdminConsole(){
   setVehicles((v.data??[]) as Vehicle[]);setBranches((b.data??[]) as Branch[]);
  },[client]);
  useEffect(()=>{
-  if(!client||!user){setRole(null);setVehicles([]);return;}
+  if(!client||!user)return;
   let active=true;
   client.from('staff').select('role').eq('user_id',user.id).maybeSingle().then(({data,error:err})=>{
    if(!active)return;

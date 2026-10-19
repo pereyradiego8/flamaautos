@@ -13,8 +13,26 @@ const nextConfig: NextConfig = {
     formats: ['image/webp'],
   },
   poweredByHeader: false,
+
+  // CSP compatible con el runtime App Router (scripts inline de hidratación).
+  // Las fuentes se restringen al CDN de fotos y Supabase usados por este sitio.
   async headers() {
-    return [{source:'/(.*)',headers:[
+    const policy = [
+      "default-src 'self'",
+      "base-uri 'self'",
+      "object-src 'none'",
+      "frame-ancestors 'none'",
+      "form-action 'self'",
+      "script-src 'self' 'unsafe-inline'",
+      "style-src 'self' 'unsafe-inline'",
+      "img-src 'self' data: blob: https://http2.mlstatic.com https://kldsrenndnyttvfuoauf.supabase.co",
+      "font-src 'self' data:",
+      "connect-src 'self' https://kldsrenndnyttvfuoauf.supabase.co https://dolarapi.com",
+      "media-src 'self'",
+      "upgrade-insecure-requests",
+    ].join('; ');
+    return [{ source:'/(.*)', headers:[
+      {key:'Content-Security-Policy',value:policy},
       {key:'X-Content-Type-Options',value:'nosniff'},
       {key:'Referrer-Policy',value:'strict-origin-when-cross-origin'},
       {key:'Permissions-Policy',value:'camera=(), microphone=(), geolocation=()'},

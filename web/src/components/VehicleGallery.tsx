@@ -19,12 +19,14 @@ type TouchPosition = {x:number;y:number};
 
 export default function VehicleGallery({photos,vehicleName}:Props){
   const [currentIndex,setCurrentIndex]=useState(0);
+  const [failedImages,setFailedImages]=useState<ReadonlySet<string>>(new Set());
   const dialogRef=useRef<HTMLDialogElement>(null);
   const thumbnailRefs=useRef<Array<HTMLButtonElement|null>>([]);
   const touchStart=useRef<TouchPosition|null>(null);
 
   const count=photos.length;
   const photo=photos[currentIndex];
+  const markUnavailable=useCallback((id:string)=>setFailedImages(previous=>new Set(previous).add(id)),[]);
 
   const showPhoto=useCallback((index:number)=>{
     if(count<2)return;
@@ -37,6 +39,7 @@ export default function VehicleGallery({photos,vehicleName}:Props){
   },[count]);
 
   useEffect(()=>{
+    if(currentIndex===0)return;
     const target=thumbnailRefs.current[currentIndex];
     const strip=target?.parentElement;
     if(!target||!strip)return;
@@ -99,11 +102,14 @@ export default function VehicleGallery({photos,vehicleName}:Props){
         key={photo.id}
         className="vehicle-carousel-image"
         src={photo.src}
+        onError={()=>markUnavailable(photo.id)}
+        style={failedImages.has(photo.id)?{visibility:'hidden'}:undefined}
         alt={photo.alt}
         fill
         priority={currentIndex===0}
         sizes="(max-width: 600px) 100vw, (max-width: 1100px) 90vw, 85vw"
       />
+      {failedImages.has(photo.id)&&<div className="vehicle-carousel-unavailable" role="status">La fotografía original ya no está disponible. Consultá a la agencia por imágenes actualizadas.</div>}
       {count>1&&<>
         <button
           type="button"
@@ -146,6 +152,8 @@ export default function VehicleGallery({photos,vehicleName}:Props){
         <Image
           src={item.src}
           alt=""
+          onError={()=>markUnavailable(item.id)}
+          style={failedImages.has(item.id)?{opacity:0}:undefined}
           width={112}
           height={84}
           sizes="(max-width: 600px) 72px, 94px"
@@ -166,12 +174,15 @@ export default function VehicleGallery({photos,vehicleName}:Props){
       >
         <Image
           className="vehicle-carousel-dialog-image"
+          onError={()=>markUnavailable(photo.id)}
+          style={failedImages.has(photo.id)?{visibility:'hidden'}:undefined}
           key={photo.id}
           src={photo.src}
           alt={photo.alt}
           fill
           sizes="100vw"
         />
+        {failedImages.has(photo.id)&&<div className="vehicle-carousel-unavailable" role="status">Imagen no disponible. Solicitá fotos actuales por WhatsApp.</div>}
         {count>1&&<>
           <button type="button" className="vehicle-carousel-arrow previous" onClick={()=>step(-1)} aria-label="Foto anterior ampliada">‹</button>
           <button type="button" className="vehicle-carousel-arrow next" onClick={()=>step(1)} aria-label="Foto siguiente ampliada">›</button>

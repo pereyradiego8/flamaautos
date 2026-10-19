@@ -611,3 +611,44 @@ input,select,textarea{min-width:0;padding:10px 11px;font-size:14px}
 @media(max-width:480px){
  .vehicle-grid > .vehicle-card{max-width:none}
 }
+
+/* Auditoría de accesibilidad: legibilidad en pantallas compactas, contraste y foco. */
+.visually-hidden{
+ position:absolute!important;width:1px!important;height:1px!important;
+ padding:0!important;margin:-1px!important;overflow:hidden!important;
+ clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important;
+}
+.vehicle-body .mini{font-size:12px;letter-spacing:.7px;color:#ff8f95}
+.vehicle-body p,.vehicle-body .specs,.card-commercial-values,.results,.sort-note{
+ font-size:14px;
+ line-height:1.5;
+}
+.vehicle-bottom-actions .small-button{font-size:13px;min-height:42px}
+.vehicle-bottom-actions .vehicle-whatsapp{color:#e9fff0;border-color:#71c393}
+.btn,.header-contact,.featured{background:#be1b29;border-color:#be1b29;color:#fff}
+.btn:hover,.header-contact:hover{background:#a61321;border-color:#a61321}
+.eyebrow{font-size:12px;letter-spacing:1.6px;color:#ff838a}
+.categories small,.features span{font-size:14px;color:#c7d0d4}
+.header nav a:focus-visible,.vehicle-card a:focus-visible,.vehicle-carousel button:focus-visible{
+ outline:3px solid #ffb1b5;outline-offset:3px;
+}
+.vehicle-card{content-visibility:auto;contain-intrinsic-size:auto 490px}
+.demo-note{
+ flex-basis:100%;margin:4px 0 0;padding-top:14px;
+ border-top:1px solid #364349;font-size:12px;line-height:1.6;color:#bbc6cc;
+}
+@media(max-width:520px){
+ .vehicle-body .mini{font-size:12px}
+ .vehicle-body p,.specs,.card-commercial-values{font-size:14px}
+ .vehicle-carousel-help{font-size:12px}
+ .vehicle-carousel-thumbnail{min-width:68px;min-height:50px}
+}
+
+.vehicle-carousel-unavailable{
+ position:absolute;inset:0;z-index:1;
+ display:grid;place-items:center;
+ padding:clamp(35px,5vw,72px);text-align:center;
+ background:linear-gradient(135deg,#1a252c,#10171b);
+ color:#f4eef0;font-size:clamp(13px,1.5vw,17px);
+ line-height:1.6;pointer-events:none;
+}

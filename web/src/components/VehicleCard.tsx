@@ -2,14 +2,14 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { formatKm,formatPrice } from '@/lib/catalog';
 import { publicPhotoUrl } from '@/lib/supabase';
-import type { Vehicle } from '@/lib/types';
+import type { VehicleCardData } from '@/lib/types';
 import {vehicleWhatsAppUrl} from '@/lib/whatsapp';
-export default function VehicleCard({vehicle}: {vehicle:Vehicle}) {
+export default function VehicleCard({vehicle,priority=false}: {vehicle:VehicleCardData;priority?:boolean}) {
   const image = vehicle.vehicle_images?.[0];
   const src = image ? publicPhotoUrl(image.storage_path) : null;
   return <article className="vehicle-card">
     <Link href={`/autos/${vehicle.slug}`} className="vehicle-media" aria-label={`Ver ${vehicle.brand} ${vehicle.model}`}>
-      {src ? <Image loading="lazy" fill sizes="(max-width: 600px) 95vw, (max-width: 1080px) 45vw, 25vw" src={src} alt={image?.alt_text || `${vehicle.brand} ${vehicle.model}`} /> : <span>Fotografías próximamente</span>}
+      {src ? <Image loading={priority?undefined:"lazy"} priority={priority} fill sizes="(max-width: 480px) 90vw, (max-width: 720px) 45vw, 320px" src={src} alt={image?.alt_text || `${vehicle.brand} ${vehicle.model}`} /> : <span>Fotografías próximamente</span>}
       {vehicle.featured && <small className="featured">Destacado</small>}
     </Link>
     <div className="vehicle-body">
