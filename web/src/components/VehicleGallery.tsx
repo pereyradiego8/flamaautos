@@ -19,7 +19,7 @@ type TouchPosition = {x:number;y:number};
 
 export default function VehicleGallery({photos,vehicleName}:Props){
   const [currentIndex,setCurrentIndex]=useState(0);
-  const [failedImages,setFailedImages]=useState<ReadonlySet<string>>(new Set());
+  const [failedImages,setFailedImages]=useState<ReadonlySet<string>>(()=>new Set());
   const dialogRef=useRef<HTMLDialogElement>(null);
   const thumbnailRefs=useRef<Array<HTMLButtonElement|null>>([]);
   const touchStart=useRef<TouchPosition|null>(null);
@@ -89,9 +89,6 @@ export default function VehicleGallery({photos,vehicleName}:Props){
     className="vehicle-carousel"
     aria-label={`Galería de fotografías de ${vehicleName}`}
     aria-roledescription="carrusel"
-    role="region"
-    tabIndex={0}
-    onKeyDown={handleKeyDown}
   >
     <div
       className="vehicle-carousel-stage"
@@ -114,12 +111,14 @@ export default function VehicleGallery({photos,vehicleName}:Props){
         <button
           type="button"
           className="vehicle-carousel-arrow previous"
+          onKeyDown={handleKeyDown}
           onClick={()=>step(-1)}
           aria-label="Foto anterior"
         >‹</button>
         <button
           type="button"
           className="vehicle-carousel-arrow next"
+          onKeyDown={handleKeyDown}
           onClick={()=>step(1)}
           aria-label="Foto siguiente"
         >›</button>
@@ -130,6 +129,7 @@ export default function VehicleGallery({photos,vehicleName}:Props){
       <button
         type="button"
         className="vehicle-carousel-expand"
+        onKeyDown={handleKeyDown}
         onClick={()=>{if(dialogRef.current&&!dialogRef.current.open)dialogRef.current.showModal();}}
         aria-label="Ampliar fotografía"
       >Ampliar <span aria-hidden="true">↗</span></button>
@@ -147,6 +147,7 @@ export default function VehicleGallery({photos,vehicleName}:Props){
         className={index===currentIndex?'vehicle-carousel-thumbnail is-active':'vehicle-carousel-thumbnail'}
         aria-label={`Ver foto ${index+1} de ${count}`}
         aria-current={index===currentIndex?'true':undefined}
+        onKeyDown={handleKeyDown}
         onClick={()=>showPhoto(index)}
       >
         <Image

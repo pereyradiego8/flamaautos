@@ -24,7 +24,7 @@ jobs:
         run: npm test
       - name: TypeScript
         run: npm run typecheck
-      - name: ESLint
-        run: npm run lint
+      - name: ESLint (sin advertencias)
+        run: npm run lint -- --max-warnings=0
       - name: Build
         run: npm run build
