@@ -15,6 +15,15 @@ export function formatPrice(value: number | null, currency: string | null): stri
 export function formatKm(value: number | null): string {
   return value === null ? 'Kilometraje a consultar' : `${new Intl.NumberFormat('es-AR').format(value)} km`;
 }
+/** Sucursales que tienen al menos una unidad publicada con ubicación asignada. */
+export function branchesWithPublishedVehicles<T extends {id:string}>(
+  branches: readonly T[],
+  vehicles: readonly {branch_id:string|null}[],
+): T[] {
+  const assignedIds = new Set(vehicles.map(vehicle=>vehicle.branch_id).filter((id):id is string=>Boolean(id)));
+  return branches.filter(branch=>assignedIds.has(branch.id));
+}
+
 export function slugify(value: string): string {
   return value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 }

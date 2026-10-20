@@ -6,7 +6,7 @@ Repositorio: https://github.com/pereyradiego8/flamaautos
 
 ## Tecnología
 
-Next.js 15, React 19, Supabase y Vercel. Node.js 24 en Vercel y GitHub Actions.
+Next.js 16.4.2, React 19, Supabase y Vercel. Node.js 24 en Vercel y GitHub Actions.
 
 ## Estado al 18 de octubre de 2026
 
@@ -57,3 +57,12 @@ Los archivos de supabase/migrations están destinados exclusivamente a la base F
 - Confirmar en Supabase Auth las URL de retorno hacia el sitio en Vercel.
 - Recordar que el bucket de fotografías es público: no subir documentos o fotos confidenciales.
 - Completar la política de privacidad antes de captar datos personales de compradores.
+
+## Seguridad del inventario y flujo de cambios
+
+- `source_review_note` solo puede modificarse por administradores; el servidor lo verifica mediante un trigger de PostgreSQL. Los editores pueden seguir modificando el resto de la ficha con sus permisos habituales.
+- La vista `vehicle_cards` debe conceder únicamente lectura a `anon` y `authenticated`.
+- El filtro de sucursales aparece exclusivamente cuando hay unidades publicadas asignadas a ubicaciones confirmadas; no se asignan sucursales automáticamente por proximidad.
+- Las extracciones de Mercado Libre en GitHub Actions dejan artefactos revisables y no realizan `push` directo a `main`. Los artefactos requieren revisión e incorporación mediante pull request.
+- **Acción del administrador del repositorio:** habilitar protección de rama `main`, exigir PR y estado obligatorio `verify` de «Verificación web», restringir force-push y eliminación. Antes de activar la protección, revisar la configuración de permisos disponible en GitHub.
+- **Despliegue de base:** aplicar la migración `202610200001_guard_editor_review_and_catalog_grants.sql` al proyecto exclusivo de Flama Autos antes de considerar efectiva la corrección de permisos. No instalarla en bases ajenas.
