@@ -36,7 +36,12 @@ test('una auditoría completamente limpia pasa aunque la excepción haya vencido
   full.metadata.vulnerabilities = { info: 0, low: 0, moderate: 0, high: 0, critical: 0, total: 0 };
   assert.equal(evaluateAudit(full, prod, lock, new Date('2027-01-01')).ok, true);
 });
-test('la excepción continúa vigente el día 89 y caduca al cumplir 90 días', () => {\n  const { full, prod, lock } = fixture();\n  assert.equal(evaluateAudit(full, prod, lock, new Date('2027-01-17T23:59:59.999Z')).ok, true);\n  assert.equal(evaluateAudit(full, prod, lock, new Date('2027-01-18T00:00:00.000Z')).ok, false);\n});\ntest('excepción vencida bloquea el CI', () => {
+test('la excepción continúa vigente el día 89 y caduca al cumplir 90 días', () => {
+  const { full, prod, lock } = fixture();
+  assert.equal(evaluateAudit(full, prod, lock, new Date('2027-01-17T23:59:59.999Z')).ok, true);
+  assert.equal(evaluateAudit(full, prod, lock, new Date('2027-01-18T00:00:00.000Z')).ok, false);
+});
+test('excepción vencida bloquea el CI', () => {
   const { full, prod, lock } = fixture();
   assert.equal(evaluateAudit(full, prod, lock, new Date(EXPIRES_AT)).ok, false);
 });
