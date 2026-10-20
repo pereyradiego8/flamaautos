@@ -1,0 +1,80 @@
+name: Revisión semanal de seguridad (issue 5)
+
+on:
+  schedule:
+    # Lunes 12:17 UTC (09:17 en Buenos Aires). GitHub puede retrasar ejecuciones.
+    - cron: '17 12 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  dependency-security:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '24'
+      - name: Instalar dependencias reproducibles
+        working-directory: web
+        run: npm ci --no-audit --no-fund
+
+      - name: Auditar dependencias completas y de producción
+        id: audit
+        working-directory: web
+        continue-on-error: true
+        run: npm run audit:security
+
+      - name: Consultar nuevas versiones oficiales de braces
+        id: upstream
+        working-directory: web
+        continue-on-error: true
+        shell: bash
+        run: |
+          set -euo pipefail
+          latest="$(npm view braces version --json | tr -d '"[:space:]')"
+          test -n "$latest"
+          echo "latest=$latest" >> "$GITHUB_OUTPUT"
+          if [ "$latest" != "3.0.3" ]; then
+            echo "::warning::braces tiene una versión publicada distinta ($latest). Revisar inmediatamente el issue #5 y actualizar dependencias tras validar el parche."
+            exit 1
+          fi
+          echo "braces sigue en 3.0.3, sin una versión nueva publicada"
+
+      - name: Registrar resultado semanal en issue 5
+        if: always()
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          AUDIT_RESULT: ${{ steps.audit.outcome }}
+          UPSTREAM_RESULT: ${{ steps.upstream.outcome }}
+          LATEST_VERSION: ${{ steps.upstream.outputs.latest }}
+        run: |
+          set -euo pipefail
+          {
+            echo "### Revisión automática semanal — $(date -u '+%Y-%m-%d %H:%M UTC')"
+            echo ""
+            echo "- Auditoría npm (completa y producción): **$AUDIT_RESULT**."
+            echo "- Consulta de nueva versión de braces: **$UPSTREAM_RESULT**."
+            echo "- Última versión encontrada: \`\${LATEST_VERSION:-sin consultar}\`."
+            echo "- Excepción temporal: **hasta 2027-01-18 00:00 UTC**; no resuelve la vulnerabilidad."
+            echo "- [Logs y evidencia de esta revisión](https://github.com/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID)."
+            echo ""
+            echo "Si falla algún control, revisar y corregir antes de cerrar el issue #5."
+          } > "$RUNNER_TEMP/security-weekly-result.md"
+          gh issue comment 5 --repo "$GITHUB_REPOSITORY" --body-file "$RUNNER_TEMP/security-weekly-result.md"
+
+      - name: Fallar la revisión si detecta riesgos o falla una consulta
+        if: always()
+        shell: bash
+        env:
+          AUDIT_RESULT: ${{ steps.audit.outcome }}
+          UPSTREAM_RESULT: ${{ steps.upstream.outcome }}
+        run: |
+          set -euo pipefail
+          test "$AUDIT_RESULT" = "success"
+          test "$UPSTREAM_RESULT" = "success"
