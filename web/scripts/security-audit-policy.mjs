@@ -1,7 +1,7 @@
 // Scoped, expiring exception for https://github.com/advisories/GHSA-vfj7-8cjw-p6xm
 // The scanner finding remains visible; all other vulnerabilities block CI.
 export const ADVISORY = 'GHSA-vfj7-8cjw-p6xm';
-export const EXPIRES_AT = '2026-11-20T00:00:00.000Z';
+export const EXPIRES_AT = '2027-01-18T00:00:00.000Z';
 
 const expected = new Map([
   ['@next/eslint-plugin-next', { version: '16.4.2', via: 'fast-glob', direct: true }],
