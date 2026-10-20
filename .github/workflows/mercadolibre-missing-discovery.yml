@@ -8,7 +8,7 @@ on:
       - "web/scripts/collect_mercadolibre.py"
       - ".github/workflows/mercadolibre-missing-discovery.yml"
 permissions:
-  contents: write
+  contents: read
 jobs:
   discover:
     runs-on: ubuntu-latest
@@ -16,7 +16,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          persist-credentials: true
+          persist-credentials: false
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
@@ -24,17 +24,6 @@ jobs:
         run: pip install beautifulsoup4==4.14.2 lxml==6.0.2
       - name: Identificar faltantes y verificar vendedor por publicación
         run: python web/scripts/discover_missing_agenciaflama.py
-      - name: Guardar evidencias en el repositorio
-        shell: bash
-        run: |
-          set -euo pipefail
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add web/imports/agenciaflama-missing-extracted.json web/imports/agenciaflama-missing-discovery.json
-          if ! git diff --cached --quiet; then
-            git commit -m "data(import): stage additional verified listings from Agencia Flama"
-            git push origin HEAD:main
-          fi
       - uses: actions/upload-artifact@v4
         if: always()
         with:

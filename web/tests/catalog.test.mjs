@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {slugify,formatPrice,formatKm,comparePrices,CATEGORIES} from '../src/lib/catalog.ts';
+import {slugify,formatPrice,formatKm,comparePrices,CATEGORIES,branchesWithPublishedVehicles} from '../src/lib/catalog.ts';
 
 test('slug sin acentos y apto para URL',()=>{
  assert.equal(slugify('Peugeot 208 ¡Féline! 2022'), 'peugeot-208-feline-2022');
@@ -34,4 +34,11 @@ test('los precios a consultar van al final en ambos órdenes',()=>{
 });
 test('categorías únicas',()=>{
  assert.equal(new Set(CATEGORIES.map(x=>x.id)).size,CATEGORIES.length);
+});
+
+test('filtro de sucursales solo ofrece ubicaciones con vehículos publicados asignados',()=>{
+ const branches=[{id:'a',name:'Centro'},{id:'b',name:'Oeste'}];
+ assert.deepEqual(branchesWithPublishedVehicles(branches,[{branch_id:null}]),[]);
+ assert.deepEqual(branchesWithPublishedVehicles(branches,[{branch_id:'b'},{branch_id:'b'},{branch_id:null}]),[branches[1]]);
+ assert.deepEqual(branchesWithPublishedVehicles(branches,[{branch_id:'no-existe'}]),[]);
 });
