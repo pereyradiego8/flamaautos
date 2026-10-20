@@ -60,7 +60,7 @@ jobs:
             echo ""
             echo "- Auditoría npm (completa y producción): **$AUDIT_RESULT**."
             echo "- Consulta de nueva versión de braces: **$UPSTREAM_RESULT**."
-            echo "- Última versión encontrada: \`\${LATEST_VERSION:-sin consultar}\`."
+            echo "- Última versión encontrada: ${LATEST_VERSION:-sin consultar}."
             echo "- Excepción temporal: **hasta 2027-01-18 00:00 UTC**; no resuelve la vulnerabilidad."
             echo "- [Logs y evidencia de esta revisión](https://github.com/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID)."
             echo ""
